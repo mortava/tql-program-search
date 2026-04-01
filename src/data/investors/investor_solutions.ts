@@ -185,9 +185,4 @@ export const investorSolutions: Investor = {
     mortgageLates: '1x30x12 allowed; 0x60x12 max 70% LTV',
   },
 
-  sourceDocuments: [
-    'Investor Solutions - DSCR (1).pdf',
-    'Investor Solutions - DSCR (5-8 Units or 2-8 Mixed Use) (1).pdf',
-  ],
-  lastUpdated: '2026-01-01',
 }

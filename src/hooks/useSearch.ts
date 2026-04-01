@@ -154,11 +154,11 @@ function buildSearchResult(
   const allEntries = matchingLtvEntries.flatMap((m) => m.entries)
   const bestMaxLtv =
     allEntries.length > 0
-      ? Math.max(...allEntries.map((e) => e.maxLtv))
+      ? Math.max(...allEntries.map((e) => e.maxLtv ?? 0))
       : Math.max(
           ...investor.programs
             .filter((p) => p.available)
-            .flatMap((p) => p.ltvMatrix.map((e) => e.maxLtv)),
+            .flatMap((p) => p.ltvMatrix.map((e) => e.maxLtv ?? 0)),
           0,
         )
 

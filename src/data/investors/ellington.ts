@@ -3,8 +3,6 @@ import type { Investor } from '../types'
 const US_CSHIP = ['US Citizen', 'Permanent Resident', 'Non-Permanent Resident'] as const
 const INV = ['Investment'] as const
 const PRI = ['Primary Residence'] as const
-const ALL_OCC = ['Primary Residence', 'Second Home', 'Investment'] as const
-const ALL_PURPOSES = ['Purchase', 'Rate/Term Refinance', 'Cash-Out Refinance'] as const
 const DSCR_PROPS = ['SFR', 'PUD', 'Condo (Warrantable)', 'Condo (Non-Warrantable)', 'Condotel', '2-4 Unit'] as const
 const FULL_PROPS = ['SFR', 'PUD', 'Condo (Warrantable)', 'Condo (Non-Warrantable)', '2-4 Unit', 'Rural'] as const
 

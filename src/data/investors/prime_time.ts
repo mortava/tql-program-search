@@ -3,8 +3,6 @@ import type { Investor } from '../types'
 const PRIM = ['Primary Residence'] as const
 const SEC = ['Second Home'] as const
 const INV = ['Investment'] as const
-const PRIM_SEC = ['Primary Residence', 'Second Home'] as const
-const PRIM_SEC_INV = ['Primary Residence', 'Second Home', 'Investment'] as const
 
 const STANDARD_PROPS = ['SFR', 'PUD', 'Condo (Warrantable)', 'Condo (Non-Warrantable)', 'Condotel', '2-4 Unit'] as const
 const ALL_PROPS = ['SFR', 'PUD', 'Condo (Warrantable)', 'Condo (Non-Warrantable)', 'Condotel', '2-4 Unit', 'Rural'] as const

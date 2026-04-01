@@ -20,7 +20,6 @@ const CC_DSCR_PROPS = ['SFR', 'PUD', 'Condo (Warrantable)', 'Condo (Non-Warranta
 const CES_PROPS = ['SFR', 'PUD', 'Condo (Warrantable)', '2-4 Unit'] as const
 const HELOC_PROPS = ['SFR', 'PUD', 'Condo (Warrantable)', '2-4 Unit'] as const
 
-const ALL_PURPOSES = ['Purchase', 'Rate/Term Refinance', 'Cash-Out Refinance'] as const
 
 const STANDARD_ALT_DOC: readonly ['Full Doc', 'Alt-Doc', 'Bank Statement (Personal)', 'Bank Statement (Business)'] = ['Full Doc', 'Alt-Doc', 'Bank Statement (Personal)', 'Bank Statement (Business)']
 const ASCENT_STD_DOC: readonly ['Full Doc', 'Alt-Doc', 'Bank Statement (Personal)', 'Bank Statement (Business)', '1099 Only'] = ['Full Doc', 'Alt-Doc', 'Bank Statement (Personal)', 'Bank Statement (Business)', '1099 Only']

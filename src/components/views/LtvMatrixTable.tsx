@@ -23,7 +23,7 @@ function sortEntries(
   return [...entries].sort((a, b) => {
     let diff = 0
     if (key === 'fico') diff = a.minFico - b.minFico
-    else if (key === 'ltv') diff = a.maxLtv - b.maxLtv
+    else if (key === 'ltv') diff = (a.maxLtv ?? 0) - (b.maxLtv ?? 0)
     else if (key === 'loan') diff = a.maxLoanAmount - b.maxLoanAmount
     return dir === 'asc' ? diff : -diff
   })

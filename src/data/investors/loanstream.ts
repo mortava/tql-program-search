@@ -3,7 +3,6 @@ import type { Investor } from '../types'
 const DSCR_PROPS = ['SFR', 'PUD', 'Condo (Warrantable)', '2-4 Unit'] as const
 const DSCR_CSHIP = ['US Citizen', 'Permanent Resident', 'Non-Permanent Resident'] as const
 const INV = ['Investment'] as const
-const ALL_PURPOSES = ['Purchase', 'Rate/Term Refinance', 'Cash-Out Refinance'] as const
 
 export const loanstream: Investor = {
   id: 'loanstream',

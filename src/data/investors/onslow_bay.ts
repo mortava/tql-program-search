@@ -4,9 +4,6 @@ import type { Investor } from '../types'
 const PRI = ['Primary Residence'] as const
 const SEC = ['Second Home'] as const
 const INV = ['Investment'] as const
-const PRI_SEC = ['Primary Residence', 'Second Home'] as const
-const PRI_SEC_INV = ['Primary Residence', 'Second Home', 'Investment'] as const
-const SEC_INV = ['Second Home', 'Investment'] as const
 
 const US_CSHIP = ['US Citizen', 'Permanent Resident', 'Non-Permanent Resident'] as const
 
@@ -25,7 +22,6 @@ const PURCH = ['Purchase'] as const
 const RT = ['Rate/Term Refinance'] as const
 const CO = ['Cash-Out Refinance'] as const
 const PURCH_RT = ['Purchase', 'Rate/Term Refinance'] as const
-const ALL_PURPOSES = ['Purchase', 'Rate/Term Refinance', 'Cash-Out Refinance'] as const
 
 export const onslowBay: Investor = {
   id: 'onslow-bay',
@@ -226,6 +222,4 @@ export const onslowBay: Investor = {
     deedInLieu: '24–48 months depending on program',
   },
 
-  sourceDocuments: ['Onslow Bay Correspondent Guidelines.pdf'],
-  lastUpdated: '2026-01-01',
 }
