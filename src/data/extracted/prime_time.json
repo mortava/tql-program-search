@@ -1,0 +1,312 @@
+{
+  "investor": "Prime Time (Verus)",
+  "source_file": "Prime Time - Standard Doc and Alt Doc.docx (2) (1) (1).pdf",
+  "program": "Prime Time - Standard Doc and Alt Doc",
+  "occupancy": ["Primary Residence", "Second Home", "Investment"],
+  "loan_purpose": ["Purchase", "Rate/Term Refinance", "Cash Out"],
+  "product_type": ["15-Year Fixed", "30-Year Fixed", "40-Year Fixed", "5/6 ARM", "7/6 ARM", "10/6 ARM (30-year term)"],
+  "loan_amounts": {
+    "min": 150000,
+    "max": 4000000
+  },
+  "interest_only": {
+    "allowed": true,
+    "min_credit_score": 660,
+    "max_ltv": 90,
+    "note": "40-year term ARMs eligible when combined with interest only feature"
+  },
+  "acreage": "Property up to 20 acres max",
+  "cash_in_hand": "Unlimited",
+  "ltv_matrices": {
+    "primary_residence": {
+      "standard_bank_statement_1099": [
+        { "fico": 720, "max_loan": 1000000, "purchase": 90, "rate_term": 85, "cash_out": 80 },
+        { "fico": 720, "max_loan": 1500000, "purchase": 90, "rate_term": 85, "cash_out": 80 },
+        { "fico": 720, "max_loan": 2000000, "purchase": 85, "rate_term": 80, "cash_out": 80 },
+        { "fico": 720, "max_loan": 2500000, "purchase": 80, "rate_term": 75, "cash_out": 75 },
+        { "fico": 720, "max_loan": 3000000, "purchase": 75, "rate_term": 70, "cash_out": 70 },
+        { "fico": 720, "max_loan": 3500000, "purchase": 70, "rate_term": 65, "cash_out": "N/A" },
+        { "fico": 720, "max_loan": 4000000, "purchase": 70, "rate_term": 65, "cash_out": "N/A" },
+        { "fico": 700, "max_loan": 1000000, "purchase": 90, "rate_term": 85, "cash_out": 80 },
+        { "fico": 700, "max_loan": 1500000, "purchase": 90, "rate_term": 85, "cash_out": 80 },
+        { "fico": 700, "max_loan": 2000000, "purchase": 85, "rate_term": 75, "cash_out": 70 },
+        { "fico": 700, "max_loan": 2500000, "purchase": 75, "rate_term": 70, "cash_out": 65 },
+        { "fico": 700, "max_loan": 3000000, "purchase": 75, "rate_term": 70, "cash_out": 65 },
+        { "fico": 700, "max_loan": 3500000, "purchase": 70, "rate_term": 65, "cash_out": "N/A" },
+        { "fico": 680, "max_loan": 1000000, "purchase": 90, "rate_term": 85, "cash_out": 75 },
+        { "fico": 680, "max_loan": 1500000, "purchase": 85, "rate_term": 80, "cash_out": 75 },
+        { "fico": 680, "max_loan": 2000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 680, "max_loan": 2500000, "purchase": 75, "rate_term": 70, "cash_out": 65 },
+        { "fico": 680, "max_loan": 3000000, "purchase": 70, "rate_term": 65, "cash_out": 65 },
+        { "fico": 660, "max_loan": 1000000, "purchase": 80, "rate_term": 80, "cash_out": 75 },
+        { "fico": 660, "max_loan": 1500000, "purchase": 80, "rate_term": 75, "cash_out": 75 },
+        { "fico": 660, "max_loan": 2000000, "purchase": 75, "rate_term": 70, "cash_out": 65 },
+        { "fico": 660, "max_loan": 2500000, "purchase": 70, "rate_term": 65, "cash_out": 65 },
+        { "fico": 640, "max_loan": 1000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 640, "max_loan": 1500000, "purchase": 70, "rate_term": 65, "cash_out": 65 },
+        { "fico": 640, "max_loan": 2000000, "purchase": 65, "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 620, "max_loan": 1000000, "purchase": 70, "rate_term": 70, "cash_out": "N/A" }
+      ],
+      "pl_statement_wvoe_asset_utilization": [
+        { "fico": 720, "max_loan": 1000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 720, "max_loan": 1500000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 720, "max_loan": 2000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 720, "max_loan": 2500000, "purchase": 75, "rate_term": 70, "cash_out": 70 },
+        { "fico": 720, "max_loan": 3000000, "purchase": 70, "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 720, "max_loan": 3500000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 720, "max_loan": 4000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 700, "max_loan": 1000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 700, "max_loan": 1500000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 700, "max_loan": 2000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 700, "max_loan": 2500000, "purchase": 75, "rate_term": 70, "cash_out": 65 },
+        { "fico": 700, "max_loan": 3000000, "purchase": 70, "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 700, "max_loan": 3500000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 680, "max_loan": 1000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 680, "max_loan": 1500000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 680, "max_loan": 2000000, "purchase": 75, "rate_term": 70, "cash_out": 65 },
+        { "fico": 680, "max_loan": 2500000, "purchase": 70, "rate_term": 65, "cash_out": 60 },
+        { "fico": 680, "max_loan": 3000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 660, "max_loan": 1000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 660, "max_loan": 1500000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 660, "max_loan": 2000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 660, "max_loan": 2500000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 640, "max_loan": 1000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 640, "max_loan": 1500000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 640, "max_loan": 2000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 620, "max_loan": 1000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" }
+      ]
+    },
+    "second_home_investment": {
+      "standard_bank_statement_1099": [
+        { "fico": 720, "max_loan": 1000000, "purchase": 85, "rate_term": 80, "cash_out": 75 },
+        { "fico": 720, "max_loan": 1500000, "purchase": 85, "rate_term": 80, "cash_out": 75 },
+        { "fico": 720, "max_loan": 2000000, "purchase": 85, "rate_term": 80, "cash_out": 75 },
+        { "fico": 720, "max_loan": 2500000, "purchase": 80, "rate_term": 75, "cash_out": 75 },
+        { "fico": 720, "max_loan": 3000000, "purchase": 75, "rate_term": 70, "cash_out": 70 },
+        { "fico": 720, "max_loan": 3500000, "purchase": 70, "rate_term": 65, "cash_out": "N/A" },
+        { "fico": 720, "max_loan": 4000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 700, "max_loan": 1000000, "purchase": 85, "rate_term": 80, "cash_out": 75 },
+        { "fico": 700, "max_loan": 1500000, "purchase": 85, "rate_term": 80, "cash_out": 75 },
+        { "fico": 700, "max_loan": 2000000, "purchase": 85, "rate_term": 75, "cash_out": 70 },
+        { "fico": 700, "max_loan": 2500000, "purchase": 75, "rate_term": 70, "cash_out": 65 },
+        { "fico": 700, "max_loan": 3000000, "purchase": 75, "rate_term": 70, "cash_out": 65 },
+        { "fico": 700, "max_loan": 3500000, "purchase": 70, "rate_term": 65, "cash_out": "N/A" },
+        { "fico": 680, "max_loan": 1000000, "purchase": 85, "rate_term": 80, "cash_out": 75 },
+        { "fico": 680, "max_loan": 1500000, "purchase": 85, "rate_term": 80, "cash_out": 75 },
+        { "fico": 680, "max_loan": 2000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 680, "max_loan": 2500000, "purchase": 75, "rate_term": 70, "cash_out": 65 },
+        { "fico": 680, "max_loan": 3000000, "purchase": 70, "rate_term": 65, "cash_out": 65 },
+        { "fico": 660, "max_loan": 1000000, "purchase": 80, "rate_term": 80, "cash_out": 75 },
+        { "fico": 660, "max_loan": 1500000, "purchase": 80, "rate_term": 75, "cash_out": 75 },
+        { "fico": 660, "max_loan": 2000000, "purchase": 75, "rate_term": 70, "cash_out": 65 },
+        { "fico": 660, "max_loan": 2500000, "purchase": 70, "rate_term": 65, "cash_out": 65 },
+        { "fico": 640, "max_loan": 1000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 640, "max_loan": 1500000, "purchase": 70, "rate_term": 65, "cash_out": 65 },
+        { "fico": 640, "max_loan": 2000000, "purchase": 65, "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 620, "max_loan": 1000000, "purchase": 70, "rate_term": 70, "cash_out": "N/A" }
+      ],
+      "pl_statement_wvoe_asset_utilization": [
+        { "fico": 720, "max_loan": 1000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 720, "max_loan": 1500000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 720, "max_loan": 2000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 720, "max_loan": 2500000, "purchase": 75, "rate_term": 70, "cash_out": 70 },
+        { "fico": 720, "max_loan": 3000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 720, "max_loan": 3500000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 720, "max_loan": 4000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 700, "max_loan": 1000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 700, "max_loan": 1500000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 700, "max_loan": 2000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 700, "max_loan": 2500000, "purchase": 75, "rate_term": 70, "cash_out": 65 },
+        { "fico": 700, "max_loan": 3000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 700, "max_loan": 3500000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 680, "max_loan": 1000000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 680, "max_loan": 1500000, "purchase": 80, "rate_term": 75, "cash_out": 70 },
+        { "fico": 680, "max_loan": 2000000, "purchase": 75, "rate_term": 70, "cash_out": 65 },
+        { "fico": 680, "max_loan": 2500000, "purchase": 70, "rate_term": 65, "cash_out": 60 },
+        { "fico": 680, "max_loan": 3000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 660, "max_loan": 1000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 660, "max_loan": 1500000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 660, "max_loan": 2000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 660, "max_loan": 2500000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 640, "max_loan": 1000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 640, "max_loan": 1500000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 640, "max_loan": 2000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 620, "max_loan": 1000000, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" }
+      ]
+    }
+  },
+  "property_types": {
+    "single_family": "Attached, Detached",
+    "2_to_4_units_and_condos": {
+      "max_ltv": 85
+    },
+    "condo_hotel": {
+      "max_ltv": 85,
+      "max_loan_amount": 2500000
+    },
+    "rural": {
+      "allowed": true,
+      "max_ltv_purchase": 80,
+      "max_ltv_refinance": 75
+    }
+  },
+  "housing_history": {
+    "1x30x12": {
+      "purchase_ltv": "See matrix",
+      "refinance_ltv": "See matrix",
+      "max_loan_amt": "See matrix"
+    },
+    "0x60x12": {
+      "purchase_max_ltv": 80,
+      "refinance_max_ltv": 75,
+      "max_loan_amt": 1500000
+    },
+    "0x90x12": {
+      "purchase_max_ltv": 70,
+      "refinance_max_ltv": "N/A",
+      "max_loan_amt": 1000000
+    }
+  },
+  "credit_event_seasoning": {
+    "bk_fc_ss_dil_prefc_mc": {
+      "gte_36_months": {
+        "purchase_ltv": "See matrix",
+        "refinance_ltv": "See matrix",
+        "max_loan_amt": "See matrix"
+      },
+      "gte_24_months": {
+        "purchase_max_ltv": 80,
+        "refinance_max_ltv": 75,
+        "max_loan_amt": 1500000
+      },
+      "gte_12_months": {
+        "purchase_max_ltv": 70,
+        "refinance_max_ltv": "N/A",
+        "max_loan_amt": 1000000
+      }
+    },
+    "forbearance_modification_deferral": "<=12 months to be treated as 0x90x12"
+  },
+  "state_eligibility": {
+    "overlays_CT_FL_IL_NJ_NY": {
+      "max_ltv_purchase": 85,
+      "max_ltv_refinance": 80,
+      "max_loan_amount": 2000000
+    },
+    "ineligible_locations": ["Puerto Rico", "Guam", "US Virgin Islands"]
+  },
+  "declining_market": {
+    "max_ltv_purchase": 85,
+    "max_ltv_refinance": 80,
+    "max_loan_amount": 2000000
+  },
+  "income_documentation": {
+    "standard_doc": {
+      "wage_salary": "Paystubs, W-2's, 1 or 2 years Tax Returns, IRS Form 4506-C, Verbal VOE",
+      "self_employed": "1 or 2 years Personal and Business Tax Returns, YTD P&L, IRS Form 4506-C"
+    },
+    "aus_findings": {
+      "fannie_mae": "DU Approve/Eligible",
+      "freddie_mac": "LPA Accept/Eligible",
+      "ineligible_allowed_for": "Loan amount, interest only, prepayment penalty, number of financed properties, credit score < 720 when borrower has >= 7 financed properties, refinances exceeding 75% LTV",
+      "caution_refer_with_caution": "Not allowed",
+      "appraisal_waiver": "Not eligible"
+    },
+    "personal_bank_statements": {
+      "months": "12 or 24 months personal + 2 months business bank statements",
+      "qualifying_income": "Total eligible deposits from 12 or 24 months divided by number of statements",
+      "business_statements": "Must reflect business activity and transfers to personal account"
+    },
+    "business_bank_statements": {
+      "months": "12 or 24 months",
+      "analysis_methods": [
+        "Fixed Expense Ratio (50%)",
+        "Expense ratio from 3rd party (CPA, EA, tax preparer) min ratio 10%",
+        "3rd party prepared P&L Statement (CPA, EA, tax preparer)"
+      ]
+    },
+    "profit_loss_statement_only": {
+      "prepared_by": "CPA/EA/CTEC/Tax Attorney",
+      "months": "12 or 24 months",
+      "attestation": "Must have completed or filed borrower's most recent business tax return",
+      "max_housing": "1x30x12",
+      "min_credit_event_seasoning": "36 months"
+    },
+    "written_voe": {
+      "form": "FNMA Form 1005",
+      "bank_statements": "2 most recent months personal bank statements reflecting employer deposits",
+      "max_housing": "1x30x12",
+      "min_credit_event_seasoning": "36 months"
+    },
+    "irs_form_1099": {
+      "years": "1 or 2 years",
+      "expense_ratio": "Fixed 10%",
+      "ytd_documentation": "Required to support continued receipt of income from same source"
+    },
+    "asset_utilization": {
+      "formula": "Eligible assets divided by 84 = monthly income stream",
+      "max_housing": "1x30x12",
+      "min_credit_event_seasoning": "36 months"
+    }
+  },
+  "underwriting_requirements": {
+    "credit_score": "Use representative credit score of borrower with highest qualifying income",
+    "assets": "Min 30 days asset verification required; any large deposit must be sourced",
+    "reserves": {
+      "ltv_lte_80": "3 months PITIA",
+      "ltv_80_to_85": "6 months PITIA",
+      "ltv_gt_85": "12 months PITIA",
+      "loan_gt_1.5M": "9 months PITIA",
+      "loan_gt_2.5M": "12 months PITIA",
+      "cash_out_for_reserves": true
+    },
+    "dti": {
+      "max": 50,
+      "primary_up_to_55": {
+        "conditions": [
+          "Min residual income $3,500",
+          "Max LTV/CLTV <= 80%",
+          "Standard Doc 2 years",
+          "Min 6 months reserves",
+          "First time homebuyer not eligible",
+          "Min credit score 660"
+        ]
+      }
+    },
+    "gift_funds": {
+      "primary_second_home": "Min 5% borrower contribution",
+      "investment": "Min 10% borrower contribution"
+    },
+    "tradelines": {
+      "min": "2 reporting 24 months w/activity in last 12 months or 3 reporting 12 months w/recent activity",
+      "3_scores": "Minimum tradeline requirement waived"
+    },
+    "document_age": "120 days"
+  },
+  "prepayment_penalty": {
+    "investment_only": true,
+    "max_period": "5 years",
+    "not_allowed_states": ["AK", "KS", "MI", "MN", "NM", "RI"],
+    "not_allowed_individuals_in": ["IL", "NJ"],
+    "PA_restriction": "Not allowed on loan amounts less than $319,777",
+    "OH_restriction": "1-2 unit properties cannot exceed 1% of loan balance during 1st 5 years"
+  },
+  "escrows": {
+    "hpml_loans": "Required for property taxes, hazard insurance, and flood insurance",
+    "non_hpml": "See waiver options in Section 2.4.5"
+  },
+  "appraisals": {
+    "forms": ["FNMA Form 1004", "FNMA Form 1025", "FNMA Form 1073"],
+    "inspection": "Interior/exterior inspection required",
+    "review_product": "Required unless 2nd appraisal obtained",
+    "second_appraisal": "Required for loans > $2,000,000"
+  },
+  "short_term_rental": {
+    "notes": "Not explicitly mentioned in this matrix. STR coverage may fall under DSCR program."
+  },
+  "rural_property": {
+    "allowed": true,
+    "max_ltv_purchase": 80,
+    "max_ltv_refinance": 75
+  }
+}

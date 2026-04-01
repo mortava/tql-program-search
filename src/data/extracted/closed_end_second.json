@@ -1,0 +1,239 @@
+{
+  "investor": "Closed End Second (Verus)",
+  "source_file": "Closed End Second - Standard and Alt Doc (1).pdf",
+  "program": "Closed End Second - Standard and Alt Doc",
+  "occupancy": ["Primary Residence", "Second Home", "Investment"],
+  "loan_purpose": [
+    "Stand-Alone Cash Out (minimum 6 months ownership required)",
+    "Simultaneous Purchase (First Lien must be Agency-eligible loan)"
+  ],
+  "product_type": "Fixed Rate - Fully amortizing terms of 10, 15, 20, 25 & 30 years",
+  "loan_amounts": {
+    "min": 50000,
+    "max": 500000
+  },
+  "combined_loan_balance_restrictions": {
+    "gt_2M": "Maximum 80% CLTV",
+    "gt_3M": "Maximum 75% CLTV",
+    "max_combined": "$4,000,000 for all liens"
+  },
+  "cash_out_max": "$500,000",
+  "ltv_matrices": {
+    "standard_doc": {
+      "max_loan_350000": [
+        { "fico": 740, "primary": 90, "second_home": 80, "investment": 75 },
+        { "fico": 700, "primary": 85, "second_home": 80, "investment": 65 },
+        { "fico": 680, "primary": 75, "second_home": 75, "investment": "N/A" }
+      ],
+      "max_loan_500000": [
+        { "fico": 740, "primary": 85, "second_home": 75, "investment": 75 },
+        { "fico": 700, "primary": 85, "second_home": 75, "investment": 65 },
+        { "fico": 680, "primary": 75, "second_home": 70, "investment": "N/A" }
+      ]
+    },
+    "alt_doc": {
+      "max_loan_350000": [
+        { "fico": 740, "primary": 85, "second_home": 75, "investment": 70 },
+        { "fico": 700, "primary": 80, "second_home": 70, "investment": 60 },
+        { "fico": 680, "primary": 75, "second_home": 65, "investment": "N/A" }
+      ],
+      "max_loan_500000": [
+        { "fico": 740, "primary": 80, "second_home": 70, "investment": 65 },
+        { "fico": 700, "primary": 75, "second_home": 65, "investment": 60 },
+        { "fico": 680, "primary": 70, "second_home": 60, "investment": "N/A" }
+      ]
+    }
+  },
+  "property_types": {
+    "single_family": "Attached, Detached, PUD",
+    "condominiums": {
+      "max_cltv": 80
+    },
+    "2_to_4_units": {
+      "max_cltv": 75
+    },
+    "rural": "Not eligible"
+  },
+  "housing_history": "0x30x12",
+  "credit_event_seasoning": {
+    "bk_fc_ss_dil_prefc_mc_nod": ">= 48 months"
+  },
+  "forbearance_modification_deferral": "> 12 months",
+  "first_time_home_buyer": "Not Allowed",
+  "state_eligibility": {
+    "not_eligible": ["Texas", "Puerto Rico", "Guam", "US Virgin Islands"],
+    "state_overlays_CT_FL_IL_NJ_NY": {
+      "single_family_condos": {
+        "max_cltv": 80,
+        "min_credit_score": 720
+      },
+      "2_to_4_units": {
+        "max_cltv": 75,
+        "min_credit_score": 720
+      }
+    }
+  },
+  "declining_market": "Maximum CLTV limited to 80% for all transactions",
+  "eligible_borrower": {
+    "us_citizen": true,
+    "permanent_resident_alien": true,
+    "non_permanent_resident_alien": {
+      "allowed": true,
+      "max_cltv": 80
+    }
+  },
+  "ineligible_loan_features": [
+    "Lien Free Properties (including delayed financing)",
+    "Unseasoned cash-out (existing lien is cash-out within 6 months note date to note date)",
+    "Frequent Refinances (2+ cash-out refinances in past 12 months)",
+    "All existing subordinate liens must be satisfied (except solar panels per Verus Seller Guide)",
+    "All Solar Panel loans and leases with PACE/HERO financing must be paid off"
+  ],
+  "income_documentation": {
+    "standard_doc": {
+      "wage_salary": "Paystubs, 1 or 2 years W-2's, IRS Form 4506-C, Verbal VOE",
+      "self_employed": "1 or 2 years Personal and Business Tax Returns, YTD P&L, IRS Form 4506-C"
+    },
+    "personal_bank_statements": {
+      "months": "12 or 24 months personal + 2 months business bank statements",
+      "qualifying_income": "Total eligible deposits from 12 or 24 months divided by number of statements",
+      "business_statements": "Must reflect business activity and transfers to personal account"
+    },
+    "business_bank_statements": {
+      "months": "12 or 24 months",
+      "analysis_methods": [
+        "Fixed Expense Ratio (50%)",
+        "Expense ratio from 3rd party (CPA, EA, tax preparer) min ratio 10%",
+        "3rd party prepared P&L Statement (CPA, EA, tax preparer)"
+      ]
+    },
+    "irs_form_1099": {
+      "years": "1 or 2 years",
+      "expense_ratio": "Fixed 10%",
+      "ytd_documentation": "Required to support continued receipt of income"
+    },
+    "written_voe": {
+      "form": "FNMA Form 1005",
+      "bank_statements": "2 most recent months personal bank statements reflecting employer deposits",
+      "max_cltv": 80
+    },
+    "du_or_lpa": {
+      "fannie_mae": "DU Approve/Eligible",
+      "freddie_mac": "LPA Accept/Eligible",
+      "not_allowed": "Ineligible, Caution, or Refer with Caution",
+      "simultaneous_purchase_only": true,
+      "findings_for": "Income, asset, and liability documentation",
+      "appraisal_waiver": "Not eligible"
+    }
+  },
+  "underwriting_requirements": {
+    "eligibility_criteria": "Follow Closed End Second chapter in Non-Agency Seller Guide for criteria not in matrix",
+    "first_lien_documentation": {
+      "required": [
+        "Copy of 1st lien Note",
+        "Default interest rate on Note cannot exceed Note rate",
+        "If IO and/or ARM, terms of Note to be reviewed",
+        "Copy of most recent monthly mortgage payment statement"
+      ],
+      "ineligible_first_liens": [
+        "Forbearance/modifications/deferrals completed or reinstated within 12 months of Note date",
+        "Loans in active forbearance or deferment",
+        "Negative amortization including Paid-In-Kind (PIK) features",
+        "Balloon if payment becomes due during amortization period of new 2nd lien",
+        "Reverse Mortgages",
+        "Loans secured by more than one property (cross collateralized or blanket mortgages)",
+        "Home Equity Line of Credit",
+        "Note with default interest rate greater than Note rate"
+      ]
+    },
+    "credit_and_fraud": [
+      "Credit report",
+      "Gap credit report or Undisclosed Debt Monitoring (UDM) Fraud report",
+      "OFAC"
+    ],
+    "qualifying_credit_score": "Representative credit score of borrower with highest qualifying income",
+    "first_lien_payment_verification": [
+      "Copy of 1st lien Note",
+      "Copy of most recent monthly mortgage payment statement"
+    ],
+    "tradelines": {
+      "min": "2 reporting 24 months w/activity in last 12 months or 3 reporting 12 months w/recent activity",
+      "3_scores": "Minimum tradeline requirement waived"
+    },
+    "reserves": "None required",
+    "assets": "Verification required if funds needed to consummate transaction",
+    "dti": {
+      "cltv_lte_80": "50% max DTI",
+      "cltv_gt_80": "45% max DTI",
+      "qualifying_payment_standalone": "Utilize senior lien mortgage payment from credit report",
+      "qualifying_payment_simultaneous": "Utilize 1st lien qualifying method",
+      "fixed_rate": "Note rate amortized over total term",
+      "arms": "Higher of fully indexed rate or note rate",
+      "interest_only": "Qualifying rate amortized over remaining term after IO expiration"
+    },
+    "document_age": {
+      "credit_documents": "120 days",
+      "appraisals_title": "120 days",
+      "avm": "90 days"
+    }
+  },
+  "appraisal_requirements": {
+    "hpml_non_qm": "Full appraisal with interior inspection required regardless of loan balance",
+    "simultaneous_transaction": "Full appraisal required",
+    "transferred_appraisals": "Eligible",
+    "primary_and_secondary_valuation_required": true,
+    "primary_valuation_lte_250k": {
+      "options": [
+        "AVM from approved vendor with acceptable FSD score + new Property Condition Report (AVM max 90 days old at closing)",
+        "Exterior Drive-By appraisal (Hybrid or 2055 or 1075) - 1 unit only",
+        "New Appraisal (FNMA Form 1004/1025/1073)",
+        "Prior 1st lien appraisal within 12 months (same lender + new Property Condition Report + recertification by original appraiser)",
+        "Broker Price Opinion (BPO) from Clear Capital, Consolidated Analytics, Computershare, or Stewart Valuation Intelligence"
+      ]
+    },
+    "primary_valuation_gt_250k": {
+      "options": [
+        "New Appraisal (FNMA Form 1004/1025/1073)",
+        "Prior 1st lien appraisal within 12 months (same lender + new Property Condition Report + recertification + AVM; lower of prior appraisal or AVM for CLTV)"
+      ]
+    },
+    "secondary_valuation": {
+      "required": "In every file",
+      "options": [
+        "Collateral Underwriter (CU) or Loan Collateral Advisor (LCA) - score 2.5 or less; if exceeds 2.5, need enhanced desk review, field review, or second appraisal",
+        "Enhanced desk review: ARR (Stewart Valuation Intelligence), CDA (Clear Capital), CCA (Consolidated Analytics), VRR (Homegenius Real Estate), Valreview (Valligent/Veros)",
+        "AVM from approved vendor with acceptable FSD score (if primary is AVM, review must be different vendor)",
+        "Broker Price Opinion (BPO)"
+      ],
+      "enhanced_desk_review_bpo_variance": "If value more than 10% below appraised value or cannot validate, need field review or second appraisal",
+      "two_avms": "Higher FSD score = primary; second must support within 10%; if same FSD, use lower property value for CLTV",
+      "two_bpos": "Lowest value = primary; must be completed by different brokers"
+    },
+    "avm_vendors": [
+      { "vendor": "Clear Capital", "acceptable_fsd": "0.00 to 0.13" },
+      { "vendor": "Collateral Analytics", "acceptable_fsd": "0.00 to 0.10" },
+      { "vendor": "House Canary", "acceptable_fsd": "0.00 to 0.10" },
+      { "vendor": "Red Bell Real Estate (Homegenius)", "acceptable_fsd": "0.00 to 0.10" }
+    ]
+  },
+  "property_condition_report": "When required, exterior photo + rating of physical condition and characteristics (e.g., Clear Capital Property Condition Inspection)",
+  "recently_listed_properties": "Properties listed for sale or previously listed within past 6 months are NOT eligible",
+  "title_insurance": {
+    "loan_lte_250k": [
+      "Owner and Encumbrance Report (O&E) with current grantee, liens, involuntary liens, judgements, property tax info, legal description",
+      "ALTA Full Title Policy",
+      "ALTA Short Form Residential Limited Coverage Junior Loan Policy"
+    ]
+  },
+  "flood": {
+    "determination": "Required for every loan file",
+    "flood_zone": "Evidence of insurance coverage per HFIAA; loss payee clause must reflect seller as additional insured"
+  },
+  "short_term_rental": {
+    "allowed": false,
+    "notes": "Not mentioned as eligible. This is a 2nd lien product."
+  },
+  "rural_property": {
+    "allowed": false
+  }
+}

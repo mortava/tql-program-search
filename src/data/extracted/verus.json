@@ -1,0 +1,1755 @@
+{
+  "investor": "Verus Mortgage Capital",
+  "matrixDate": "11/10/2025",
+  "sourceFile": "VERUS_FULL PRODUCT LINE_MATICES.pdf",
+  "totalPages": 19,
+  "programs": [
+    {
+      "programName": "Prime Ascent Plus",
+      "programType": "Standard Doc and Alt Doc",
+      "pages": [1],
+      "ltvMatrices": {
+        "primaryResidence": {
+          "docTypes": ["Standard Doc", "Alt Doc"],
+          "rows": [
+            { "minFICO": 720, "maxLoanAmount": 1000000, "purchaseLTV": 90, "rateTermLTV": 80, "cashOutLTV": 80 },
+            { "minFICO": 720, "maxLoanAmount": 2000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 75 },
+            { "minFICO": 720, "maxLoanAmount": 2500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 700, "maxLoanAmount": 1000000, "purchaseLTV": 85, "rateTermLTV": 75, "cashOutLTV": 75 },
+            { "minFICO": 700, "maxLoanAmount": 2000000, "purchaseLTV": 80, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 700, "maxLoanAmount": 2500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+            { "minFICO": 680, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 75 },
+            { "minFICO": 680, "maxLoanAmount": 2000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 680, "maxLoanAmount": 2500000, "purchaseLTV": 70, "rateTermLTV": null, "cashOutLTV": null }
+          ]
+        },
+        "secondHomeInvestment": {
+          "docTypes": ["Standard Doc", "Alt Doc"],
+          "rows": [
+            { "minFICO": 720, "maxLoanAmount": 1000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 720, "maxLoanAmount": 2000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 720, "maxLoanAmount": 2500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 700, "maxLoanAmount": 1000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 700, "maxLoanAmount": 2000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 700, "maxLoanAmount": 2500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 680, "maxLoanAmount": 1000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 680, "maxLoanAmount": 2000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 680, "maxLoanAmount": 2500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null }
+          ]
+        }
+      },
+      "propertyTypes": {
+        "singleFamily": { "eligible": true, "subtypes": ["Attached", "Detached"] },
+        "condominium": { "eligible": true, "maxLTV": 80 },
+        "rural": { "eligible": true, "maxLTV_purchase": 80, "maxLTV_refinance": 75 },
+        "twoToFourUnit": { "eligible": false },
+        "condoHotel": { "eligible": false }
+      },
+      "housingHistory": {
+        "maxLatePayments": "0x30x12",
+        "creditEventSeasoning": {
+          "bankruptcyForeclosureShortSaleDILPreFCMortgageChargeOff": ">=48 months",
+          "forbearanceModificationDeferral": ">12 months"
+        }
+      },
+      "stateEligibility": {
+        "ineligibleOccupancy": ["Investor occupancy in Baltimore City, MD"],
+        "ineligibleLocations": ["Puerto Rico", "Guam", "US Virgin Islands"],
+        "ineligibleLoans": ["Loans meeting the New York Sub-Prime definition"]
+      },
+      "decliningMarket": {
+        "maxLTV_purchase": 85,
+        "maxLTV_rateTermCashOut": 75
+      },
+      "generalRequirements": {
+        "productType": {
+          "fixedRate": ["15-year", "30-year"],
+          "ARM": ["5/6 ARM", "7/6 ARM", "10/6 ARM"],
+          "armTerm": "30-year"
+        },
+        "interestOnly": {
+          "minFICO": 700,
+          "maxLTV": 80,
+          "totalLoanTerm": "30-year",
+          "qualificationBasis": "Remaining term amortized after IO expiration"
+        },
+        "loanAmounts": { "min": 150000, "max": 2500000 },
+        "loanPurpose": ["Purchase", "Rate/Term", "Cash-Out"],
+        "occupancy": ["Primary", "Second Home", "Investment"],
+        "acreage": "Up to 20 acres",
+        "cashInHand": { "max": 1000000, "note": "Not applicable to Delayed Financing transactions" },
+        "appraisals": {
+          "form": "FNMA Form 1004, 1073 with interior/exterior inspection",
+          "reviewProduct": "Required unless 2nd appraisal obtained",
+          "secondAppraisal": "Required for loans > $2,000,000"
+        }
+      },
+      "incomeDocumentation": {
+        "standardDoc": {
+          "wageSalary": "Paystubs, W-2s, 1-year or 2-years of Tax Returns, IRS Form 4506-C, Verbal VOE",
+          "selfEmployed": "1-year or 2-years of Personal and Business Tax Returns, YTD P&L, IRS Form 4506-C"
+        },
+        "personalBankStatements": {
+          "months": "12 or 24 months personal + 2 months business",
+          "qualifyingMethod": "Total eligible deposits from 12 or 24 months divided by number of statements",
+          "businessRequirement": "Must reflect business activity and transfers to personal account"
+        },
+        "businessBankStatements": {
+          "months": "12 or 24 months",
+          "analysisMethods": [
+            "Fixed Expense Ratio (50%)",
+            "Expense ratio provided by Third party (CPA, EA, tax preparer) min ratio 10%",
+            "Third party prepared Profit & Loss Statement (CPA, EA, tax preparer)"
+          ]
+        },
+        "ineligibleDocTypes": ["Profit & Loss Statement", "Written VOE", "IRS Form 1099", "Asset Utilization"]
+      },
+      "underwritingRequirements": {
+        "creditScore": {
+          "method": "Representative score of borrower with highest qualifying income",
+          "representativeScore": "Lower of 2 or middle of 3 credit scores"
+        },
+        "tradelines": {
+          "minimum": "2 reporting 24-months w/activity in last 12 months OR 3 reporting 12-months w/recent activity",
+          "waiver": "If primary borrower has 3 credit scores, minimum tradeline requirement is waived"
+        },
+        "reserves": {
+          "ltvBelow85": "6 months PITIA",
+          "ltvAbove85": "12 months PITIA",
+          "loanAmountAbove1_5M": "9 months PITIA"
+        },
+        "assets": "Min 30-days asset verification required; large deposits must be sourced",
+        "giftFunds": {
+          "minContribution": "5% primary/second home, 10% investment"
+        },
+        "dtiMax": 43,
+        "documentAge": "120 days",
+        "cashOutSatisfyReserves": true
+      },
+      "prepaymentPenalty": {
+        "investmentPropertyOnly": true,
+        "maxPeriod": "5 years",
+        "structures": [
+          "Fixed percentage no less than 3%",
+          "Declining structures not exceeding 5%, not dropping below 3% in first 3 years (e.g. 5/4/3/3/3 or 5/4/3/2/1)",
+          "6 months of interest on prepayments exceeding 20% of original principal in 12-month period"
+        ],
+        "stateRestrictions": {
+          "notAllowed": ["AK", "KS", "MI", "MN", "NM", "OH", "RI"],
+          "notAllowedIndividuals": ["IL", "NJ"],
+          "minLoanAmountPA": 319777,
+          "decliningOnlyMS": true
+        }
+      },
+      "escrows": "HPML loans require escrows for property taxes, hazard insurance, and flood insurance"
+    },
+    {
+      "programName": "Prime Ascent",
+      "programType": "Standard Doc and Alt Doc",
+      "pages": [2, 3, 4],
+      "ltvMatrices": {
+        "primaryResidence": {
+          "standardBankStatement1099": {
+            "label": "Standard, Bank Statement, 1099",
+            "rows": [
+              { "minFICO": 720, "maxLoanAmount": 1000000, "purchaseLTV": 90, "rateTermLTV": 85, "cashOutLTV": 80 },
+              { "minFICO": 720, "maxLoanAmount": 1500000, "purchaseLTV": 90, "rateTermLTV": 85, "cashOutLTV": 80 },
+              { "minFICO": 720, "maxLoanAmount": 2000000, "purchaseLTV": 85, "rateTermLTV": 80, "cashOutLTV": 80 },
+              { "minFICO": 720, "maxLoanAmount": 2500000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 75 },
+              { "minFICO": 720, "maxLoanAmount": 3000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+              { "minFICO": 720, "maxLoanAmount": 3500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": null },
+              { "minFICO": 720, "maxLoanAmount": 4000000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": null },
+              { "minFICO": 700, "maxLoanAmount": 1000000, "purchaseLTV": 90, "rateTermLTV": 85, "cashOutLTV": 80 },
+              { "minFICO": 700, "maxLoanAmount": 1500000, "purchaseLTV": 90, "rateTermLTV": 85, "cashOutLTV": 80 },
+              { "minFICO": 700, "maxLoanAmount": 2000000, "purchaseLTV": 85, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 700, "maxLoanAmount": 2500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+              { "minFICO": 700, "maxLoanAmount": 3000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+              { "minFICO": 700, "maxLoanAmount": 3500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": null },
+              { "minFICO": 680, "maxLoanAmount": 1000000, "purchaseLTV": 90, "rateTermLTV": 85, "cashOutLTV": 75 },
+              { "minFICO": 680, "maxLoanAmount": 1500000, "purchaseLTV": 85, "rateTermLTV": 80, "cashOutLTV": 75 },
+              { "minFICO": 680, "maxLoanAmount": 2000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 680, "maxLoanAmount": 2500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+              { "minFICO": 680, "maxLoanAmount": 3000000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+              { "minFICO": 660, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 80, "cashOutLTV": 75 },
+              { "minFICO": 660, "maxLoanAmount": 1500000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 75 },
+              { "minFICO": 660, "maxLoanAmount": 2000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+              { "minFICO": 660, "maxLoanAmount": 2500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+              { "minFICO": 640, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 640, "maxLoanAmount": 1500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+              { "minFICO": 640, "maxLoanAmount": 2000000, "purchaseLTV": 65, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 620, "maxLoanAmount": 1000000, "purchaseLTV": 70, "rateTermLTV": 70, "cashOutLTV": null }
+            ]
+          },
+          "plStatementWrittenVOEAssetUtilization": {
+            "label": "P&L Statement Only, P&L Statement with 2 Mo Bank St, Written VOE, Asset Utilization",
+            "rows": [
+              { "minFICO": 720, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 720, "maxLoanAmount": 1500000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 720, "maxLoanAmount": 2000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 720, "maxLoanAmount": 2500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+              { "minFICO": 720, "maxLoanAmount": 3000000, "purchaseLTV": 70, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 720, "maxLoanAmount": 3500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 720, "maxLoanAmount": 4000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 700, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 700, "maxLoanAmount": 1500000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 700, "maxLoanAmount": 2000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 700, "maxLoanAmount": 2500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+              { "minFICO": 700, "maxLoanAmount": 3000000, "purchaseLTV": 70, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 700, "maxLoanAmount": 3500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 680, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 680, "maxLoanAmount": 1500000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 680, "maxLoanAmount": 2000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+              { "minFICO": 680, "maxLoanAmount": 2500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 60 },
+              { "minFICO": 680, "maxLoanAmount": 3000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 660, "maxLoanAmount": 1000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 660, "maxLoanAmount": 1500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 660, "maxLoanAmount": 2000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 660, "maxLoanAmount": 2500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 640, "maxLoanAmount": 1000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 640, "maxLoanAmount": 1500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 640, "maxLoanAmount": 2000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 620, "maxLoanAmount": 1000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null }
+            ]
+          }
+        },
+        "secondHomeInvestment": {
+          "standardBankStatement1099": {
+            "label": "Standard, Bank Statement, 1099",
+            "rows": [
+              { "minFICO": 720, "maxLoanAmount": 1000000, "purchaseLTV": 85, "rateTermLTV": 80, "cashOutLTV": 75 },
+              { "minFICO": 720, "maxLoanAmount": 1500000, "purchaseLTV": 85, "rateTermLTV": 80, "cashOutLTV": 75 },
+              { "minFICO": 720, "maxLoanAmount": 2000000, "purchaseLTV": 85, "rateTermLTV": 80, "cashOutLTV": 75 },
+              { "minFICO": 720, "maxLoanAmount": 2500000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 75 },
+              { "minFICO": 720, "maxLoanAmount": 3000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+              { "minFICO": 720, "maxLoanAmount": 3500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": null },
+              { "minFICO": 720, "maxLoanAmount": 4000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 700, "maxLoanAmount": 1000000, "purchaseLTV": 85, "rateTermLTV": 80, "cashOutLTV": 75 },
+              { "minFICO": 700, "maxLoanAmount": 1500000, "purchaseLTV": 85, "rateTermLTV": 80, "cashOutLTV": 75 },
+              { "minFICO": 700, "maxLoanAmount": 2000000, "purchaseLTV": 85, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 700, "maxLoanAmount": 2500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+              { "minFICO": 700, "maxLoanAmount": 3000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+              { "minFICO": 700, "maxLoanAmount": 3500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": null },
+              { "minFICO": 680, "maxLoanAmount": 1000000, "purchaseLTV": 85, "rateTermLTV": 80, "cashOutLTV": 75 },
+              { "minFICO": 680, "maxLoanAmount": 1500000, "purchaseLTV": 85, "rateTermLTV": 80, "cashOutLTV": 75 },
+              { "minFICO": 680, "maxLoanAmount": 2000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 680, "maxLoanAmount": 2500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+              { "minFICO": 680, "maxLoanAmount": 3000000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+              { "minFICO": 660, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 80, "cashOutLTV": 75 },
+              { "minFICO": 660, "maxLoanAmount": 1500000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 75 },
+              { "minFICO": 660, "maxLoanAmount": 2000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+              { "minFICO": 660, "maxLoanAmount": 2500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+              { "minFICO": 640, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 640, "maxLoanAmount": 1500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+              { "minFICO": 640, "maxLoanAmount": 2000000, "purchaseLTV": 65, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 620, "maxLoanAmount": 1000000, "purchaseLTV": 70, "rateTermLTV": 70, "cashOutLTV": null }
+            ]
+          },
+          "plStatementWrittenVOEAssetUtilization": {
+            "label": "P&L Statement Only, P&L Statement with 2 Mo Bank St, Written VOE, Asset Utilization",
+            "rows": [
+              { "minFICO": 720, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 720, "maxLoanAmount": 1500000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 720, "maxLoanAmount": 2000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 720, "maxLoanAmount": 2500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+              { "minFICO": 720, "maxLoanAmount": 3000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 720, "maxLoanAmount": 3500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 720, "maxLoanAmount": 4000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 700, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 700, "maxLoanAmount": 1500000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 700, "maxLoanAmount": 2000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 700, "maxLoanAmount": 2500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+              { "minFICO": 700, "maxLoanAmount": 3000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 700, "maxLoanAmount": 3500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 680, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 680, "maxLoanAmount": 1500000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 70 },
+              { "minFICO": 680, "maxLoanAmount": 2000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+              { "minFICO": 680, "maxLoanAmount": 2500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 60 },
+              { "minFICO": 680, "maxLoanAmount": 3000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 660, "maxLoanAmount": 1000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 660, "maxLoanAmount": 1500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 660, "maxLoanAmount": 2000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 660, "maxLoanAmount": 2500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 640, "maxLoanAmount": 1000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 640, "maxLoanAmount": 1500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 640, "maxLoanAmount": 2000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+              { "minFICO": 620, "maxLoanAmount": 1000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null }
+            ]
+          }
+        }
+      },
+      "propertyTypes": {
+        "singleFamily": { "eligible": true, "subtypes": ["Attached", "Detached"] },
+        "twoToFourUnit": { "eligible": true, "maxLTV": 85 },
+        "condominium": { "eligible": true, "maxLTV": 85 },
+        "condoHotel": { "eligible": true, "maxLTV": 85, "maxLoanAmount": 2500000 },
+        "rural": { "eligible": true, "maxLTV_purchase": 80, "maxLTV_refinance": 75 }
+      },
+      "housingHistory": {
+        "tiers": [
+          { "latePayments": "1x30x12", "maxLTV_purchase": "See matrix", "maxLTV_refinance": "See matrix", "maxLoanAmount": "See matrix" },
+          { "latePayments": "0x60x12", "maxLTV_purchase": 80, "maxLTV_refinance": 75, "maxLoanAmount": 1500000 },
+          { "latePayments": "0x90x12", "maxLTV_purchase": 70, "maxLTV_refinance": null, "maxLoanAmount": 1000000 }
+        ],
+        "creditEventSeasoning": {
+          "tiers": [
+            { "seasoning": ">=36 months", "maxLTV_purchase": "See matrix", "maxLTV_refinance": "See matrix", "maxLoanAmount": "See matrix" },
+            { "seasoning": ">=24 months", "maxLTV_purchase": 80, "maxLTV_refinance": 75, "maxLoanAmount": 1500000 },
+            { "seasoning": ">=12 months", "maxLTV_purchase": 70, "maxLTV_refinance": null, "maxLoanAmount": 1000000 }
+          ],
+          "forbearanceModificationDeferral": "<=12 months treated as 0x90x12"
+        }
+      },
+      "stateEligibility": {
+        "ineligibleOccupancy": ["Investor occupancy in Baltimore City, MD"],
+        "stateOverlays": {
+          "states": ["CT", "FL", "IL", "NJ", "NY"],
+          "maxLTV_purchase": 85,
+          "maxLTV_refinance": 80,
+          "maxLoanAmount": 2000000
+        },
+        "ineligibleLocations": ["Puerto Rico", "Guam", "US Virgin Islands"]
+      },
+      "decliningMarket": {
+        "maxLTV_purchase": 85,
+        "maxLTV_refinance": 80,
+        "maxLoanAmount": 2000000
+      },
+      "generalRequirements": {
+        "productType": {
+          "fixedRate": ["15-year", "30-year", "40-year"],
+          "ARM": ["5/6 ARM", "7/6 ARM", "10/6 ARM"],
+          "armTerms": ["30-year", "40-year"],
+          "armNote": "ARM 40-year term must be combined with interest only feature"
+        },
+        "interestOnly": {
+          "minFICO": 660,
+          "maxLTV": 90,
+          "terms": ["30-year", "40-year"],
+          "qualificationBasis": "Remaining term amortized after IO expiration"
+        },
+        "loanAmounts": { "min": 150000, "max": 4000000 },
+        "loanPurpose": ["Purchase", "Rate/Term", "Cash-Out"],
+        "occupancy": ["Primary", "Second Home", "Investment"],
+        "acreage": "Up to 20 acres",
+        "cashInHand": { "max": "Unlimited" },
+        "appraisals": {
+          "form": "FNMA Form 1004, 1025, 1073 with interior/exterior inspection",
+          "reviewProduct": "Required unless 2nd appraisal obtained",
+          "secondAppraisal": "Required for loans > $2,000,000"
+        }
+      },
+      "incomeDocumentation": {
+        "standardDocOrAUSFindings": {
+          "wageSalary": "Paystubs, W-2s, 1-year or 2-years of Tax Returns, IRS Form 4506-C, Verbal VOE",
+          "selfEmployed": "1-year or 2-years of Personal and Business Tax Returns, YTD P&L, IRS Form 4506-C",
+          "ausFindings": {
+            "note": "Findings permitted for income documentation relief only",
+            "eligible": ["Fannie Mae DU Approve/Eligible", "Freddie Mac LPA Accept/Eligible"],
+            "conditionallyEligible": ["Fannie Mae DU Approve/Ineligible", "Freddie Mac LPA Accept/Ineligible (subject to restrictions)"]
+          }
+        },
+        "personalBankStatements": {
+          "months": "12 or 24 months personal + 2 months business",
+          "qualifyingMethod": "Total eligible deposits divided by number of statements"
+        },
+        "businessBankStatements": {
+          "months": "12 or 24 months",
+          "analysisMethods": [
+            "Fixed Expense Ratio (50%)",
+            "Expense ratio by Third party (CPA, EA, tax preparer) min ratio 10%",
+            "Third party prepared P&L Statement"
+          ]
+        },
+        "profitAndLossStatementOnly": {
+          "months": "12 or 24 months",
+          "preparer": "CPA/EA/CTEC/Tax Attorney",
+          "attestation": "Must attest they have completed or filed borrower's most recent business tax return",
+          "restrictions": {
+            "maxHousingHistory": "1x30x12",
+            "minCreditEventSeasoning": "36 months"
+          }
+        },
+        "plStatementWithTwoMonthsBankStatements": {
+          "months": "12 or 24 months P&L + 2 months business bank statements",
+          "preparer": "CPA/EA/CTEC/Tax Attorney",
+          "attestation": "Must attest they have completed or filed borrower's most recent business tax return",
+          "restrictions": {
+            "maxHousingHistory": "1x30x12",
+            "minCreditEventSeasoning": "36 months"
+          }
+        },
+        "writtenVOE": {
+          "form": "FNMA Form 1005",
+          "additionalDocs": "2 most recent months personal bank statements reflecting employer deposits",
+          "restrictions": {
+            "maxHousingHistory": "1x30x12",
+            "minCreditEventSeasoning": "36 months"
+          }
+        },
+        "irsForm1099": {
+          "years": "1 or 2 years",
+          "expenseRatio": "Fixed 10%",
+          "ytdDocumentation": "Required to support continued receipt of income from same source"
+        },
+        "assetUtilization": {
+          "method": "Eligible assets divided by 84 = monthly income",
+          "restrictions": {
+            "maxHousingHistory": "1x30x12",
+            "minCreditEventSeasoning": "36 months"
+          }
+        }
+      },
+      "underwritingRequirements": {
+        "creditScore": {
+          "method": "Representative score of borrower with highest qualifying income",
+          "representativeScore": "Lower of 2 or middle of 3 credit scores"
+        },
+        "tradelines": {
+          "minimum": "2 reporting 24-months w/activity in last 12 months OR 3 reporting 12-months w/recent activity",
+          "waiver": "If primary borrower has 3 credit scores, minimum tradeline requirement is waived"
+        },
+        "reserves": {
+          "ltvBelow80": "3 months PITIA",
+          "ltv80to85": "6 months PITIA",
+          "ltvAbove85": "12 months PITIA",
+          "loanAmountAbove1_5M": "9 months PITIA",
+          "loanAmountAbove2_5M": "12 months PITIA"
+        },
+        "assets": "Min 30-days asset verification required; large deposits must be sourced",
+        "giftFunds": {
+          "minContribution": "5% primary/second home, 10% investment",
+          "primarySecondHomeOnly": "100% gift funds allowed when using Standard Doc 12- or 24-months and Alt Doc Bank Statement 12- or 24-months",
+          "maxLTV_giftFunds": 80,
+          "mustMeetReserveAndResidualIncome": true
+        },
+        "dti": {
+          "max": 50,
+          "upTo55": {
+            "allowed": true,
+            "restrictions": {
+              "minResidualIncome": 3500,
+              "maxLTV": 80,
+              "standardDoc2Years": true,
+              "minReserves": "6 months",
+              "fthbNotEligible": true,
+              "minFICO": 660
+            }
+          }
+        },
+        "documentAge": "120 days",
+        "cashOutSatisfyReserves": true
+      },
+      "prepaymentPenalty": {
+        "investmentPropertyOnly": true,
+        "maxPeriod": "5 years",
+        "structures": [
+          "Fixed percentage no less than 3%",
+          "Declining structures not exceeding 5%, not dropping below 3% in first 3 years",
+          "6 months of interest on prepayments exceeding 20% of original principal in 12-month period"
+        ],
+        "stateRestrictions": {
+          "notAllowed": ["AK", "KS", "MI", "MN", "NM", "OH", "RI"],
+          "notAllowedIndividuals": ["IL", "NJ"],
+          "minLoanAmountPA": 319777,
+          "decliningOnlyMS": true
+        }
+      },
+      "escrows": {
+        "hpml": "Required for property taxes, hazard insurance, and flood insurance",
+        "nonHPML": "See waiver options in Section 2.5.5"
+      }
+    },
+    {
+      "programName": "ITIN",
+      "programType": "Standard Doc and Alt Doc",
+      "pages": [5],
+      "citizenshipType": "ITIN (Individual Taxpayer Identification Number)",
+      "ltvMatrices": {
+        "primaryResidenceAndSecondHome": {
+          "rows": [
+            { "minFICO": 700, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 80, "cashOutLTV": 75 },
+            { "minFICO": 700, "maxLoanAmount": 1500000, "purchaseLTV": 80, "rateTermLTV": 80, "cashOutLTV": 75 },
+            { "minFICO": 680, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 80, "cashOutLTV": 70 },
+            { "minFICO": 680, "maxLoanAmount": 1500000, "purchaseLTV": 75, "rateTermLTV": 75, "cashOutLTV": 70 },
+            { "minFICO": 660, "maxLoanAmount": 1000000, "purchaseLTV": 75, "rateTermLTV": 75, "cashOutLTV": 70 },
+            { "minFICO": 660, "maxLoanAmount": 1500000, "purchaseLTV": 70, "rateTermLTV": 70, "cashOutLTV": 65 }
+          ]
+        }
+      },
+      "propertyTypes": {
+        "singleFamily": { "eligible": true, "subtypes": ["Attached", "Detached"] },
+        "twoToFourUnit": { "eligible": true, "maxLTV_purchase": 75, "maxLTV_refinance": 70 },
+        "condominium": { "eligible": true, "maxLTV_purchase": 75, "maxLTV_refinance": 70 },
+        "condoHotel": { "eligible": true, "maxLTV_purchase": 75, "maxLTV_refinance": 70 },
+        "rural": { "eligible": true, "maxLTV_purchase": 75, "maxLTV_refinance": 70 }
+      },
+      "housingHistory": {
+        "maxLatePayments": "1x30x12",
+        "creditEventSeasoning": {
+          "bankruptcyForeclosureEtc": ">=36 months",
+          "forbearanceModificationDeferral": ">12 months"
+        }
+      },
+      "stateEligibility": {
+        "ineligibleLocations": ["Puerto Rico", "Guam", "US Virgin Islands"]
+      },
+      "decliningMarket": {
+        "note": "Maximum eligible LTVs do not require a market adjustment for the ITIN program"
+      },
+      "generalRequirements": {
+        "productType": {
+          "fixedRate": ["15-year", "30-year"],
+          "ARM": ["5/6 ARM", "7/6 ARM", "10/6 ARM"],
+          "armTerm": "30-year"
+        },
+        "interestOnly": {
+          "minFICO": 680,
+          "totalLoanTerm": "30-year",
+          "qualificationBasis": "Remaining term amortized after IO expiration"
+        },
+        "loanAmounts": { "min": 150000, "max": 1500000 },
+        "loanPurpose": ["Purchase", "Rate/Term", "Cash-Out"],
+        "occupancy": ["Primary", "Second Home"],
+        "acreage": "Up to 20 acres",
+        "cashInHand": {
+          "maxIfLTVabove50": 300000,
+          "maxIfLTVbelow50": 500000
+        },
+        "appraisals": "FNMA Form 1004, 1025, 1073 with interior/exterior inspection. Appraisal review product required."
+      },
+      "incomeDocumentation": {
+        "standardDoc": {
+          "wageSalary": "Paystubs, W-2s, 1-year or 2-years Tax Returns, IRS Form 4506-C, Verbal VOE",
+          "selfEmployed": "1-year or 2-years Personal and Business Tax Returns, YTD P&L, 2 monthly bank statements, IRS Form 4506-C"
+        },
+        "personalBankStatements": {
+          "months": "12 or 24 months personal + 2 months business",
+          "qualifyingMethod": "Total eligible deposits divided by number of statements"
+        },
+        "businessBankStatements": {
+          "months": "12 or 24 months",
+          "analysisMethods": [
+            "Fixed Expense Ratio (50%)",
+            "Expense ratio by Third party (CPA, EA, tax preparer) min ratio 10%",
+            "Third party prepared P&L Statement"
+          ]
+        },
+        "irsForm1099": {
+          "years": "1 or 2 years",
+          "expenseRatio": "Fixed 10%",
+          "ytdDocumentation": "Required to support continued receipt of income"
+        },
+        "writtenVOE": {
+          "form": "FNMA Form 1005",
+          "additionalDocs": "2 most recent months personal bank statements reflecting employer deposits",
+          "minFICO": 680
+        }
+      },
+      "underwritingRequirements": {
+        "documentationRequirements": [
+          "Copy of unexpired government-issued ID (passport, Matricula Consular, US State-issued ID)",
+          "Copy of ITIN card or letter from IRS assigning ITIN number",
+          "Proof ITIN was assigned prior to application",
+          "IRS Form W7 not acceptable if ITIN letter not provided or not legible"
+        ],
+        "dtiMax": 50,
+        "reserves": {
+          "ltvEquals80": "6 months PITIA",
+          "ltvBelow80": "3 months PITIA"
+        },
+        "giftFunds": "100% gift funds allowed",
+        "tradelines": {
+          "minimum": "2 reporting 24-months w/activity in last 12 months OR 3 reporting 12-months w/recent activity OR 1 mortgage/installment/revolving reporting 36-months with activity in last 6 months",
+          "waiver": "If primary borrower has 3 credit scores, minimum tradeline requirement is waived",
+          "nonTraditionalCredit": "Not eligible"
+        },
+        "documentAge": "120 days"
+      }
+    },
+    {
+      "programName": "Investor Solutions - DSCR",
+      "programType": "DSCR (Single Investment Property)",
+      "pages": [6, 7, 8],
+      "ltvMatrices": {
+        "dscrAbove1_00": {
+          "label": "DSCR >= 1.00",
+          "rows": [
+            { "minFICO": 700, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 75 },
+            { "minFICO": 700, "maxLoanAmount": 1500000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 75 },
+            { "minFICO": 700, "maxLoanAmount": 2000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 700, "maxLoanAmount": 3000000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+            { "minFICO": 700, "maxLoanAmount": 3500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": null },
+            { "minFICO": 660, "maxLoanAmount": 1000000, "purchaseLTV": 75, "rateTermLTV": 75, "cashOutLTV": 70 },
+            { "minFICO": 660, "maxLoanAmount": 1500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 660, "maxLoanAmount": 2000000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+            { "minFICO": 660, "maxLoanAmount": 2500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+            { "minFICO": 660, "maxLoanAmount": 3000000, "purchaseLTV": 65, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 640, "maxLoanAmount": 1000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": null },
+            { "minFICO": 640, "maxLoanAmount": 1500000, "purchaseLTV": 65, "rateTermLTV": 65, "cashOutLTV": null },
+            { "minFICO": 640, "maxLoanAmount": 2000000, "purchaseLTV": 65, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 640, "maxLoanAmount": 3000000, "purchaseLTV": 60, "rateTermLTV": null, "cashOutLTV": null }
+          ]
+        },
+        "dscrBelow1_00": {
+          "label": "DSCR < 1.00",
+          "rows": [
+            { "minFICO": 700, "maxLoanAmount": 1000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 700, "maxLoanAmount": 1500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 700, "maxLoanAmount": 2000000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+            { "minFICO": 700, "maxLoanAmount": 2500000, "purchaseLTV": 65, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 700, "maxLoanAmount": 3000000, "purchaseLTV": 60, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 680, "maxLoanAmount": 1000000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": null },
+            { "minFICO": 680, "maxLoanAmount": 1500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": null },
+            { "minFICO": 680, "maxLoanAmount": 2000000, "purchaseLTV": 65, "rateTermLTV": 60, "cashOutLTV": null },
+            { "minFICO": 680, "maxLoanAmount": 3000000, "purchaseLTV": 60, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 660, "maxLoanAmount": 1000000, "purchaseLTV": 65, "rateTermLTV": null, "cashOutLTV": null }
+          ]
+        }
+      },
+      "propertyTypes": {
+        "singleFamily": { "eligible": true, "subtypes": ["Attached", "Detached"] },
+        "twoToFourUnit": { "eligible": true, "maxLTV_purchase": 75, "maxLTV_refinance": 70 },
+        "condominium": { "eligible": true, "maxLTV_purchase": 75, "maxLTV_refinance": 70 },
+        "condoHotel": { "eligible": true, "maxLTV_purchase": 75, "maxLTV_refinance": 65, "maxLoanAmount": 1500000 },
+        "rural": { "eligible": true, "maxLTV_purchase": 75, "maxLTV_refinance": 70 }
+      },
+      "housingHistory": {
+        "latePayments": {
+          "1x30x12": "No reduction",
+          "0x60x12": { "maxLTV_purchase": 70, "maxLTV_rateTerm": 65, "maxLTV_cashOut": 65 }
+        },
+        "creditEventSeasoning": {
+          "36months": "No reduction",
+          "24months": { "maxLTV_purchase": 75, "maxLTV_rateTerm": 70, "maxLTV_cashOut": 70 }
+        },
+        "forbearanceModificationDeferral": ">12 months"
+      },
+      "investorExperience": {
+        "experiencedInvestor": "Must have history of owning and managing commercial or non-owner occupied residential real estate for at least 1 year in last 3 years",
+        "firstTimeInvestor": {
+          "eligible": true,
+          "restrictions": {
+            "fthbNotAllowed": true,
+            "minFICO": 700,
+            "minCreditEventSeasoning": "36 months",
+            "unitsMax": 1,
+            "minDSCR": 1.00,
+            "mustOwnPrimaryResidence": true
+          }
+        },
+        "firstTimeHomebuyer": "Not eligible except as allowed in Seller Guide"
+      },
+      "shortTermRental": {
+        "allowed": true,
+        "allTransactions": {
+          "maxLTV_purchase": 75,
+          "maxLTV_refinance": 70,
+          "note": "LTV is lesser of above or LTV based upon DSCR/Credit Score/Loan Balance table"
+        },
+        "dscrCalculation": {
+          "grossRentsBasedOn": "12-month average to account for seasonality",
+          "expenseFactor": "20% reduction for extraordinary costs (advertising, furnishings, cleaning)",
+          "expenseFactorNote": "If actual expenses exceed 20%, use actual. If less than 20%, use 20% minimum.",
+          "formula_PITIA": "(Gross Rents * 0.80) / PITIA = DSCR",
+          "formula_ITIA": "(Gross Rents * 0.80) / ITIA = DSCR"
+        },
+        "incomeDocumentation": [
+          {
+            "method": "STR analysis form or 1007/1025",
+            "requirements": [
+              "Provide source of data used",
+              "Include comparable STR properties (room count, GLA, location, market appeal)",
+              "Include daily rental rate and occupancy percentage",
+              "Factor seasonality and vacancy",
+              "Must be completed by licensed appraiser"
+            ]
+          },
+          {
+            "method": "12-month rental history from Third party rental/management service",
+            "requirements": [
+              "Must identify subject property/unit",
+              "Rents collected for previous 12 months",
+              "All vendor management fees",
+              "Qualifying income must be net of all vendor/management fees"
+            ]
+          },
+          {
+            "method": "12-month bank statements from borrower/guarantor",
+            "requirements": [
+              "Must evidence short-term rental deposits",
+              "Must provide rental records for subject property to support monthly deposits"
+            ]
+          },
+          {
+            "method": "AIRDNA Rentalizer/Property Earning Potential Report",
+            "requirements": [
+              "Only allowed for purchase transactions",
+              "Gross rents = revenue projection less 20% extraordinary expense factor",
+              "Forecast period must cover 12 months and be dated within 90 days of Note date",
+              "Must have 3 comparable properties similar in size, room count, amenities, availability, occupancy",
+              "Market Score or Sub-Market Score must be 60 or greater"
+            ]
+          }
+        ],
+        "lowestSourceRule": "When documented using multiple sources, lowest source of monthly income must be used"
+      },
+      "longTermRental": {
+        "vacantRefinance": {
+          "maxLTV": 70,
+          "note": "LTV is lesser of 70% or LTV based upon DSCR/Credit Score/Loan Balance table"
+        },
+        "purchaseTransactions": {
+          "grossRents": "Monthly rents from FNMA Form 1007 or 1025 reflecting long-term market rents",
+          "tenantOccupied": {
+            "1007or1025": "Must reflect current monthly rent",
+            "higherActualLease": "Evidence of 2 months receipt required, must be within 120% of estimated market rent",
+            "higherEstimatedRent": "Must be within 120% of lease amount",
+            "cap": "If exceeds 120%, capped at 120%"
+          },
+          "vacant": "Allowed without LTV restriction",
+          "rentControlOrSubsidy": "Must use current contractual rent"
+        },
+        "refinanceTransactions": {
+          "requiredDocumentation": [
+            "Original appraisal report reflecting tenant-occupied",
+            "FNMA Form 1007 or 1025 reflecting long-term market rents",
+            "Executed lease agreement (month-to-month allowed)"
+          ],
+          "noLeaseAgreement": "LTV limited to lesser of 70% or per DSCR/FICO/Loan balance matrix",
+          "vacant": "LTV limited to lesser of 70% or per DSCR/FICO/Loan balance matrix"
+        },
+        "dscrCalculation": {
+          "formula": "Monthly Gross Rents / PITIA (or ITIA)"
+        }
+      },
+      "stateEligibility": {
+        "twoToFourUnitIneligible": ["IL", "NY"],
+        "ineligible": ["Baltimore City, MD"],
+        "stateOverlays": {
+          "states": ["CT", "FL", "IL", "NJ", "NY"],
+          "maxLTV_purchase": 75,
+          "maxLTV_refinance": 70,
+          "maxLoanAmount": 2000000
+        },
+        "ineligibleLocations": ["Puerto Rico", "Guam", "US Virgin Islands"]
+      },
+      "decliningMarket": {
+        "maxLTV_purchase": 75,
+        "maxLTV_refinance": 70,
+        "maxLoanAmount": 2000000
+      },
+      "generalRequirements": {
+        "productType": {
+          "fixedRate": ["15-year", "30-year", "40-year"],
+          "ARM": ["5/6 ARM", "7/6 ARM", "10/6 ARM"],
+          "armTerms": ["30-year", "40-year"],
+          "armNote": "ARM 40-year must be combined with interest only feature"
+        },
+        "interestOnly": {
+          "minFICO": 680,
+          "maxLTV_purchase": 75,
+          "maxLTV_rateTerm": 75,
+          "maxLTV_cashOut": 70,
+          "terms": ["30-year", "40-year"],
+          "qualificationBasis": "Interest only payment"
+        },
+        "loanAmounts": { "min": 100000, "max": 3500000 },
+        "loanAmountBelow150K": {
+          "maxLTV_purchase": 70,
+          "maxLTV_refinance": 65,
+          "minDSCR": 1.25
+        },
+        "loanPurpose": ["Purchase", "Rate/Term", "Cash-Out"],
+        "nonArmsLengthIneligible": true,
+        "occupancy": ["Investment"],
+        "acreage": "Up to 5 acres",
+        "cashInHand": {
+          "maxIfLTVabove65": 500000,
+          "maxIfLTVbelow65": 1000000,
+          "note": "Total equity withdrawn cannot exceed limits. Not applicable to Delayed Financing."
+        },
+        "appraisals": {
+          "form": "FNMA Form 1004, 1025, 1073 with interior/exterior inspection",
+          "reviewProduct": "Required unless 2nd appraisal obtained",
+          "secondAppraisal": "Required for loans > $2,000,000"
+        }
+      },
+      "underwritingRequirements": {
+        "creditScore": {
+          "method": "Representative score of borrower/guarantor with highest representative score",
+          "representativeScore": "Lower of 2 or middle of 3 credit scores"
+        },
+        "tradelines": {
+          "minimum": "2 reporting 24-months w/activity in last 12 months OR 3 reporting 12-months w/recent activity",
+          "waiver": "If borrower/guarantor has 3 credit scores, minimum tradeline requirement is waived"
+        },
+        "reserves": {
+          "standard": "2 months PITIA",
+          "loanAmountAbove1_5M": "6 months PITIA",
+          "loanAmountAbove2_5M": "12 months PITIA"
+        },
+        "assets": "Min 30-days asset verification required",
+        "giftFunds": "Allowed after min 10% borrower contribution",
+        "documentAge": "120 days",
+        "cashOutSatisfyReserves": true
+      },
+      "prepaymentPenalty": {
+        "maxPeriod": "5 years",
+        "structures": [
+          "Fixed percentage no less than 3%",
+          "Declining structures not exceeding 5%, not dropping below 3% in first 3 years",
+          "6 months of interest on prepayments exceeding 20% of original principal in 12-month period"
+        ],
+        "stateRestrictions": {
+          "notAllowed": ["AK", "KS", "MI", "MN", "NM", "OH", "RI"],
+          "notAllowedIndividuals": ["IL", "NJ"],
+          "minLoanAmountPA": 319777,
+          "decliningOnlyMS": true
+        }
+      },
+      "escrows": "May be waived, see Section 2.5.5"
+    },
+    {
+      "programName": "Investor Solutions - DSCR (5-8 Unit or 2-8 Mixed Use)",
+      "programType": "DSCR",
+      "pages": [9, 10],
+      "ltvMatrices": {
+        "fiveToEightResidentialUnits_dscrAbove1": {
+          "label": "5-8 Residential Units DSCR >= 1.00",
+          "rows": [
+            { "minFICO": 720, "maxLoanAmount": 1500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+            { "minFICO": 720, "maxLoanAmount": 2000000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+            { "minFICO": 720, "maxLoanAmount": 2500000, "purchaseLTV": 65, "rateTermLTV": 60, "cashOutLTV": 60 },
+            { "minFICO": 720, "maxLoanAmount": 3000000, "purchaseLTV": 60, "rateTermLTV": 55, "cashOutLTV": null },
+            { "minFICO": 700, "maxLoanAmount": 1500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+            { "minFICO": 700, "maxLoanAmount": 2000000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 }
+          ]
+        },
+        "twoToEightMixedUse_dscrAbove1": {
+          "label": "2-8 Mixed Use DSCR >= 1.00",
+          "rows": [
+            { "minFICO": 720, "maxLoanAmount": 1500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+            { "minFICO": 720, "maxLoanAmount": 2000000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+            { "minFICO": 720, "maxLoanAmount": 2500000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 720, "maxLoanAmount": 3000000, "purchaseLTV": null, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 700, "maxLoanAmount": 1500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 65 },
+            { "minFICO": 700, "maxLoanAmount": 2000000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 }
+          ]
+        }
+      },
+      "propertyTypes": {
+        "residential5to8Unit": { "eligible": true },
+        "mixedUse2to8Unit": {
+          "eligible": true,
+          "commercialUsage": "Retail/Office/Restaurant",
+          "maxCommercialUnits": {
+            "2to3Unit": 1,
+            "4to5Unit": 2,
+            "6to8Unit": 3
+          },
+          "maxCommercialArea": "49.99% of total building area"
+        },
+        "rural": { "eligible": false }
+      },
+      "housingHistory": {
+        "maxLatePayments": "0x30x12",
+        "creditEventSeasoning": ">=36 months for any event",
+        "forbearanceModificationDeferral": ">12 months"
+      },
+      "investorExperience": {
+        "experiencedInvestor": "Must have history of owning and managing commercial or non-owner occupied residential real estate for at least 1 year in last 3 years",
+        "firstTimeInvestor": "Not eligible",
+        "firstTimeHomebuyer": "Not eligible"
+      },
+      "unleasedUnits": {
+        "maxVacant_2to3Unit": 1,
+        "maxVacant_4plusUnit": 2,
+        "vacantUnitQualification": "75% of market rent"
+      },
+      "shortTermRental": {
+        "allowed": false,
+        "note": "Short-Term Rental Income not eligible"
+      },
+      "stateEligibility": {
+        "ineligibleStates": ["IL", "NY"],
+        "ineligible": ["Baltimore City, MD"],
+        "stateOverlays": {
+          "states": ["CT", "FL", "NJ"],
+          "maxLTV_purchase": 70,
+          "maxLTV_refinance": 65,
+          "minFICO": 720
+        },
+        "ineligibleLocations": ["Puerto Rico", "Guam", "US Virgin Islands"]
+      },
+      "decliningMarket": {
+        "note": "Maximum eligible LTVs do not require a market adjustment for 5-8 multifamily and 2-8 mixed use"
+      },
+      "generalRequirements": {
+        "productType": {
+          "fixedRate": ["15-year", "30-year"],
+          "ARM": ["5/6 ARM", "7/6 ARM", "10/6 ARM"],
+          "armTerm": "30-year"
+        },
+        "interestOnly": {
+          "eligible": true,
+          "term": "30-year",
+          "qualificationBasis": "Interest only payment"
+        },
+        "loanAmounts": { "min": 400000, "max": 3000000 },
+        "loanPurpose": ["Purchase", "Rate/Term", "Cash-Out"],
+        "nonArmsLengthIneligible": true,
+        "occupancy": ["Investment"],
+        "cashInHand": { "max": 1000000 },
+        "eligibleBorrower": ["US Citizen", "Permanent Resident Alien", "Non-Permanent Resident Alien"],
+        "ofacRestriction": "Citizens and individuals from OFAC sanctioned countries not eligible",
+        "acreage": "Up to 2 acres, not meeting rural definition"
+      },
+      "incomeRequirements": {
+        "leased": "Use lower of estimated market rent or lease agreement",
+        "vacantResidential": {
+          "qualifyAt": "75% of market rents",
+          "mustBeMarketedForRent": true,
+          "vacantCommercialNotAllowed": true
+        },
+        "managementFee": "Reduce qualifying rents by any management fee on appraisal report",
+        "mixedUseIncomeLimit": "Commercial space income must not exceed 49.99% of total property income",
+        "minimumDSCR": 1.00,
+        "dscrFormula": "Eligible monthly rents / PITIA (or ITIA)"
+      },
+      "underwritingRequirements": {
+        "reserves": {
+          "standard": "6 months PITIA",
+          "loanAmountAbove1_5M": "9 months PITIA",
+          "loanAmountAbove2_5M": "12 months PITIA"
+        },
+        "cashOutSatisfyReserves": false,
+        "giftFunds": "Not eligible",
+        "documentAge": "120 days"
+      },
+      "prepaymentPenalty": {
+        "maxPeriod": "5 years",
+        "stateRestrictions": {
+          "notAllowed": ["OH"],
+          "notAllowedIndividuals": ["IL", "NJ"],
+          "minLoanAmountPA": 319777,
+          "decliningOnlyMS": true
+        }
+      },
+      "escrows": "May be waived, see Section 2.5.5"
+    },
+    {
+      "programName": "Cross Collateral DSCR",
+      "programType": "DSCR Portfolio",
+      "pages": [11, 12],
+      "ltvMatrices": {
+        "loanDSCR_above1_20": {
+          "label": "Loan DSCR > 1.20",
+          "rows": [
+            { "minFICO": 700, "maxLoanAmount": 1000000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 75 },
+            { "minFICO": 700, "maxLoanAmount": 1500000, "purchaseLTV": 80, "rateTermLTV": 75, "cashOutLTV": 75 },
+            { "minFICO": 700, "maxLoanAmount": 2000000, "purchaseLTV": 75, "rateTermLTV": 75, "cashOutLTV": 70 },
+            { "minFICO": 700, "maxLoanAmount": 3000000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+            { "minFICO": 700, "maxLoanAmount": 3500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": null },
+            { "minFICO": 700, "maxLoanAmount": 4000000, "purchaseLTV": 65, "rateTermLTV": 60, "cashOutLTV": null },
+            { "minFICO": 680, "maxLoanAmount": 1000000, "purchaseLTV": 75, "rateTermLTV": 75, "cashOutLTV": 70 },
+            { "minFICO": 680, "maxLoanAmount": 1500000, "purchaseLTV": 75, "rateTermLTV": 75, "cashOutLTV": 70 },
+            { "minFICO": 680, "maxLoanAmount": 2000000, "purchaseLTV": 70, "rateTermLTV": 70, "cashOutLTV": 65 },
+            { "minFICO": 680, "maxLoanAmount": 3000000, "purchaseLTV": 65, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 680, "maxLoanAmount": 3500000, "purchaseLTV": 65, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 660, "maxLoanAmount": 1000000, "purchaseLTV": 75, "rateTermLTV": 75, "cashOutLTV": 70 },
+            { "minFICO": 660, "maxLoanAmount": 1500000, "purchaseLTV": 75, "rateTermLTV": 75, "cashOutLTV": 70 },
+            { "minFICO": 660, "maxLoanAmount": 2000000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+            { "minFICO": 660, "maxLoanAmount": 2500000, "purchaseLTV": 70, "rateTermLTV": 65, "cashOutLTV": 65 },
+            { "minFICO": 660, "maxLoanAmount": 3000000, "purchaseLTV": 65, "rateTermLTV": null, "cashOutLTV": null }
+          ]
+        },
+        "loanDSCR_1_00to1_20": {
+          "label": "Loan DSCR 1.00 - 1.20",
+          "rows": [
+            { "minFICO": 700, "maxLoanAmount": 1000000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 700, "maxLoanAmount": 1500000, "purchaseLTV": 75, "rateTermLTV": 70, "cashOutLTV": 70 },
+            { "minFICO": 700, "maxLoanAmount": 2000000, "purchaseLTV": 70, "rateTermLTV": 70, "cashOutLTV": 65 },
+            { "minFICO": 700, "maxLoanAmount": 2500000, "purchaseLTV": 65, "rateTermLTV": 65, "cashOutLTV": 60 },
+            { "minFICO": 700, "maxLoanAmount": 3000000, "purchaseLTV": 60, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 700, "maxLoanAmount": 3500000, "purchaseLTV": 60, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 680, "maxLoanAmount": 1000000, "purchaseLTV": 70, "rateTermLTV": 70, "cashOutLTV": 65 },
+            { "minFICO": 680, "maxLoanAmount": 1500000, "purchaseLTV": 70, "rateTermLTV": 70, "cashOutLTV": 65 },
+            { "minFICO": 680, "maxLoanAmount": 2000000, "purchaseLTV": 65, "rateTermLTV": 60, "cashOutLTV": 60 },
+            { "minFICO": 680, "maxLoanAmount": 3000000, "purchaseLTV": 60, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 680, "maxLoanAmount": 3500000, "purchaseLTV": 60, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": 660, "maxLoanAmount": 1000000, "purchaseLTV": 65, "rateTermLTV": 65, "cashOutLTV": 65 },
+            { "minFICO": 660, "maxLoanAmount": 1500000, "purchaseLTV": 65, "rateTermLTV": 65, "cashOutLTV": 60 },
+            { "minFICO": 660, "maxLoanAmount": 2000000, "purchaseLTV": 60, "rateTermLTV": 60, "cashOutLTV": 55 },
+            { "minFICO": 660, "maxLoanAmount": 2500000, "purchaseLTV": 60, "rateTermLTV": 55, "cashOutLTV": null },
+            { "minFICO": 660, "maxLoanAmount": 3000000, "purchaseLTV": 55, "rateTermLTV": null, "cashOutLTV": null }
+          ]
+        }
+      },
+      "portfolioLimits": {
+        "minLoanAmount": 200000,
+        "maxLoanAmount": 4000000,
+        "minPropertyCount": 2,
+        "maxPropertyCount": 25,
+        "maxPropertyLevelAllocatedBalance": 1000000
+      },
+      "propertyTypes": {
+        "singleFamily": { "eligible": true, "subtypes": ["Attached", "Detached"] },
+        "twoToFourUnit": { "eligible": true, "maxLTV_purchase": 75, "maxLTV_refinance": 70, "overlayNote": "Applies if any property in portfolio is 2-4 Unit" },
+        "condominium": { "eligible": true, "maxLTV_purchase": 75, "maxLTV_refinance": 70, "overlayNote": "Applies if any property in portfolio is Condominium" },
+        "condoHotel": { "eligible": true, "maxLTV_purchase": 75, "maxLTV_refinance": 65, "maxLoanAmount": 1500000, "overlayNote": "Applies if any property in portfolio is Condo Hotel" },
+        "rural": { "eligible": true, "maxLTV_purchase": 75, "maxLTV_refinance": 70, "overlayNote": "Applies if any property in portfolio is rural" },
+        "fiveToEightUnit": { "eligible": false },
+        "twoToEightMixedUse": { "eligible": false }
+      },
+      "housingHistory": {
+        "maxLatePayments": ["1x30x12", "2x30x24"],
+        "creditEventSeasoning": ">=36 months for any event",
+        "forbearanceModificationDeferral": ">12 months"
+      },
+      "investorExperience": {
+        "experiencedInvestor": "Required - must have history 1 year in last 3 years",
+        "firstTimeInvestor": "Not eligible",
+        "firstTimeHomebuyer": "Not eligible"
+      },
+      "stateEligibility": {
+        "twoToFourUnitIneligible": ["IL", "NY"],
+        "ineligible": ["Baltimore City, MD"],
+        "stateOverlays": {
+          "states": ["CT", "FL", "IL", "NJ", "NY"],
+          "maxLTV_purchase": 75,
+          "maxLTV_refinance": 70,
+          "overlayNote": "Applies if any property in portfolio is in these states"
+        },
+        "ineligibleLocations": ["Puerto Rico", "Guam", "US Virgin Islands"]
+      },
+      "generalRequirements": {
+        "productType": {
+          "fixedRate": ["15-year", "30-year"],
+          "ARM": ["5/6 ARM", "7/6 ARM", "10/6 ARM"],
+          "armTerm": "30-year"
+        },
+        "interestOnly": {
+          "minFICO": 680,
+          "maxLTV_purchase": 75,
+          "maxLTV_rateTerm": 75,
+          "maxLTV_cashOut": 70,
+          "qualificationBasis": "Interest only payment"
+        },
+        "loanPurpose": ["Purchase", "Rate/Term", "Cash-Out"],
+        "mixedTransactions": "Permitted (e.g., Purchase + Cash-Out); eligibility/pricing based on most conservative transaction type",
+        "nonArmsLengthIneligible": true,
+        "occupancy": ["Investment"],
+        "cashInHand": {
+          "maxIfLTVabove65": 1000000,
+          "maxIfLTVbelow65": 2000000
+        },
+        "eligibleBorrower": ["US Citizen", "Permanent Resident Alien"],
+        "acreage": "Up to 5 acres",
+        "appraisals": {
+          "form": "FNMA Form 1004, 1025, 1073",
+          "secondAppraisal": "Required for loans > $2,000,000"
+        },
+        "value": {
+          "minPerProperty": 100000,
+          "maxPerUnit": 1500000
+        },
+        "partialRelease": "120% of allocated balance required"
+      },
+      "incomeRequirements": {
+        "longTermRental": "See Correspondent Non-Agency Seller Guide",
+        "shortTermRental": "See Correspondent Non-Agency Seller Guide",
+        "vacantProperty": {
+          "ltvReduction": "10% when 25% or more of portfolio properties are vacant",
+          "vacantUnitRule_2to4Unit": "Property considered vacant when 2+ units vacant, use 75% market rent for vacant units",
+          "vacantMustBeLeaseReady": true,
+          "cannotBeUnderRenovation": true
+        },
+        "dscr": {
+          "minimumLoanDSCR": 1.00,
+          "loanDSCR_formula": "Total gross rental income for all properties / Total loan PITIA (or ITIA)",
+          "minimumPropertyDSCR": 0.75,
+          "propertyDSCR_formula": "Gross rental income per property / Allocated loan PITIA (or ITIA) per property"
+        },
+        "workbook": "Verus Cross Collateral Workbook required"
+      },
+      "underwritingRequirements": {
+        "reserves": {
+          "standard": "2 months PITIA for each property",
+          "totalLoanAbove1_5M": "6 months PITIA for each property",
+          "totalLoanAbove2_5M": "12 months PITIA for each property"
+        },
+        "cashOutSatisfyReserves": true,
+        "giftFunds": "Ineligible",
+        "documentAge": "120 days"
+      },
+      "escrows": "Required for cross-collateral, may not be waived"
+    },
+    {
+      "programName": "Foreign National DSCR",
+      "programType": "DSCR - Investment Property Only",
+      "pages": [13, 14],
+      "citizenshipType": "Foreign National",
+      "ltvMatrices": {
+        "dscrAbove1_00": {
+          "label": "DSCR >= 1.00",
+          "rows": [
+            { "minFICO": 680, "maxLoanAmount": 1000000, "purchaseLTV": 75, "rateTermLTV": 75, "cashOutLTV": 70 },
+            { "minFICO": 680, "maxLoanAmount": 1500000, "purchaseLTV": 75, "rateTermLTV": 75, "cashOutLTV": 65 },
+            { "minFICO": 680, "maxLoanAmount": 2000000, "purchaseLTV": 70, "rateTermLTV": 70, "cashOutLTV": 60 },
+            { "minFICO": 680, "maxLoanAmount": 2500000, "purchaseLTV": 65, "rateTermLTV": null, "cashOutLTV": null },
+            { "minFICO": "No Credit Score", "maxLoanAmount": 1000000, "purchaseLTV": 75, "rateTermLTV": 75, "cashOutLTV": 70 },
+            { "minFICO": "No Credit Score", "maxLoanAmount": 1500000, "purchaseLTV": 75, "rateTermLTV": 75, "cashOutLTV": 65 },
+            { "minFICO": "No Credit Score", "maxLoanAmount": 2000000, "purchaseLTV": 70, "rateTermLTV": 70, "cashOutLTV": 60 },
+            { "minFICO": "No Credit Score", "maxLoanAmount": 2500000, "purchaseLTV": 65, "rateTermLTV": null, "cashOutLTV": null }
+          ]
+        },
+        "dscrBelow1_00": {
+          "label": "DSCR < 1.00",
+          "rows": [
+            { "minFICO": 680, "maxLoanAmount": 1000000, "purchaseLTV": 70, "rateTermLTV": 70, "cashOutLTV": 65 },
+            { "minFICO": 680, "maxLoanAmount": 1500000, "purchaseLTV": 65, "rateTermLTV": 65, "cashOutLTV": 65 },
+            { "minFICO": 680, "maxLoanAmount": 2000000, "purchaseLTV": 60, "rateTermLTV": 60, "cashOutLTV": 60 },
+            { "minFICO": "No Credit Score", "maxLoanAmount": 1000000, "purchaseLTV": 70, "rateTermLTV": 70, "cashOutLTV": 65 },
+            { "minFICO": "No Credit Score", "maxLoanAmount": 1500000, "purchaseLTV": 65, "rateTermLTV": 65, "cashOutLTV": 65 },
+            { "minFICO": "No Credit Score", "maxLoanAmount": 2000000, "purchaseLTV": 60, "rateTermLTV": 60, "cashOutLTV": 60 }
+          ]
+        }
+      },
+      "propertyTypes": {
+        "singleFamily": { "eligible": true, "subtypes": ["Attached", "Detached"] },
+        "twoToFourUnit": { "eligible": true, "maxLTV_purchase": 70, "maxLTV_rateTerm": 70, "maxLTV_cashOut": 65 },
+        "condominium": { "eligible": true, "maxLTV_purchase": 70, "maxLTV_rateTerm": 70, "maxLTV_cashOut": 65 },
+        "condoHotel": { "eligible": true, "maxLTV_purchase": 70, "maxLTV_rateTerm": 70, "maxLTV_cashOut": 65 },
+        "rural": { "eligible": true, "maxLTV_purchase": 70, "maxLTV_rateTerm": 70, "maxLTV_cashOut": 65 }
+      },
+      "housingHistory": {
+        "maxLatePayments": "0x30x12, if documented",
+        "creditEventSeasoning": ">=36 months",
+        "forbearanceModificationDeferral": ">12 months"
+      },
+      "investorExperience": {
+        "firstTimeInvestor": "Allowed"
+      },
+      "shortTermRental": {
+        "allowed": true,
+        "refinanceOnly": {
+          "maxLTV": 70,
+          "note": "LTV is lesser of 70% or LTV based upon DSCR/Credit Score/Loan Balance table"
+        },
+        "dscrCalculation": {
+          "grossRentsBasedOn": "12-month average to account for seasonality",
+          "expenseFactor": "20% reduction",
+          "formula_PITIA": "(Gross Rents * 0.80) / PITIA = DSCR",
+          "formula_ITIA": "(Gross Rents * 0.80) / ITIA = DSCR"
+        },
+        "incomeDocumentation": [
+          {
+            "method": "STR analysis form or 1007/1025 by licensed appraiser",
+            "requirements": "Same as standard DSCR STR requirements"
+          },
+          {
+            "method": "12-month rental history from Third party rental/management service"
+          },
+          {
+            "method": "12-month bank statements from borrower/guarantor"
+          },
+          {
+            "method": "AIRDNA Rentalizer/Property Earning Potential Report",
+            "purchaseOnly": true,
+            "requirements": [
+              "Revenue projection less 20% expense factor",
+              "Forecast must cover 12 months, dated within 90 days of Note date",
+              "3 comparable properties required",
+              "Market Score or Sub-Market Score >= 60"
+            ]
+          }
+        ]
+      },
+      "longTermRental": {
+        "vacantRefinance": {
+          "maxLTV": 70,
+          "note": "LTV is lesser of 70% or LTV based upon DSCR/Credit Score/Loan Balance table"
+        }
+      },
+      "stateEligibility": {
+        "twoToFourUnitIneligible": ["IL", "NY"],
+        "ineligible": ["Baltimore City, MD"],
+        "stateOverlays": {
+          "states": ["CT", "FL", "IL", "NJ", "NY"],
+          "maxLTV_refinance": 70,
+          "maxLoanAmount_allTransactions": 2000000
+        },
+        "ineligibleLocations": ["Puerto Rico", "Guam", "US Virgin Islands"]
+      },
+      "decliningMarket": {
+        "maxLTV_refinance": 70,
+        "maxLoanAmount_allTransactions": 2000000
+      },
+      "generalRequirements": {
+        "productType": {
+          "fixedRate": ["15-year", "30-year", "40-year"],
+          "ARM": ["5/6 ARM", "7/6 ARM", "10/6 ARM"],
+          "armTerms": ["30-year", "40-year"],
+          "armNote": "ARM 40-year term must be combined with interest only feature"
+        },
+        "interestOnly": {
+          "eligible": true,
+          "terms": ["30-year", "40-year"],
+          "qualificationBasis": "Interest only payment"
+        },
+        "loanAmounts": { "min": 150000, "max": 2500000 },
+        "loanPurpose": ["Purchase", "Rate/Term", "Cash-Out"],
+        "nonArmsLengthIneligible": true,
+        "occupancy": ["Investment"],
+        "eligibleBorrowers": "Foreign Nationals",
+        "ofacRestriction": "Citizens and individuals from OFAC sanctioned countries not eligible",
+        "floridaPurchases": "Loans to foreign principals/persons/entities require Florida Land Title Association Affidavits",
+        "acreage": "Up to 5 acres",
+        "cashInHand": {
+          "maxIfLTVabove50": 300000,
+          "maxIfLTVbelow50": 500000,
+          "note": "Total equity withdrawn cannot exceed above limits"
+        },
+        "appraisals": {
+          "form": "FNMA Form 1004, 1025, 1073",
+          "secondAppraisal": "Required for loans > $2,000,000"
+        }
+      },
+      "underwritingRequirements": {
+        "creditScore": {
+          "method": "If score available, use representative score of borrower/guarantor with highest representative score",
+          "representativeScore": "Lower of 2 or middle of 3 credit scores"
+        },
+        "tradelines": "Not required; if borrower has US credit score see section 2.5.12 of Non-Agency Seller Guide",
+        "reserves": "6 months PITIA",
+        "assets": "Min 30-days asset verification",
+        "giftFunds": "Allowed after min 10% borrower contribution",
+        "documentAge": "120 days",
+        "cashOutSatisfyReserves": true
+      },
+      "prepaymentPenalty": {
+        "maxPeriod": "5 years",
+        "structures": [
+          "Fixed percentage no less than 3%",
+          "Declining structures not exceeding 5%, not dropping below 3% in first 3 years",
+          "6 months of interest on prepayments exceeding 20% of original principal in 12-month period"
+        ],
+        "stateRestrictions": {
+          "notAllowed": ["AK", "KS", "MI", "MN", "NM", "OH", "RI"],
+          "notAllowedIndividuals": ["IL", "NJ"],
+          "minLoanAmountPA": 319777,
+          "decliningOnlyMS": true
+        }
+      },
+      "escrows": "May be waived, see Section 2.5.5"
+    },
+    {
+      "programName": "Closed End Second",
+      "programType": "Standard and Alt Doc (Second Lien)",
+      "pages": [15, 16, 17],
+      "ltvMatrices": {
+        "standardDoc": {
+          "label": "Standard Doc - Maximum CLTV",
+          "rows": [
+            { "maxLoanAmount": 350000, "minFICO": 740, "primaryResidenceCLTV": 90, "secondHomeCLTV": 80, "investmentCLTV": 75 },
+            { "maxLoanAmount": 350000, "minFICO": 700, "primaryResidenceCLTV": 85, "secondHomeCLTV": 80, "investmentCLTV": 65 },
+            { "maxLoanAmount": 350000, "minFICO": 680, "primaryResidenceCLTV": 75, "secondHomeCLTV": 75, "investmentCLTV": null },
+            { "maxLoanAmount": 500000, "minFICO": 740, "primaryResidenceCLTV": 85, "secondHomeCLTV": 75, "investmentCLTV": 75 },
+            { "maxLoanAmount": 500000, "minFICO": 700, "primaryResidenceCLTV": 85, "secondHomeCLTV": 75, "investmentCLTV": 65 },
+            { "maxLoanAmount": 500000, "minFICO": 680, "primaryResidenceCLTV": 75, "secondHomeCLTV": 70, "investmentCLTV": null },
+            { "maxLoanAmount": 750000, "minFICO": 740, "primaryResidenceCLTV": 80, "secondHomeCLTV": 75, "investmentCLTV": null },
+            { "maxLoanAmount": 750000, "minFICO": 700, "primaryResidenceCLTV": 80, "secondHomeCLTV": 70, "investmentCLTV": null },
+            { "maxLoanAmount": 750000, "minFICO": 680, "primaryResidenceCLTV": 75, "secondHomeCLTV": 65, "investmentCLTV": null }
+          ]
+        },
+        "bankStatementAnd1099": {
+          "label": "Bank Statement and 1099 - Maximum CLTV",
+          "rows": [
+            { "maxLoanAmount": 350000, "minFICO": 740, "primaryResidenceCLTV": 85, "secondHomeCLTV": 75, "investmentCLTV": 70 },
+            { "maxLoanAmount": 350000, "minFICO": 700, "primaryResidenceCLTV": 80, "secondHomeCLTV": 70, "investmentCLTV": 60 },
+            { "maxLoanAmount": 350000, "minFICO": 680, "primaryResidenceCLTV": 75, "secondHomeCLTV": 65, "investmentCLTV": null },
+            { "maxLoanAmount": 500000, "minFICO": 740, "primaryResidenceCLTV": 80, "secondHomeCLTV": 70, "investmentCLTV": 65 },
+            { "maxLoanAmount": 500000, "minFICO": 700, "primaryResidenceCLTV": 75, "secondHomeCLTV": 65, "investmentCLTV": 60 },
+            { "maxLoanAmount": 500000, "minFICO": 680, "primaryResidenceCLTV": 70, "secondHomeCLTV": 60, "investmentCLTV": null },
+            { "maxLoanAmount": 750000, "minFICO": 740, "primaryResidenceCLTV": 75, "secondHomeCLTV": 65, "investmentCLTV": null },
+            { "maxLoanAmount": 750000, "minFICO": 700, "primaryResidenceCLTV": 70, "secondHomeCLTV": 60, "investmentCLTV": null },
+            { "maxLoanAmount": 750000, "minFICO": 680, "primaryResidenceCLTV": 65, "secondHomeCLTV": 55, "investmentCLTV": null }
+          ]
+        },
+        "wvoeAndPLwith2MoBankSt": {
+          "label": "WVOE and P&L Statement with 2 Mo Bank St - Maximum CLTV",
+          "rows": [
+            { "maxLoanAmount": 350000, "minFICO": 740, "primaryResidenceCLTV": 80, "secondHomeCLTV": 70, "investmentCLTV": 70 },
+            { "maxLoanAmount": 350000, "minFICO": 700, "primaryResidenceCLTV": 75, "secondHomeCLTV": 65, "investmentCLTV": 60 },
+            { "maxLoanAmount": 350000, "minFICO": 680, "primaryResidenceCLTV": 70, "secondHomeCLTV": 60, "investmentCLTV": null },
+            { "maxLoanAmount": 500000, "minFICO": 740, "primaryResidenceCLTV": 75, "secondHomeCLTV": 65, "investmentCLTV": 65 },
+            { "maxLoanAmount": 500000, "minFICO": 700, "primaryResidenceCLTV": 70, "secondHomeCLTV": 60, "investmentCLTV": 60 },
+            { "maxLoanAmount": 500000, "minFICO": 680, "primaryResidenceCLTV": 65, "secondHomeCLTV": 55, "investmentCLTV": null },
+            { "maxLoanAmount": 750000, "minFICO": 740, "primaryResidenceCLTV": 70, "secondHomeCLTV": 60, "investmentCLTV": null },
+            { "maxLoanAmount": 750000, "minFICO": 700, "primaryResidenceCLTV": 65, "secondHomeCLTV": 55, "investmentCLTV": null },
+            { "maxLoanAmount": 750000, "minFICO": 680, "primaryResidenceCLTV": 60, "secondHomeCLTV": 50, "investmentCLTV": null }
+          ]
+        }
+      },
+      "propertyTypes": {
+        "singleFamily": { "eligible": true, "subtypes": ["Attached", "Detached"] },
+        "twoToFourUnit": { "eligible": true, "maxCLTV": 75 },
+        "condominium": { "eligible": true, "maxCLTV": 80 },
+        "rural": { "eligible": false },
+        "condoHotel": { "eligible": false }
+      },
+      "housingHistory": {
+        "maxLatePayments": "0x30x12",
+        "creditEventSeasoning": ">=48 months (BK/FC/SS/DIL/PreFC/MC/NOD)",
+        "forbearanceModificationDeferral": ">12 months",
+        "firstTimeHomebuyer": "Not Allowed"
+      },
+      "stateEligibility": {
+        "ineligibleStates": ["TX"],
+        "ineligible": ["Investor occupancy in Baltimore City, MD"],
+        "stateOverlays": {
+          "states": ["CT", "FL", "IL", "NJ", "NY"],
+          "singleFamilyCondo": { "maxCLTV": 80, "minFICO": 720 },
+          "twoToFourUnit": { "maxCLTV": 75, "minFICO": 720 }
+        },
+        "ineligibleLocations": ["Puerto Rico", "Guam", "US Virgin Islands"]
+      },
+      "decliningMarket": {
+        "maxCLTV": 80
+      },
+      "generalRequirements": {
+        "productAndTerm": {
+          "fixedRate": ["10-year", "15-year", "20-year", "25-year", "30-year"],
+          "balloon": "30/15 Balloon: 30-year amortized with 15-year balloon. DTI qualifying at 180 months."
+        },
+        "interestOnly": {
+          "occupancy": "Primary residence only",
+          "maxCLTV": 80,
+          "terms": [
+            { "fixedRate20yr": "3 year IO with 17 year amortization" },
+            { "fixedRate30yr": "3 year IO with 27 year amortization" }
+          ],
+          "qualificationBasis": "Remaining term amortized after IO expiration"
+        },
+        "loanAmounts": { "min": 50000, "max": 750000 },
+        "combinedLoanBalance": {
+          "above2M": { "maxCLTV": 80 },
+          "above3M": { "maxCLTV": 75 },
+          "maxCombined": 4000000
+        },
+        "loanPurpose": ["Stand-Alone Cash-Out (min 6 months ownership)", "Simultaneous Purchase (1st lien must be Agency-eligible)"],
+        "occupancy": ["Primary", "Second Home", "Investment"],
+        "cashInHand": { "max": 750000 },
+        "eligibleBorrower": ["US Citizen", "Permanent Resident Alien", "Non-Permanent Resident Alien (max 80% CLTV)"]
+      },
+      "ineligibleLoanFeatures": [
+        "Lien Free Properties (including delayed financing)",
+        "Unseasoned cash-out (within 6 months note to note)",
+        "Frequent Refinances (2+ cash-out refis in past 12 months)"
+      ],
+      "firstLienEligibility": {
+        "requiredDocumentation": [
+          "Copy of 1st lien Note (default interest rate cannot exceed Note rate)",
+          "Copy of most recent monthly mortgage payment statement"
+        ],
+        "qualifyingPayment": {
+          "standAloneCashOut": "Use mortgage payment on credit report",
+          "simultaneousPurchase": {
+            "fixedRate": "Note rate amortized over total loan term",
+            "arm": "Higher of fully indexed rate or Note rate",
+            "interestOnly": "Amortized over remaining term after IO expiration"
+          }
+        },
+        "ineligibleFirstLiens": [
+          "Forbearance/modifications/deferrals within 12 months of Note date",
+          "Active forbearance or deferment",
+          "Negative amortization including PIK features",
+          "Balloon (if due during 2nd lien amortization)",
+          "Reverse Mortgages",
+          "Cross collateralized loans or blanket mortgages",
+          "HELOC",
+          "Note with default interest rate > Note rate"
+        ]
+      },
+      "incomeDocumentation": {
+        "standardDoc": {
+          "wageSalary": "Paystubs, 1-year or 2-years W-2s, IRS Form 4506-C, Verbal VOE",
+          "selfEmployed": "1-year or 2-years Personal and Business Tax Returns, YTD P&L, IRS Form 4506-C"
+        },
+        "personalBankStatements": {
+          "months": "12 or 24 months personal + 2 months business"
+        },
+        "businessBankStatements": {
+          "months": "12 or 24 months",
+          "analysisMethods": [
+            "Fixed Expense Ratio (50%)",
+            "Expense ratio by Third party (min 10%)",
+            "Third party prepared P&L Statement"
+          ]
+        },
+        "plStatementWithTwoMonthsBankStatements": {
+          "months": "12 or 24 months P&L + 2 months business bank statements",
+          "preparer": "CPA/EA/CTEC/Tax Attorney",
+          "maxCLTV": 80
+        },
+        "writtenVOE": {
+          "form": "FNMA Form 1005",
+          "additionalDocs": "2 months personal bank statements reflecting employer deposits",
+          "maxCLTV": 80
+        },
+        "irsForm1099": {
+          "years": "1 or 2 years",
+          "expenseRatio": "Fixed 10%",
+          "ytdDocumentation": "Required"
+        },
+        "ausFindings": {
+          "eligible": ["Fannie Mae DU Approve/Eligible", "Freddie Mac LPA Accept/Eligible"],
+          "notAllowed": ["Ineligible", "Caution", "Refer with Caution"],
+          "simultaneousPurchaseOnly": true,
+          "usedFor": "Income, asset, and liability documentation",
+          "appraisalWaiverNotEligible": true
+        }
+      },
+      "propertyRequirements": {
+        "acreage": "Up to 10 acres, not meeting rural definition",
+        "appraisal": {
+          "hpml": "Full appraisal with interior inspection required regardless of loan balance",
+          "simultaneousTransaction": "Full appraisal with interior inspection required",
+          "transferredAppraisals": "Eligible",
+          "primaryValuation_under400K": "See Non-Agency Seller Guide",
+          "primaryValuation_over400K": "Full appraisal with interior inspection",
+          "secondaryValuation": "See Non-Agency Seller Guide"
+        },
+        "listingSeasoning": "Properties listed for sale within past 6 months not eligible"
+      },
+      "underwritingRequirements": {
+        "dti": {
+          "cltvBelow80": { "maxDTI": 50 },
+          "cltvAbove80": { "maxDTI": 45 }
+        },
+        "reserves": {
+          "simultaneousPurchase": "Follow first lien requirements",
+          "standAloneCashOut": "None required"
+        },
+        "giftFunds": "Follow first lien requirements for simultaneous purchase",
+        "documentAge": {
+          "appraisalTitle": "120 days",
+          "avm": "90 days",
+          "credit": "120 days"
+        }
+      },
+      "prepaymentPenalty": {
+        "investmentPropertyOnly": true,
+        "maxPeriod": "5 years",
+        "stateRestrictions": {
+          "notAllowed": ["AK", "KS", "MI", "MN", "NM", "OH", "RI", "VA"],
+          "notAllowedIndividuals": ["IL", "NJ"],
+          "minLoanAmountPA": 319777,
+          "decliningOnlyMS": true,
+          "minLoanAmountMD": 75000
+        }
+      },
+      "escrows": "Escrows for taxes and insurance are not permitted for second lien programs"
+    },
+    {
+      "programName": "Home Equity Line of Credit (HELOC)",
+      "programType": "Standard and Alt Doc",
+      "pages": [18, 19],
+      "ltvMatrices": {
+        "standardDoc": {
+          "label": "Standard Doc - Maximum HCLTV",
+          "rows": [
+            { "maxLoanAmount": 250000, "minFICO": 740, "primaryResidenceHCLTV": 90, "secondHomeHCLTV": 75, "investmentHCLTV": 70 },
+            { "maxLoanAmount": 250000, "minFICO": 700, "primaryResidenceHCLTV": 85, "secondHomeHCLTV": 75, "investmentHCLTV": 65 },
+            { "maxLoanAmount": 250000, "minFICO": 680, "primaryResidenceHCLTV": 75, "secondHomeHCLTV": 75, "investmentHCLTV": null },
+            { "maxLoanAmount": 350000, "minFICO": 740, "primaryResidenceHCLTV": 85, "secondHomeHCLTV": 75, "investmentHCLTV": 65 },
+            { "maxLoanAmount": 350000, "minFICO": 700, "primaryResidenceHCLTV": 85, "secondHomeHCLTV": 75, "investmentHCLTV": 65 },
+            { "maxLoanAmount": 350000, "minFICO": 680, "primaryResidenceHCLTV": 75, "secondHomeHCLTV": 70, "investmentHCLTV": null },
+            { "maxLoanAmount": 500000, "minFICO": 740, "primaryResidenceHCLTV": 75, "secondHomeHCLTV": 75, "investmentHCLTV": null },
+            { "maxLoanAmount": 500000, "minFICO": 700, "primaryResidenceHCLTV": 75, "secondHomeHCLTV": 70, "investmentHCLTV": null },
+            { "maxLoanAmount": 500000, "minFICO": 680, "primaryResidenceHCLTV": 75, "secondHomeHCLTV": 65, "investmentHCLTV": null }
+          ]
+        },
+        "bankStatement": {
+          "label": "Bank Statement - Maximum HCLTV",
+          "rows": [
+            { "maxLoanAmount": 250000, "minFICO": 740, "primaryResidenceHCLTV": 80, "secondHomeHCLTV": 75, "investmentHCLTV": 70 },
+            { "maxLoanAmount": 250000, "minFICO": 700, "primaryResidenceHCLTV": 75, "secondHomeHCLTV": 70, "investmentHCLTV": 65 },
+            { "maxLoanAmount": 350000, "minFICO": 740, "primaryResidenceHCLTV": 75, "secondHomeHCLTV": 75, "investmentHCLTV": 65 },
+            { "maxLoanAmount": 350000, "minFICO": 700, "primaryResidenceHCLTV": 75, "secondHomeHCLTV": 70, "investmentHCLTV": 65 },
+            { "maxLoanAmount": 500000, "minFICO": 740, "primaryResidenceHCLTV": 75, "secondHomeHCLTV": 70, "investmentHCLTV": null },
+            { "maxLoanAmount": 500000, "minFICO": 700, "primaryResidenceHCLTV": 70, "secondHomeHCLTV": 65, "investmentHCLTV": null }
+          ]
+        }
+      },
+      "propertyTypes": {
+        "singleFamily": { "eligible": true, "subtypes": ["Attached", "Detached"] },
+        "twoToFourUnit": { "eligible": true, "maxHCLTV": 80 },
+        "fnmaWarrantableCondo": { "eligible": true, "maxHCLTV": 80 },
+        "rural": { "eligible": false },
+        "nonWarrantableCondo": { "eligible": false },
+        "condoHotel": { "eligible": false }
+      },
+      "housingHistory": {
+        "maxLatePayments": "0x30x12",
+        "creditEventSeasoning": {
+          "bankruptcyForeclosureEtc": ">=84 months",
+          "multipleDerogatoryEvents": ">=84 months"
+        },
+        "forbearanceModificationDeferral": ">12 months",
+        "firstTimeHomebuyer": "Not Applicable"
+      },
+      "stateEligibility": {
+        "ineligibleStates": ["TX"],
+        "ineligible": ["Investor occupancy in Baltimore City, MD"],
+        "stateOverlays": {
+          "states": ["CT", "FL", "IL", "NJ", "NY"],
+          "maxHCLTV": 80,
+          "minFICO": 720
+        },
+        "tennessee": "Maximum total loan term is 15 years",
+        "ineligibleLocations": ["Puerto Rico", "Guam", "US Virgin Islands"]
+      },
+      "decliningMarket": {
+        "maxHCLTV": 80
+      },
+      "generalRequirements": {
+        "productAndTerm": {
+          "type": "Variable Rate",
+          "terms": ["15-year", "20-year", "25-year", "30-year"],
+          "index": "Prime as published in Wall Street Journal (daily)",
+          "margin": "See Rate Sheet",
+          "floorRate": 4.0,
+          "maximumRate": 18,
+          "dailyPeriodicInterestRate": "Index plus Margin"
+        },
+        "drawPeriod": ["2-year", "3-year", "5-year"],
+        "minimumPayment": {
+          "drawPeriod": "Interest only, greater of accrued interest or $100",
+          "repaymentPeriod": "Amortizing P&I based on max line amount, repayment term, current rate"
+        },
+        "qualifyingPayment": "Amortizing P&I based on max line amount, repayment term, current rate (Index + Margin)",
+        "advances": {
+          "initialAdvance": "Minimum 50% of total line amount",
+          "minimumAdvance": 1000,
+          "maximumAdvance": "Line amount",
+          "lockoutPeriod": "90 days after closing"
+        },
+        "responsibleLending": {
+          "ineligible": ["State High Cost", "HOEPA"],
+          "maxPointsFees": "5%"
+        },
+        "loanAmounts": { "min": 50000, "max": 500000 },
+        "hcltv": "Maximum line amount + total outstanding 1st lien balance",
+        "combinedLoanBalance": { "max": 2000000 },
+        "loanPurpose": "Stand-Alone Cash-Out (minimum ownership of 12 months required)",
+        "occupancy": ["Primary", "Second Home", "Investment"],
+        "cashInHand": { "max": 500000 },
+        "eligibleBorrower": ["US Citizen", "Permanent Resident Alien"]
+      },
+      "ineligibleLoanFeatures": [
+        "Lien Free Properties (including delayed financing)",
+        "Unseasoned cash-out (within 6 months note to note)",
+        "Frequent Refinances (2+ cash-out refis in past 12 months)"
+      ],
+      "firstLienEligibility": {
+        "requiredDocumentation": [
+          "Copy of 1st lien Note (default interest rate cannot exceed Note rate)",
+          "Copy of most recent monthly mortgage payment statement"
+        ],
+        "qualifyingPayment": {
+          "fixedRate": "Note rate amortized over total loan term",
+          "arm": "Higher of fully indexed rate or Note rate",
+          "interestOnly": "Amortized over remaining term after IO expiration"
+        },
+        "ineligibleFirstLiens": [
+          "Forbearance/modifications/deferrals within 12 months of Note date",
+          "Active forbearance or deferment",
+          "Negative amortization including PIK features",
+          "Balloon (if due during 2nd lien amortization)",
+          "Reverse Mortgages",
+          "Cross collateralized loans or blanket mortgages",
+          "HELOC",
+          "Note with default interest rate > Note rate"
+        ]
+      },
+      "incomeDocumentation": {
+        "standardDoc": {
+          "wageSalary": "Paystubs, W-2s, 1-year or 2-years Tax Returns, IRS Form 4506-C, Verbal VOE",
+          "selfEmployed": "1-year or 2-years Personal and Business Tax Returns, YTD P&L, IRS Form 4506-C"
+        },
+        "personalBankStatements": {
+          "months": "12 or 24 months personal + 2 months business",
+          "qualifyingMethod": "Total eligible deposits divided by number of statements"
+        },
+        "businessBankStatements": {
+          "months": "12 or 24 months",
+          "analysisMethods": ["Fixed Expense Ratio (50%)"]
+        }
+      },
+      "propertyRequirements": {
+        "acreage": "Up to 10 acres, not meeting rural definition",
+        "appraisal": {
+          "transferredAppraisals": "Not eligible",
+          "primaryValuation_under400K": "See Non-Agency Seller Guide",
+          "primaryValuation_over400K": "Full appraisal with interior inspection",
+          "secondaryValuation": "Not required",
+          "newAppraisalAfter120Days": "Required (1004D Update not allowed)"
+        },
+        "listingSeasoning": "Properties listed for sale within past 6 months not eligible",
+        "ownershipSeasoning": "12 months on title",
+        "existingSubordinateLiens": "Must be satisfied",
+        "solarPanels": "UCC filings associated with subject property are ineligible"
+      },
+      "underwritingRequirements": {
+        "creditScore": {
+          "method": "Use lowest representative score amongst all borrowers",
+          "representativeScore": "Lower of 2 or middle of 3 credit scores",
+          "rapidRescoring": "Not allowed"
+        },
+        "tradelines": {
+          "minimum": "All borrowers must have 3 reporting with 1 currently open and active for at least 24 months. Other 2 reported for 12 months can be open or closed."
+        },
+        "dti": {
+          "hcltvBelow80": { "maxDTI": 50 },
+          "hcltvAbove80": { "maxDTI": 45 }
+        },
+        "assetsAndReserves": "Not applicable",
+        "documentAge": {
+          "titleReport": "60 days",
+          "appraisal": "120 days",
+          "avm": "90 days",
+          "credit": "120 days"
+        }
+      },
+      "escrows": "Escrows for taxes and insurance are not permitted for second lien programs"
+    }
+  ],
+  "ruralPropertyRules": {
+    "summary": "Rural properties are allowed on most Verus programs with LTV restrictions",
+    "byProgram": [
+      {
+        "program": "Prime Ascent Plus",
+        "allowed": true,
+        "maxLTV_purchase": 80,
+        "maxLTV_refinance": 75
+      },
+      {
+        "program": "Prime Ascent",
+        "allowed": true,
+        "maxLTV_purchase": 80,
+        "maxLTV_refinance": 75
+      },
+      {
+        "program": "ITIN",
+        "allowed": true,
+        "maxLTV_purchase": 75,
+        "maxLTV_refinance": 70
+      },
+      {
+        "program": "Investor Solutions DSCR (1-4 Unit)",
+        "allowed": true,
+        "maxLTV_purchase": 75,
+        "maxLTV_refinance": 70
+      },
+      {
+        "program": "Investor Solutions DSCR (5-8 Unit / 2-8 Mixed Use)",
+        "allowed": false
+      },
+      {
+        "program": "Cross Collateral DSCR",
+        "allowed": true,
+        "maxLTV_purchase": 75,
+        "maxLTV_refinance": 70,
+        "overlayNote": "Applies if any property in portfolio is rural"
+      },
+      {
+        "program": "Foreign National DSCR",
+        "allowed": true,
+        "maxLTV_purchase": 70,
+        "maxLTV_rateTerm": 70,
+        "maxLTV_cashOut": 65
+      },
+      {
+        "program": "Closed End Second",
+        "allowed": false
+      },
+      {
+        "program": "HELOC",
+        "allowed": false
+      }
+    ]
+  },
+  "shortTermRentalSummary": {
+    "allowedPrograms": [
+      {
+        "program": "Investor Solutions DSCR (1-4 Unit)",
+        "allowed": true,
+        "maxLTV_purchase": 75,
+        "maxLTV_refinance": 70,
+        "proofOfRents": [
+          "STR analysis form or 1007/1025 by licensed appraiser",
+          "12-month rental history from Third party rental/management service",
+          "12-month bank statements from borrower evidencing STR deposits",
+          "AIRDNA Rentalizer/Property Earning Potential Report (purchase only)"
+        ],
+        "dscrExpenseFactor": "20% minimum",
+        "airdnaMinMarketScore": 60,
+        "lowestSourceRule": true
+      },
+      {
+        "program": "Foreign National DSCR",
+        "allowed": true,
+        "maxLTV_refinance": 70,
+        "note": "Refinance only for LTV limitation; purchase follows matrix",
+        "proofOfRents": "Same methods as standard DSCR STR",
+        "airdnaMinMarketScore": 60
+      },
+      {
+        "program": "Cross Collateral DSCR",
+        "allowed": true,
+        "note": "See Correspondent Non-Agency Seller Guide for documentation requirements"
+      }
+    ],
+    "notAllowedPrograms": [
+      {
+        "program": "Investor Solutions DSCR (5-8 Unit / 2-8 Mixed Use)",
+        "allowed": false,
+        "reason": "Short-Term Rental Income not eligible"
+      },
+      {
+        "program": "Prime Ascent Plus",
+        "allowed": false,
+        "reason": "Not a DSCR program"
+      },
+      {
+        "program": "Prime Ascent",
+        "allowed": false,
+        "reason": "Not a DSCR program"
+      },
+      {
+        "program": "ITIN",
+        "allowed": false,
+        "reason": "Not a DSCR program"
+      },
+      {
+        "program": "Closed End Second",
+        "allowed": false,
+        "reason": "Second lien program"
+      },
+      {
+        "program": "HELOC",
+        "allowed": false,
+        "reason": "Second lien program"
+      }
+    ]
+  },
+  "citizenshipEligibility": {
+    "usCitizen": ["Prime Ascent Plus", "Prime Ascent", "Investor Solutions DSCR", "DSCR 5-8 Unit/2-8 Mixed Use", "Cross Collateral DSCR", "Foreign National DSCR (not applicable)", "Closed End Second", "HELOC"],
+    "permanentResident": ["Prime Ascent Plus", "Prime Ascent", "Investor Solutions DSCR", "DSCR 5-8 Unit/2-8 Mixed Use", "Cross Collateral DSCR", "Closed End Second", "HELOC"],
+    "nonPermanentResident": ["Prime Ascent", "DSCR 5-8 Unit/2-8 Mixed Use", "Closed End Second (max 80% CLTV)"],
+    "itin": ["ITIN Program"],
+    "foreignNational": ["Foreign National DSCR"],
+    "ofacSanctionedCountries": "Not eligible on any program"
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "investor": "Onslow Bay (Annaly)",
+  "note": "Onslow Bay does allow for exceptions to underwriting guidelines as long as the exception is based upon reasonable and documented compensating factors.",
+  "programs": [
+    {
+      "program_name": "Onslow Bay Expanded Prime Plus - Full Doc & Alt Doc",
+      "page": 29,
+      "description": "Expanded Prime Plus Correspondent Program targets high credit borrowers who fall just outside of traditional Prime Jumbo underwriters or qualify with Alternative Documentation.",
+      "ltv_matrices": {
+        "purchase_and_rate_term_refinance": {
+          "owner_occupied": [
+            { "fico": "740", "lt_1M": 90, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75 },
+            { "fico": "720", "lt_1M": 90, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75 },
+            { "fico": "700", "lt_1M": 90, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75 },
+            { "fico": "680", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70 },
+            { "fico": "660", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70 }
+          ],
+          "second_home": [
+            { "fico": "740", "lt_1M": 85, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75 },
+            { "fico": "720", "lt_1M": 85, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75 },
+            { "fico": "700", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70 },
+            { "fico": "680", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70 },
+            { "fico": "660", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65 }
+          ],
+          "investment": [
+            { "fico": "740", "lt_1M": 85, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75 },
+            { "fico": "720", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70 },
+            { "fico": "700", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70 },
+            { "fico": "680", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 70, "lt_2_5M": 65 },
+            { "fico": "660", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65 }
+          ]
+        },
+        "cash_out_refinance": {
+          "owner_occupied": [
+            { "fico": "740", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65 },
+            { "fico": "720", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65 },
+            { "fico": "700", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 60 },
+            { "fico": "680", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 60, "lt_2_5M": "N/A" },
+            { "fico": "660", "lt_1M": 70, "lt_1_5M": 70, "lt_2M": 60, "lt_2_5M": "N/A" }
+          ],
+          "second_home": [
+            { "fico": "740", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": 60 },
+            { "fico": "720", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": 60 },
+            { "fico": "700", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": 60 },
+            { "fico": "680", "lt_1M": 70, "lt_1_5M": 70, "lt_2M": 60, "lt_2_5M": "N/A" },
+            { "fico": "660", "lt_1M": 70, "lt_1_5M": 70, "lt_2M": 60, "lt_2_5M": "N/A" }
+          ],
+          "investment": [
+            { "fico": "740", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 65, "lt_2_5M": 60 },
+            { "fico": "720", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": 60 },
+            { "fico": "700", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": 60 },
+            { "fico": "680", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": "N/A", "lt_2_5M": "N/A" },
+            { "fico": "660", "lt_1M": 70, "lt_1_5M": 60, "lt_2M": "N/A", "lt_2_5M": "N/A" }
+          ]
+        }
+      },
+      "reserves": {
+        "by_loan_amount": [
+          { "range": "$150,000 - $500,000", "months": 6 },
+          { "range": "$500,001 - $1,000,000", "months": 6 },
+          { "range": "$1,000,001 - $2,000,000", "months": 9 },
+          { "range": "$2,000,001 - $3,000,000", "months": 12 }
+        ],
+        "additional_financed_properties": "2 Months Incremental PITIA Per Financed Property",
+        "low_ltv_exception": "<=65% LTV/CLTV: Cash Out Used as Reserves"
+      },
+      "housing_history": {
+        "payment_history": "0x30x12",
+        "housing_event_seasoning": "4+ Years"
+      }
+    },
+    {
+      "program_name": "Onslow Bay Sharp Matrix - Credit Grades A- & A-3",
+      "page": 30,
+      "description": "Sharp Correspondent Program (Credit Grades A- & A-3) is tailored for borrowers qualifying with lower reserves, FICO scores or more recent derogatory housing events or delinquencies.",
+      "credit_grades": {
+        "sharp_A_minus": {
+          "ltv_matrices": {
+            "purchase_and_rate_term_refinance": {
+              "owner_occupied": [
+                { "fico": "740", "lt_1M": 90, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75 },
+                { "fico": "720", "lt_1M": 90, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75 },
+                { "fico": "700", "lt_1M": 85, "lt_1_5M": 85, "lt_2M": 75, "lt_2_5M": 70 },
+                { "fico": "680", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70 },
+                { "fico": "660", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65 },
+                { "fico": "640", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": "N/A" },
+                { "fico": "620", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": "N/A", "lt_2_5M": "N/A" }
+              ],
+              "second_home": [
+                { "fico": "740", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70 },
+                { "fico": "720", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70 },
+                { "fico": "700", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": "N/A" },
+                { "fico": "680", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": "N/A" },
+                { "fico": "660", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": "N/A" },
+                { "fico": "640", "lt_1M": 70, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": "N/A" },
+                { "fico": "620", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A", "lt_2_5M": "N/A" }
+              ],
+              "investment": [
+                { "fico": "740", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": 70 },
+                { "fico": "720", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": "N/A" },
+                { "fico": "700", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": "N/A" },
+                { "fico": "680", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": "N/A" },
+                { "fico": "660", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": "N/A" },
+                { "fico": "640", "lt_1M": 70, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": "N/A" },
+                { "fico": "620", "lt_1M": 65, "lt_1_5M": 65, "lt_2M": "N/A", "lt_2_5M": "N/A" }
+              ]
+            },
+            "cash_out_refinance": {
+              "owner_occupied": [
+                { "fico": "740", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": 60 },
+                { "fico": "720", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": 60 },
+                { "fico": "700", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": 60 },
+                { "fico": "680", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": 60 },
+                { "fico": "660", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_2_5M": "N/A" },
+                { "fico": "640", "lt_1M": 65, "lt_1_5M": 60, "lt_2M": "N/A", "lt_2_5M": "N/A" },
+                { "fico": "620", "lt_1M": 65, "lt_1_5M": "N/A", "lt_2M": "N/A", "lt_2_5M": "N/A" }
+              ],
+              "second_home": [
+                { "fico": "740", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_2_5M": "N/A" },
+                { "fico": "720", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_2_5M": "N/A" },
+                { "fico": "700", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_2_5M": "N/A" },
+                { "fico": "680", "lt_1M": 65, "lt_1_5M": 65, "lt_2M": "N/A", "lt_2_5M": "N/A" },
+                { "fico": "660", "lt_1M": 60, "lt_1_5M": "N/A", "lt_2M": "N/A", "lt_2_5M": "N/A" },
+                { "fico": "640", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A", "lt_2_5M": "N/A" },
+                { "fico": "620", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A", "lt_2_5M": "N/A" }
+              ],
+              "investment": [
+                { "fico": "740", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": "N/A" },
+                { "fico": "720", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": "N/A" },
+                { "fico": "700", "lt_1M": 70, "lt_1_5M": 70, "lt_2M": "N/A", "lt_2_5M": "N/A" },
+                { "fico": "680", "lt_1M": 65, "lt_1_5M": 60, "lt_2M": "N/A", "lt_2_5M": "N/A" },
+                { "fico": "660", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A", "lt_2_5M": "N/A" },
+                { "fico": "640", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A", "lt_2_5M": "N/A" },
+                { "fico": "620", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A", "lt_2_5M": "N/A" }
+              ]
+            }
+          }
+        },
+        "sharp_A_minus_3": {
+          "ltv_matrices": {
+            "purchase_and_rate_term_refinance": {
+              "owner_occupied": [
+                { "fico": "740", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 75 },
+                { "fico": "720", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 75 },
+                { "fico": "700", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70 },
+                { "fico": "680", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 70 },
+                { "fico": "660", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65 },
+                { "fico": "640", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": "N/A" },
+                { "fico": "620", "lt_1M": 65, "lt_1_5M": 65, "lt_2M": "N/A" }
+              ],
+              "second_home": [
+                { "fico": "740", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70 },
+                { "fico": "720", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70 },
+                { "fico": "700", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70 },
+                { "fico": "680", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65 },
+                { "fico": "660", "lt_1M": 70, "lt_1_5M": 70, "lt_2M": 65 },
+                { "fico": "640", "lt_1M": 65, "lt_1_5M": 65, "lt_2M": "N/A" },
+                { "fico": "620", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" }
+              ],
+              "investment": [
+                { "fico": "740", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70 },
+                { "fico": "720", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70 },
+                { "fico": "700", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 70 },
+                { "fico": "680", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65 },
+                { "fico": "660", "lt_1M": 70, "lt_1_5M": 70, "lt_2M": 65 },
+                { "fico": "640", "lt_1M": 65, "lt_1_5M": 65, "lt_2M": "N/A" },
+                { "fico": "620", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" }
+              ]
+            },
+            "cash_out_refinance": {
+              "owner_occupied": [
+                { "fico": "740", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65 },
+                { "fico": "720", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60 },
+                { "fico": "700", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60 },
+                { "fico": "680", "lt_1M": 65, "lt_1_5M": 65, "lt_2M": "N/A" },
+                { "fico": "660", "lt_1M": 65, "lt_1_5M": "N/A", "lt_2M": "N/A" },
+                { "fico": "640", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" },
+                { "fico": "620", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" }
+              ],
+              "second_home": [
+                { "fico": "740", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": "N/A" },
+                { "fico": "720", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": "N/A" },
+                { "fico": "700", "lt_1M": 65, "lt_1_5M": 65, "lt_2M": "N/A" },
+                { "fico": "680", "lt_1M": 60, "lt_1_5M": "N/A", "lt_2M": "N/A" },
+                { "fico": "660", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" },
+                { "fico": "640", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" },
+                { "fico": "620", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" }
+              ],
+              "investment": [
+                { "fico": "740", "lt_1M": 70, "lt_1_5M": "N/A", "lt_2M": "N/A" },
+                { "fico": "720", "lt_1M": 70, "lt_1_5M": "N/A", "lt_2M": "N/A" },
+                { "fico": "700", "lt_1M": 65, "lt_1_5M": "N/A", "lt_2M": "N/A" },
+                { "fico": "680", "lt_1M": 60, "lt_1_5M": "N/A", "lt_2M": "N/A" },
+                { "fico": "660", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" },
+                { "fico": "640", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" },
+                { "fico": "620", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" }
+              ]
+            }
+          }
+        }
+      },
+      "reserves": {
+        "sharp_A_minus": {
+          "by_loan_amount": [
+            { "range": "$150,000 - $500,000", "months": "A+ 3 Months / A- 3 Months" },
+            { "range": "$500,001 - $1,000,000", "months": "A+ 3 Months / A- 3 Months" },
+            { "range": "$1,000,001 - $2,000,000", "months": "A+ 6 Months / A- 3 Months" },
+            { "range": "$2,000,001 - $3,000,000", "months": "A+ 9 Months / A- N/A" }
+          ],
+          "additional_financed_properties": "2 Months Incremental PITIA/ITIA Per Financed Property",
+          "low_ltv_exception": "<=65% LTV/CLTV"
+        }
+      },
+      "housing_history": {
+        "payment_history": "1x30x12, 0x60x24",
+        "housing_event_seasoning_A_plus": "3+ Years",
+        "housing_event_seasoning_A_minus": "2+ Years"
+      }
+    },
+    {
+      "program_name": "Onslow Bay DSCR Plus Matrix",
+      "page": 31,
+      "description": "DSCR Plus Correspondent Program is designed for professional real estate investors utilizing property cashflow to qualify.",
+      "ltv_matrices": {
+        "dscr_gte_1": {
+          "purchase": [
+            { "fico": "740", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70 },
+            { "fico": "720", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70 },
+            { "fico": "700", "lt_1M": 80, "lt_1_5M": 70, "lt_2M": 65 },
+            { "fico": "680", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60 },
+            { "fico": "660", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60 }
+          ],
+          "rate_term_refi": [
+            { "fico": "740", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70 },
+            { "fico": "720", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70 },
+            { "fico": "700", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65 },
+            { "fico": "680", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60 },
+            { "fico": "660", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60 }
+          ],
+          "cash_out": [
+            { "fico": "740", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 60 },
+            { "fico": "720", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 60 },
+            { "fico": "700", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 60 },
+            { "fico": "680", "lt_1M": 65, "lt_1_5M": 60, "lt_2M": "N/A" },
+            { "fico": "660", "lt_1M": 65, "lt_1_5M": 60, "lt_2M": "N/A" }
+          ]
+        },
+        "dscr_gte_075": {
+          "purchase": [
+            { "fico": "740", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65 },
+            { "fico": "720", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65 },
+            { "fico": "700", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65 },
+            { "fico": "680", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" },
+            { "fico": "660", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" }
+          ],
+          "rate_term_refi": [
+            { "fico": "740", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65 },
+            { "fico": "720", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65 },
+            { "fico": "700", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65 },
+            { "fico": "680", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" },
+            { "fico": "660", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" }
+          ],
+          "cash_out": [
+            { "fico": "740", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": "N/A" },
+            { "fico": "720", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": "N/A" },
+            { "fico": "700", "lt_1M": 65, "lt_1_5M": 65, "lt_2M": "N/A" },
+            { "fico": "680", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" },
+            { "fico": "660", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A" }
+          ]
+        },
+        "no_ratio_dscr": {
+          "purchase": [
+            { "fico": "740", "lt_1M": 75, "lt_1_5M": 65 },
+            { "fico": "720", "lt_1M": 70, "lt_1_5M": 65 },
+            { "fico": "700", "lt_1M": 65, "lt_1_5M": 65 },
+            { "fico": "680", "lt_1M": "N/A", "lt_1_5M": "N/A" },
+            { "fico": "660", "lt_1M": "N/A", "lt_1_5M": "N/A" }
+          ],
+          "rate_term_refi": [
+            { "fico": "740", "lt_1M": 65, "lt_1_5M": "N/A" },
+            { "fico": "720", "lt_1M": 65, "lt_1_5M": "N/A" },
+            { "fico": "700", "lt_1M": 65, "lt_1_5M": "N/A" },
+            { "fico": "680", "lt_1M": "N/A", "lt_1_5M": "N/A" },
+            { "fico": "660", "lt_1M": "N/A", "lt_1_5M": "N/A" }
+          ],
+          "cash_out": [
+            { "fico": "740", "lt_1M": 60, "lt_1_5M": "N/A" },
+            { "fico": "720", "lt_1M": 60, "lt_1_5M": "N/A" },
+            { "fico": "700", "lt_1M": 60, "lt_1_5M": "N/A" },
+            { "fico": "680", "lt_1M": "N/A", "lt_1_5M": "N/A" },
+            { "fico": "660", "lt_1M": "N/A", "lt_1_5M": "N/A" }
+          ]
+        }
+      },
+      "reserves": {
+        "dscr_gte_1": {
+          "by_loan_amount": [
+            { "range": "$150,000 - $500,000", "months": 3 },
+            { "range": "$500,001 - $1,000,000", "months": 6 },
+            { "range": "$1,000,001 - $2,000,000", "months": 6 }
+          ]
+        },
+        "dscr_gte_075_and_no_ratio": {
+          "note": "Higher reserves apply"
+        },
+        "additional_financed_properties": "2 Months Incremental PITIA Per Financed Property",
+        "low_ltv_exception": "<=65% LTV/CLTV"
+      },
+      "housing_history": {
+        "payment_history": "0x30x12",
+        "housing_event_seasoning": "3+ Years"
+      }
+    },
+    {
+      "program_name": "Onslow Bay Agency & Non-Agency Investor Matrices",
+      "page": 32,
+      "description": "Agency & Non-Agency Investor Program targets Conforming loans, Agency Jumbo loans and loans exceeding the Agency Limit.",
+      "agency_investor_program": {
+        "title": "Conforming Balance & Agency Jumbo",
+        "matrices": [
+          {
+            "purpose": "Purchase / Rate Term",
+            "property_type": "1 Unit",
+            "min_loan_amount": 150000,
+            "max_loan_amount": "Agency Limit (#Units / State)",
+            "fico": 700,
+            "ltv_cltv": 80,
+            "max_dti": "50%"
+          },
+          {
+            "purpose": "Purchase / Rate Term",
+            "property_type": "1 Unit",
+            "min_loan_amount": 150000,
+            "max_loan_amount": "Agency Limit (#Units / State)",
+            "fico": 680,
+            "ltv_cltv": 75,
+            "max_dti": "50%"
+          },
+          {
+            "purpose": "Purchase / Rate Term",
+            "property_type": "2-4 Unit",
+            "min_loan_amount": 150000,
+            "max_loan_amount": "Agency Limit (#Units / State)",
+            "fico": 700,
+            "ltv_cltv": 75,
+            "max_dti": "50%"
+          },
+          {
+            "purpose": "Purchase / Rate Term",
+            "property_type": "2-4 Unit",
+            "min_loan_amount": 150000,
+            "max_loan_amount": "Agency Limit (#Units / State)",
+            "fico": 680,
+            "ltv_cltv": 70,
+            "max_dti": "50%"
+          },
+          {
+            "purpose": "Cash Out",
+            "property_type": "1 Unit",
+            "min_loan_amount": 150000,
+            "max_loan_amount": "Agency Limit (#Units / State)",
+            "fico": 700,
+            "ltv_cltv": 75,
+            "max_dti": "50%"
+          },
+          {
+            "purpose": "Cash Out",
+            "property_type": "2-4 Unit",
+            "min_loan_amount": 150000,
+            "max_loan_amount": "Agency Limit (#Units / State)",
+            "fico": 700,
+            "ltv_cltv": 70,
+            "max_dti": "50%"
+          }
+        ]
+      },
+      "non_agency_investor_program": {
+        "title": "Exceeds Agency Limit",
+        "matrices": [
+          {
+            "purpose": "Purchase / Rate Term",
+            "property_type": "1 Unit",
+            "min_loan_amount": "$1 Above Agency Jumbo Balance",
+            "max_loan_amount": 2000000,
+            "fico": 700,
+            "ltv_cltv": 80,
+            "max_dti": "50%"
+          },
+          {
+            "purpose": "Purchase / Rate Term",
+            "property_type": "1 Unit",
+            "min_loan_amount": "$1 Above Agency Jumbo Balance",
+            "max_loan_amount": 2000000,
+            "fico": 680,
+            "ltv_cltv": 75,
+            "max_dti": "50%"
+          },
+          {
+            "purpose": "Purchase / Rate Term",
+            "property_type": "2-4 Unit",
+            "min_loan_amount": "$1 Above Agency Jumbo Balance",
+            "max_loan_amount": 2000000,
+            "fico": 700,
+            "ltv_cltv": 70,
+            "max_dti": "50%"
+          },
+          {
+            "purpose": "Purchase / Rate Term",
+            "property_type": "2-4 Unit",
+            "min_loan_amount": "$1 Above Agency Jumbo Balance",
+            "max_loan_amount": 2000000,
+            "fico": 700,
+            "ltv_cltv": 70,
+            "max_dti": "50%"
+          },
+          {
+            "purpose": "Cash Out",
+            "property_type": "1 Unit",
+            "min_loan_amount": "$1 Above Agency Jumbo Balance",
+            "max_loan_amount": 2000000,
+            "fico": 700,
+            "ltv_cltv": 80,
+            "max_dti": "50%"
+          },
+          {
+            "purpose": "Cash Out",
+            "property_type": "1 Unit",
+            "min_loan_amount": "$1 Above Agency Jumbo Balance",
+            "max_loan_amount": 2000000,
+            "fico": 680,
+            "ltv_cltv": 75,
+            "max_dti": "50%"
+          },
+          {
+            "purpose": "Cash Out",
+            "property_type": "2-4 Unit",
+            "min_loan_amount": "$1 Above Agency Jumbo Balance",
+            "max_loan_amount": 2000000,
+            "fico": 700,
+            "ltv_cltv": 75,
+            "max_dti": "50%"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1090 @@
+{
+  "investor": "American Heritage Lending",
+  "nmls": "93735",
+  "effectiveDate": "03/01/2026",
+  "programs": [
+    {
+      "programName": "INVEST STAR DSCR",
+      "source": "AHL_STAR_DSCR.pdf",
+      "occupancy": "Investment",
+      "docType": "DSCR",
+      "income": {
+        "dscrRatio": "As defined in the matrix",
+        "dscrCalculation": [
+          "Rental income divided by PITIAA",
+          "Lesser of the lease or Form 1007/1025",
+          "Vacant properties use 1007/1025 (No LTV restrictions)",
+          "1007/1025 may be used for gross rents if within 20% tolerance of actual lease",
+          "Lease may be used with 2 months canceled checks to support higher rent"
+        ],
+        "shortTermRental": [
+          "Purchase and Refinance: 100% of income documented by 12 month history of deposits from eligible sources like Airbnb or VRBO",
+          "Purchase Only: 75% of income documented by 1007 or property management report",
+          "Short term rent is not permitted on 5-10 unit properties"
+        ],
+        "realEstateOwned": "List all properties to meet the experience requirement and those properties associated to mortgage liabilities on credit"
+      },
+      "ltvMatrices": [
+        {
+          "dscrRange": "DSCR >= 1.00",
+          "transactionType": "Purchase",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "85%", "lte1_5M": "80%", "lte2M": "75%", "lte3M": "70%" }, "notes": "(5) LTV > 80% requires min 740 FICO, min DSCR 1.00, 12mo PITIA reserves, no first time investors, 0x30x12, delegated correspondent not eligible, must have experience owning 2+ unit property" },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "85%", "lte1_5M": "80%", "lte2M": "75%", "lte3M": "70%" }, "notes": "(5)" },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "75%", "lte2M": "70%", "lte3M": "65%" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "75%", "lte2M": "70%", "lte3M": "60%" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "70%", "lte2M": "65%", "lte3M": "60%" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "60%", "lte3M": "55%" } }
+          ]
+        },
+        {
+          "dscrRange": "DSCR >= 1.00",
+          "transactionType": "Rate/Term Refinance",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "75%", "lte2M": "70%", "lte3M": "65%" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "75%", "lte2M": "70%", "lte3M": "65%" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "75%", "lte2M": "70%", "lte3M": "65%" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "70%", "lte2M": "65%", "lte3M": "60%" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "70%", "lte2M": "65%", "lte3M": "60%" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "60%", "lte3M": "55%" } }
+          ]
+        },
+        {
+          "dscrRange": "DSCR >= 1.00",
+          "transactionType": "Cash Out Refinance",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "70%", "lte2M": "70%", "lte3M": "65%" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "70%", "lte2M": "70%", "lte3M": "65%" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "70%", "lte2M": "70%", "lte3M": "65%" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "65%", "lte2M": "65%", "lte3M": "60%" }, "notes": "(1) Cash Out FICO < 720 restrictions apply" },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "65%", "lte3M": "60%" }, "notes": "(1)" },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "65%", "lte1_5M": "60%", "lte2M": "60%", "lte3M": "55%" }, "notes": "(1)" }
+          ]
+        },
+        {
+          "dscrRange": "DSCR >= 0.75 and < 1.00",
+          "transactionType": "Purchase",
+          "notes": "(3) 2-4 Units and Condos Max LTV Purchase 75% / Refinance 70%. Interest only requires 700 FICO and max LTV 75%. Vacant properties ineligible for refinances. 5% LTV reduction on declining markets. Min $150,000 loan amount. No Non-Warrantable Condo. No Condotel. Mortgage History 0x30x12. First time investors not allowed. 12 Months Reserves Required.",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "70%", "lte2M": "65%" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "70%", "lte2M": "65%" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "70%", "lte2M": "65%" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "70%", "lte2M": "65%" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "70%", "lte2M": "65%" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "60%" } }
+          ]
+        },
+        {
+          "dscrRange": "DSCR >= 0.75 and < 1.00",
+          "transactionType": "Rate/Term Refinance",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "60%" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "60%" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "60%" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "60%" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "65%", "lte1_5M": "65%", "lte2M": "60%" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "65%", "lte1_5M": "65%", "lte2M": "60%" } }
+          ]
+        },
+        {
+          "dscrRange": "DSCR >= 0.75 and < 1.00",
+          "transactionType": "Cash Out Refinance",
+          "notes": "(3) Additional: 2-4 Units and Condos Max LTV Purchase 75% / Refinance 70%. Interest only requires 700 FICO and max LTV 70%. LTV > 65% max cash out $500,000. LTV <= 65% max cash out $1,000,000. Vacant properties ineligible for refinances. 5% LTV reduction on declining markets. Min $150,000 loan. No Non-Warrantable Condo. No Condotel. Mortgage History 0x30x12. First time investors not allowed. 12 Months Reserves Required.",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "60%" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "60%" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "60%" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "60%" }, "notes": "(1)" },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "65%", "lte1_5M": "65%", "lte2M": "60%" }, "notes": "(1)" },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "65%", "lte1_5M": "60%", "lte2M": "60%" }, "notes": "(1)" }
+          ]
+        },
+        {
+          "dscrRange": "DSCR < 0.75",
+          "transactionType": "Purchase",
+          "notes": "(4) Same restrictions as DSCR >= 0.75 < 1.00 PLUS: LTV > 65% max cash out $500,000, LTV <= 65% max cash out $1,000,000.",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "70%", "lte2M": "65%" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "70%", "lte2M": "65%" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "NA" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "65%", "lte1_5M": "65%", "lte2M": "NA" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "65%", "lte1_5M": "NA", "lte2M": "NA" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "60%", "lte1_5M": "NA", "lte2M": "NA" } }
+          ]
+        },
+        {
+          "dscrRange": "DSCR < 0.75",
+          "transactionType": "Rate/Term Refinance",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "70%", "lte2M": "65%" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "70%", "lte2M": "65%" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "65%", "lte2M": "NA" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "65%", "lte1_5M": "65%", "lte2M": "NA" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "60%", "lte1_5M": "NA", "lte2M": "NA" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "60%", "lte1_5M": "NA", "lte2M": "NA" } }
+          ]
+        },
+        {
+          "dscrRange": "DSCR < 0.75",
+          "transactionType": "Cash Out Refinance",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "65%", "lte1_5M": "60%", "lte2M": "60%" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "65%", "lte1_5M": "60%", "lte2M": "60%" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "60%", "lte1_5M": "60%", "lte2M": "NA" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "60%", "lte1_5M": "60%", "lte2M": "NA" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "60%", "lte1_5M": "NA", "lte2M": "NA" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "60%", "lte1_5M": "NA", "lte2M": "NA" } }
+          ]
+        }
+      ],
+      "productTypeRestrictions": {
+        "2_4Units": { "maxLTVPurchase": "80%", "maxLTVRateTerm": "80%", "maxLTVCashOut": "75%" },
+        "5_10Units": { "maxLTVPurchase": "75%", "maxLTVRateTerm": "70%", "maxLTVCashOut": "65%" },
+        "shortTermRental": { "maxLTVPurchase": "75%", "maxLTVRateTerm": "70%", "maxLTVCashOut": "70%", "notes": "(2) STR restrictions apply" },
+        "nonWarrantableCondo": { "maxLTVPurchase": "75%", "maxLTVRateTerm": "75%", "maxLTVCashOut": "70%" },
+        "condotel": { "maxLTVPurchase": "75%", "maxLTVRateTerm": "70%", "maxLTVCashOut": "65%" },
+        "interestOnly": { "maxLTVPurchase": "80%", "maxLTVRateTerm": "75%", "maxLTVCashOut": "75%" },
+        "foreignNational": { "maxLTVPurchase": "75%", "maxLTVRateTerm": "70%", "maxLTVCashOut": "65%" },
+        "nonPermanentResident": { "maxLTVPurchase": "75%", "maxLTVRateTerm": "70%", "maxLTVCashOut": "70%" }
+      },
+      "footnotes": {
+        "1_cashOutFicoLt720": {
+          "description": "Cash Out FICO < 720 restrictions",
+          "rules": [
+            "FICO 680-719 and LTV > 70% OR FICO 660-679 and LTV > 65%:",
+            "Max loan amount of $750,000",
+            "Max cash out proceeds $100,000"
+          ]
+        },
+        "2_shortTermRental": {
+          "description": "Short Term Rental additional requirements",
+          "rules": [
+            "75% max LTV purchase requires 700 FICO",
+            "0x30x12 mortgage rating",
+            "1.00 short term rental DSCR ratio",
+            "Max $1,500,000 loan amount"
+          ]
+        },
+        "3_dscr_075_to_100": {
+          "description": "DSCR >= 0.75 < 1.00 restrictions",
+          "rules": [
+            "2-4 Units and Condos Max LTV Purchase 75% / Refinance 70%",
+            "Interest only requires 700 FICO and max LTV 75%",
+            "Vacant properties ineligible for refinances",
+            "5% LTV reduction on declining markets",
+            "Minimum $150,000 loan amount",
+            "No Non-Warrantable Condo",
+            "No Condotel",
+            "Mortgage History 0x30x12",
+            "First time investors not allowed",
+            "12 Months Reserves Required"
+          ]
+        },
+        "4_dscr_lt_075": {
+          "description": "DSCR < 0.75 restrictions",
+          "rules": [
+            "2-4 Units and Condos Max LTV Purchase 75% / Refinance 70%",
+            "Interest only requires 700 FICO and max LTV 70%",
+            "LTV > 65% max cash out $500,000",
+            "LTV <= 65% max cash out $1,000,000",
+            "Vacant properties ineligible for refinances",
+            "5% LTV reduction on declining markets",
+            "Minimum $150,000 loan amount",
+            "No Non-Warrantable Condo",
+            "No Condotel",
+            "Mortgage History 0x30x12",
+            "First time investors not allowed",
+            "12 Months Reserves Required"
+          ]
+        },
+        "5_ltv_gt_80": {
+          "description": "LTV > 80% requirements",
+          "rules": [
+            "Minimum credit score 740",
+            "Minimum DSCR 1.00",
+            "12 months PITIA reserves",
+            "No First Time Investors",
+            "0x30x12 required",
+            "Delegated correspondent not eligible"
+          ]
+        },
+        "6_5_10_unit_multifamily": {
+          "description": "5-10 Unit / Multifamily requirements",
+          "rules": [
+            "Borrower must have experience owning a 2+ unit property",
+            "Minimum 1.10 DSCR",
+            "Minimum FICO 680",
+            "Minimum unit size 500 sq ft",
+            "No Short Term Rental",
+            "Max UPB $3MM (5% LTV reduction > $2MM)",
+            "6 mo. min reserves, 12 mo. for > $1.5MM Original Principal Balance",
+            "1 unit permitted to be unleased/vacant on RT/CO transaction, 75% of market rent used to qualify",
+            "No Mixed Use",
+            "US Citizen only",
+            "Minimum Loan amount of $250,000",
+            "Mortgage History 0x30x12",
+            "Correspondent not eligible"
+          ]
+        }
+      },
+      "product": {
+        "fixedProducts": "30 Year fixed or 40 Year fixed interest only",
+        "armProducts": "Not allowed",
+        "interestOnlyTerm": "120 Months",
+        "loanAmount": {
+          "minimum": 75000,
+          "maximum": 3000000,
+          "5_10UnitMinimum": 250000,
+          "5_10UnitMaximum": 3000000
+        },
+        "prepaymentPenalty": {
+          "type": "Fixed percentage 1-5 year term with a 5% fixed penalty",
+          "declining": "Declining structure starting at 5% with a floor of 3%"
+        },
+        "prepayRestrictions": {
+          "notAllowed": ["AK", "KS", "MN", "NM", "RI"],
+          "noRestrictions5_10Unit": ["KS", "MN", "NM", "RI"],
+          "allowedWithConditions": ["IL", "MS", "NJ", "OH", "PA"]
+        },
+        "escrows": "Escrow waiver allowed with conditions, see client guide",
+        "cashOutProceeds": {
+          "businessPurpose": true,
+          "maxCashInHand_LTV_gt_65": 500000,
+          "noLimitation_LTV_lte_65": true
+        },
+        "appraisedValueSeasoning": {
+          "rateTermRefinance": "No seasoning required",
+          "cashOutRefinance_3months": {
+            "seasoning": "3 months",
+            "maxLoanAmount": "Lesser of $750,000 or purchase price plus improvements",
+            "minFico": 680
+          },
+          "cashOutRefinance_6months": {
+            "seasoning": "6 months",
+            "restrictions": "No additional restrictions"
+          },
+          "inheritanceDivorceSeparation": "No seasoning required"
+        },
+        "occupancy": "Investment only",
+        "secondaryFinancing": "Not allowed",
+        "landContract": "Eligible as rate and term refinance if seasoned 12 months with payment history 0x30 for 12 months supported by canceled checks",
+        "delayedFinancing": "Eligible when property purchased for cash within 180 days of loan application. Rate and Term loan/LTV limits apply."
+      },
+      "borrower": {
+        "eligibleBorrowers": ["US Citizen", "Permanent Resident", "Non-Permanent Resident", "Foreign National", "US Domiciled Entity", "Living Trusts"],
+        "foreignNational": {
+          "minCreditScore": 680,
+          "defaultScoreWhenUnavailable": 680,
+          "reserves": "12 Months",
+          "minDSCR": 1.00,
+          "minLoanAmount": 150000,
+          "achRequired": true
+        },
+        "achRequirements": [
+          "Required on all cash out refinances with a qualifying score below 700",
+          "Required on all cash out refinances with an LTV greater than 70%",
+          "Required on all DSCR ratios less than 1"
+        ],
+        "maxBorrowers": "4 individuals or 2 entities",
+        "vesting": ["Natural persons", "US Domiciled Entity", "Living Trusts"],
+        "experience": "Must own an investment property for 12 months during the last 3 years. 5-10 unit properties require experience owning a 2+ unit property on purchase transactions (case-by-case exceptions may be permitted).",
+        "firstTimeInvestor": "Must own primary residence for 12 months during the last 3 years (Max 75% LTV). 5-10 unit properties require experience. First time investors are not permitted.",
+        "firstTimeHomebuyer": "Ineligible",
+        "exposure": "No more than $5,000,000 or 15 properties to one single borrower"
+      },
+      "credit": {
+        "decisionCreditScore": {
+          "minimum": 660,
+          "minScoresReporting": 2,
+          "method": "Lower of two or middle of three. Use lowest decision score among all borrowers."
+        },
+        "mortgageStatus": "Primary and Subject Mortgage must be current at time of closing",
+        "mortgageRating": "1x30x12 months for Primary and Subject Mortgage. 5-10 unit properties require 0x30x12 on primary and subject.",
+        "mortgagePrimaryRating": "If reporting on credit for 12 months, most recent 60 days not required",
+        "consumerCredit": "No requirement",
+        "creditEventSeasoning": "36 Months",
+        "covidForbearance": "Eligible if all missed payments are repaid or 3 regular payments over 90 days have been paid after forbearance has ended.",
+        "chargeOffsAndCollections": "Can be ignored unless title impacted",
+        "judgmentsAndLiens": "All open judgments, garnishments, and outstanding liens affecting title must be paid off prior to or at closing",
+        "tradelines": "One (1) active tradeline rated for 24 months and Two (2) tradelines rated 12 months open or closed. One (1) mortgage tradeline rated for 12 months open or closed in last 24 months and One (1) additional tradeline."
+      },
+      "assetsReserves": {
+        "assets": "Seasoned for 60 days. Sourcing required.",
+        "reserves": {
+          "standard": "6 Months PITIA",
+          "purchaseException": "3 Months PITIA with credit score >= 720 and LTV <= 80",
+          "loanAmountGt1_5M": "12 Months PITIA",
+          "dscrLt1": "12 Months PITIA",
+          "foreignNationals": "12 Months PITIA",
+          "ltvGt80": "12 Months PITIA",
+          "loanProceedsForReserves": true
+        },
+        "concessions": "Not to exceed 6%, must be used for closing costs and prepaids",
+        "giftFunds": "Permitted after minimum 10% borrower contribution",
+        "giftEquity": "Not eligible"
+      },
+      "property": {
+        "propertyTypes": ["SFR 1-4 Units", "PUD", "Condo", "Non-Warrantable Condo", "Condotel", "5-10 Units (Residential use only)"],
+        "nonWarrantableCondo": { "minDSCR": 1.00, "minFico": 680 },
+        "propertyCondition": "C4 or better",
+        "minimumSquareFootage": {
+          "sfrAndPud": 600,
+          "condoUnits": 500,
+          "2_4Units": 400,
+          "5_10Units": 500
+        },
+        "acreage": "Max 10 acres",
+        "ruralProperties": "Not allowed",
+        "appraisalRequirements": {
+          "amcRequired": true,
+          "ssrsRequired": true,
+          "forms": {
+            "sfr": "1004/1007",
+            "2_4Units": "1025",
+            "condo": "1073/1007",
+            "5_10Unit": "FHLMC 71A"
+          },
+          "datedWithin": "120 days of the Note",
+          "deskReview": "Required on all loans or CU Score of 2.5 or less with restrictions"
+        },
+        "twoAppraisals": "Required for loan amounts > $2,000,000",
+        "appraisalTransfers": "Allowed with signed transfer letter from lender, invoice, and first generation report",
+        "insuranceRequirements": {
+          "rentLossCoverage": "6 months qualifying rent",
+          "liabilityCoverage": "$100,000"
+        },
+        "listedForSale": {
+          "rateTerm": "Listing must be canceled prior to application date",
+          "cashOut": "Listing must be canceled 90 days prior to application date",
+          "valuationRule": "Lesser of recent list price or appraised value within 6 months of listing"
+        },
+        "unavailableStates": ["ND", "SD"],
+        "5_10UnitNotPermitted": ["NE", "AK"]
+      },
+      "compliance": {
+        "nmlsLicenseRequired": ["AZ", "CA", "OR", "NV", "UT", "ID", "ND", "SD", "MN", "VT"],
+        "maxBrokerFees": {
+          "loanAmountLt150k": "5% in aggregate (includes borrower paid, lender paid, business purpose premium, total fee compensation)",
+          "loanAmountGte150k": "3% for compensation (borrower paid, lender paid, business purpose premium). 5% total fee aggregate.",
+          "stackingFees": "Not allowed to exceed max compensation"
+        }
+      }
+    },
+    {
+      "programName": "INVEST STAR INCOME (Investment Only)",
+      "source": "AHL_INVESTOR_FULL AND ALT_DOC.pdf",
+      "occupancy": "Investment",
+      "docTypes": ["Full Doc", "Alt Doc (1099)", "Bank Statements (12 or 24 months)"],
+      "income": {
+        "incomeTypes": [
+          "Full Document: 1 or 2 Years - W-2 & Paystubs - Tax Returns",
+          "Alternative Document: 1 or 2 Years - 1099",
+          "Bank Statements: Personal or Business - 12 or 24 Months",
+          "Bank Statements: 2 Years self-employed in same business required"
+        ],
+        "bankStatementExpenseRatio": {
+          "fixedExpenseRatio": {
+            "serviceBusiness": { "0_3_FTE": "20%", "4_9_FTE": "40%", "10plus_FTE": "60%" },
+            "productBusiness": { "0_3_FTE": "40%", "4_9_FTE": "60%", "10plus_FTE": "80%" }
+          },
+          "expenseLetter": "Letter from CPA/accountant, IRS enrolled agent, or tax preparer subject to minimum total expense percentage of 10%",
+          "profitAndLossStatement": "Expense factor provided on a P&L prepared by CPA/accountant, IRS enrolled agent, or tax preparer subject to minimum 10%"
+        },
+        "debtRatio": {
+          "ltvGt80": "45% Max DTI",
+          "ltvLte80": "50% Max DTI",
+          "livingRentFree": "43% Max DTI",
+          "interestOnly": "45% Max DTI"
+        },
+        "residualIncome": "Minimum $1,250 plus $250 for first dependent then $125 for each additional dependent to max $1,750"
+      },
+      "ltvMatrices": [
+        {
+          "occupancy": "Investment",
+          "transactionType": "Purchase",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "85%", "lte1_5M": "80%", "lte2M": "80%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "85%", "lte1_5M": "80%", "lte2M": "80%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "80%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "80%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "75%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "75%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } }
+          ]
+        },
+        {
+          "occupancy": "Investment",
+          "transactionType": "Rate/Term Refinance",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "80%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "80%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "80%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "80%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "75%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "75%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } }
+          ]
+        },
+        {
+          "occupancy": "Investment",
+          "transactionType": "Cash Out Refinance",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "80%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "80%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "75%", "lte2M": "75%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "75%", "lte2M": "75%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "75%", "lte2M": "75%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "75%", "lte2M": "75%", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } }
+          ]
+        }
+      ],
+      "productTypeRestrictions": {
+        "interestOnly": { "maxLTVPurchase": "80%", "maxLTVRateTerm": "80%", "maxLTVCashOut": "75%" },
+        "nonPermanentResident": { "maxLTVPurchase": "75%", "maxLTVRateTerm": "70%", "maxLTVCashOut": "70%" },
+        "2_4Unit": { "maxLTVPurchase": "80%", "maxLTVRateTerm": "75%", "maxLTVCashOut": "70%" },
+        "warrantableCondo": { "maxLTVPurchase": "85%", "maxLTVRateTerm": "80%", "maxLTVCashOut": "80%" },
+        "nonWarrantableCondo": { "maxLTVPurchase": "75%", "maxLTVRateTerm": "75%", "maxLTVCashOut": "70%", "minFico": 680 },
+        "condotel": { "maxLTVPurchase": "75%", "maxLTVRateTerm": "70%", "maxLTVCashOut": "65%", "minFico": 680 },
+        "ruralProperties": { "maxLTVPurchase": "80%", "maxLTVRateTerm": "75%", "maxLTVCashOut": "70%", "minFico": 680 }
+      },
+      "product": {
+        "fixedProducts": "30 Year fixed or 40 Year fixed interest only",
+        "armProducts": "Not Allowed",
+        "interestOnlyTerm": "120 Months",
+        "loanAmount": { "minimum": 100000, "maximum": 2000000 },
+        "prepaymentPenalty": {
+          "type": "Fixed percentage 1-5 year term with a 5% fixed penalty",
+          "declining": "Declining structure starting at 5% with a floor of 3%"
+        },
+        "escrows": {
+          "waiverAllowed": true,
+          "maxLTV": "80%",
+          "minFico": 720
+        },
+        "cashOutProceeds": {
+          "maxCashInHand_LTV_gt_65": 500000,
+          "noLimitation_LTV_lte_65": true
+        },
+        "seasoning": {
+          "rateTermRefinance": "No seasoning required",
+          "cashOutRefinance_3months": {
+            "maxLoanAmount": "Lesser of $750,000 or purchase price plus improvements",
+            "minFico": 680
+          },
+          "cashOutRefinance_6months": "No additional restrictions",
+          "inheritanceDivorceSeparation": "No seasoning required"
+        },
+        "occupancy": "Investment Only",
+        "secondaryFinancing": "Max CLTV restricted to max qualifying LTV",
+        "landContract": "Eligible as RT refi if seasoned 12 months with 0x30 for 12 months supported by canceled checks",
+        "texasCashOut": "Max 80% LTV. Financed points cannot exceed 80% LTV. 12 day waiting period required.",
+        "delayedFinancing": "Eligible when property purchased for cash within 180 days of loan application. Purchase loan/LTV limits apply."
+      },
+      "borrower": {
+        "eligibleBorrowers": ["US Citizen", "Permanent Resident", "Non-Permanent Resident"],
+        "foreignNational": "Not Allowed",
+        "maxBorrowers": "4 individuals",
+        "vesting": ["Natural persons", "US Domiciled Entity", "Living Trusts"],
+        "firstTimeHomebuyer": "Max 75% LTV",
+        "firstTimeInvestor": "Must own primary residence for 12 months during the last 3 years (Max 80% LTV)",
+        "exposure": "No more than $5,000,000 or 15 properties to one single borrower"
+      },
+      "credit": {
+        "qualifyingCreditScore": {
+          "minimum": 660,
+          "minScoresReporting": 2,
+          "method": "Lower of two or middle of three. Use decision score for primary wage earner. All borrowers must meet minimum."
+        },
+        "mortgageStatus": "Primary and Subject Mortgage must be current at time of closing",
+        "mortgageRating": {
+          "standard": "0x30x12 months for all mortgages",
+          "exception": "1x30x12 by exception only: Max LTV 75%, Max Loan Amount $1,500,000"
+        },
+        "consumerCredit": "No requirement",
+        "creditEventSeasoning": {
+          "standard": "BK, FC, SS, FB, Mod require 36 month seasoning",
+          "exception": "24 month seasoning by exception only: Max LTV 75%, Max Loan Amount $1,500,000"
+        },
+        "covidForbearance": "Eligible if all missed payments repaid or 3 regular payments over 90 days paid after forbearance ended",
+        "chargeOffsAndCollections": "Individual collection and non-mortgage charge-off >= $250, and accounts totaling > $2,000, must be paid in full. Medical collections excluded up to $10,000 cumulative.",
+        "judgmentsAndLiens": "All open judgments, garnishments, and outstanding liens affecting title must be paid off prior to or at closing",
+        "tradelines": "One (1) active tradeline rated 24 months and Two (2) tradelines rated 12 months open or closed. One (1) mortgage tradeline rated 12 months open or closed in last 24 months and One (1) additional tradeline."
+      },
+      "assetsReserves": {
+        "assets": "Seasoned for 60 days. Large deposits exceeding 50% of qualifying income must be sourced.",
+        "reserves": {
+          "ltvLte65": "0 Months PITIA",
+          "ltvGt65": "6 Months PITIA",
+          "purchaseException": "3 Months PITIA with credit score >= 720 and LTV <= 80",
+          "loanAmountGt1_5M": "12 Months PITIA regardless of LTV",
+          "loanProceedsForReserves": true
+        },
+        "concessions": {
+          "ltvLt80": "6%",
+          "ltvGt80": "4%",
+          "usage": "Must be used for closing costs and prepaids"
+        },
+        "giftFunds": "Permitted after minimum 10% borrower contribution",
+        "giftEquity": "Not eligible"
+      },
+      "property": {
+        "propertyTypes": ["SFR 1-4 Units", "PUD", "Condo", "Non-Warrantable Condo", "Condotel", "Rural"],
+        "nonWarrantableCondo": { "minFico": 680 },
+        "condotel": { "minFico": 680 },
+        "propertyCondition": "C4 or better",
+        "minimumSquareFootage": {
+          "sfrAndPud": 600,
+          "condoUnits": 500,
+          "2_4Units": 400
+        },
+        "acreage": "Max 10 acres",
+        "rural": {
+          "allowed": true,
+          "maxLTVPurchase": "80%",
+          "maxLTVRateTerm": "75%",
+          "maxLTVCashOut": "70%",
+          "minFico": 680,
+          "maxAcreage": "10 acres",
+          "comps": "At least two comps must be within 5 miles of the subject property",
+          "road": "Property must be located on a paved road. No dirt roads."
+        },
+        "appraisalRequirements": {
+          "amcRequired": true,
+          "ssrsRequired": true,
+          "forms": { "sfr": "1004", "2_4Units": "1025", "condo": "1073" },
+          "datedWithin": "120 days of the Note",
+          "deskReview": "Required on all loans or CU Score of 2.5 or less with restrictions"
+        },
+        "appraisalTransfers": "Allowed with signed transfer letter from lender, invoice, and first generation report",
+        "listedForSale": {
+          "rateTerm": "Listing must be canceled prior to application date",
+          "cashOut": "Listing must be canceled 90 days prior to application date",
+          "valuationRule": "Lesser of recent list price or appraised value within 6 months of listing"
+        }
+      },
+      "compliance": {
+        "nmlsLicenseRequired": ["AZ", "CA", "OR", "NV", "UT", "ID", "ND", "SD", "MN", "VT"],
+        "maxBrokerFees": {
+          "loanAmountLt150k": "5% in aggregate",
+          "loanAmountGte150k": "3% compensation, 5% total fee aggregate",
+          "stackingFees": "Not allowed to exceed max compensation"
+        }
+      }
+    },
+    {
+      "programName": "ALL STAR (Full Doc / Alt Doc - Primary & Second Home)",
+      "source": "AHL_full_alt_doc.pdf",
+      "occupancy": ["Primary", "Second Home"],
+      "docTypes": ["Full Doc", "Alt Doc (1099)", "Bank Statements (12 or 24 months)", "1 Year Profit & Loss", "Asset Qualifier", "Asset Income Lift"],
+      "income": {
+        "incomeTypes": [
+          "Full Document: 1 or 2 Years - W-2 & Paystubs - Tax Returns",
+          "Alternative Document: 1 or 2 Years - 1099",
+          "Bank Statements: Personal or Business - 12 or 24 Months",
+          "Bank Statements: 2 Years self-employed in same business required",
+          "1 Year Profit & Loss: Must be prepared and signed by verified CPA/EA/CTEC/Tax Attorney",
+          "Asset Qualifier: Assets post close must be greater than 110% of the loan amount + reserves",
+          "Asset Qualifier: Income equals Qualified Assets / 60 months",
+          "Asset Income Lift: Income equals Qualified Assets / 120 months",
+          "Asset Income Lift: Must be paired with Full Doc, Bank Statements, or 1099 Income"
+        ],
+        "bankStatementExpenseRatio": {
+          "fixedExpenseRatio": {
+            "serviceBusiness": { "0_3_FTE": "20%", "4_9_FTE": "40%", "10plus_FTE": "60%" },
+            "productBusiness": { "0_3_FTE": "40%", "4_9_FTE": "60%", "10plus_FTE": "80%" }
+          },
+          "expenseLetter": "Letter from CPA/accountant, IRS enrolled agent, or tax preparer subject to minimum total expense percentage of 10%",
+          "profitAndLossStatement": "Expense factor on P&L prepared by CPA/accountant/IRS enrolled agent/tax preparer subject to minimum 10%"
+        },
+        "debtRatio": {
+          "ltvGt80": "45% Max DTI",
+          "ltvLte80": "50% Max DTI",
+          "assetQualifier": "43% Max DTI",
+          "incomeLift": "45% Max DTI",
+          "livingRentFree": "43% Max DTI",
+          "interestOnly": "45% Max DTI"
+        },
+        "residualIncome": "Minimum $1,250 plus $250 for first dependent then $125 for each additional dependent to max $1,750"
+      },
+      "ltvMatrices": [
+        {
+          "occupancy": "Primary",
+          "transactionType": "Purchase",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "90%", "lte1_5M": "90%", "lte2M": "85%", "lte2_5M": "80%", "lte3M": "75%", "lte3_5M": "70%" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "90%", "lte1_5M": "90%", "lte2M": "85%", "lte2_5M": "80%", "lte3M": "75%", "lte3_5M": "70%" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "90%", "lte1_5M": "90%", "lte2M": "85%", "lte2_5M": "80%", "lte3M": "75%", "lte3_5M": "70%" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "90%", "lte1_5M": "85%", "lte2M": "85%", "lte2_5M": "75%", "lte3M": "75%", "lte3_5M": "N/A" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "85%", "lte1_5M": "85%", "lte2M": "80%", "lte2_5M": "70%", "lte3M": "70%", "lte3_5M": "N/A" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "80%", "lte2_5M": "70%", "lte3M": "70%", "lte3_5M": "N/A" } }
+          ]
+        },
+        {
+          "occupancy": "Primary",
+          "transactionType": "Rate/Term Refinance",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "85%", "lte1_5M": "85%", "lte2M": "80%", "lte2_5M": "75%", "lte3M": "70%", "lte3_5M": "70%" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "85%", "lte1_5M": "85%", "lte2M": "80%", "lte2_5M": "75%", "lte3M": "70%", "lte3_5M": "70%" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "85%", "lte1_5M": "85%", "lte2M": "80%", "lte2_5M": "75%", "lte3M": "70%", "lte3_5M": "70%" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "85%", "lte1_5M": "80%", "lte2M": "75%", "lte2_5M": "70%", "lte3M": "70%", "lte3_5M": "N/A" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "75%", "lte2_5M": "70%", "lte3M": "70%", "lte3_5M": "N/A" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "75%", "lte2_5M": "70%", "lte3M": "70%", "lte3_5M": "N/A" } }
+          ]
+        },
+        {
+          "occupancy": "Primary",
+          "transactionType": "Cash Out Refinance",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "75%", "lte2M": "75%", "lte2_5M": "70%", "lte3M": "65%", "lte3_5M": "N/A" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "75%", "lte2M": "75%", "lte2_5M": "70%", "lte3M": "65%", "lte3_5M": "N/A" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "75%", "lte2M": "75%", "lte2_5M": "70%", "lte3M": "65%", "lte3_5M": "N/A" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "75%", "lte2M": "70%", "lte2_5M": "65%", "lte3M": "60%", "lte3_5M": "N/A" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "75%", "lte2M": "70%", "lte2_5M": "65%", "lte3M": "60%", "lte3_5M": "N/A" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "70%", "lte2M": "N/A", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } }
+          ]
+        },
+        {
+          "occupancy": "Second Home",
+          "transactionType": "Purchase",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "85%", "lte1_5M": "85%", "lte2M": "80%", "lte2_5M": "75%", "lte3M": "70%", "lte3_5M": "N/A" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "85%", "lte1_5M": "85%", "lte2M": "80%", "lte2_5M": "75%", "lte3M": "70%", "lte3_5M": "N/A" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "85%", "lte1_5M": "85%", "lte2M": "80%", "lte2_5M": "75%", "lte3M": "70%", "lte3_5M": "N/A" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "75%", "lte2M": "70%", "lte2_5M": "65%", "lte3M": "60%", "lte3_5M": "N/A" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "75%", "lte2M": "70%", "lte2_5M": "65%", "lte3M": "60%", "lte3_5M": "N/A" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "N/A", "lte1_5M": "N/A", "lte2M": "N/A", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } }
+          ]
+        },
+        {
+          "occupancy": "Second Home",
+          "transactionType": "Rate/Term Refinance",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "75%", "lte2_5M": "70%", "lte3M": "65%", "lte3_5M": "N/A" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "75%", "lte2_5M": "70%", "lte3M": "65%", "lte3_5M": "N/A" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "80%", "lte1_5M": "80%", "lte2M": "75%", "lte2_5M": "70%", "lte3M": "65%", "lte3_5M": "N/A" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "75%", "lte2M": "70%", "lte2_5M": "65%", "lte3M": "60%", "lte3_5M": "N/A" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "75%", "lte2M": "70%", "lte2_5M": "65%", "lte3M": "60%", "lte3_5M": "N/A" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "N/A", "lte1_5M": "N/A", "lte2M": "N/A", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } }
+          ]
+        },
+        {
+          "occupancy": "Second Home",
+          "transactionType": "Cash Out Refinance",
+          "rows": [
+            { "ficoMin": 760, "ficoMax": 850, "ficoLabel": "760+", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "75%", "lte2M": "70%", "lte2_5M": "65%", "lte3M": "60%", "lte3_5M": "N/A" } },
+            { "ficoMin": 740, "ficoMax": 759, "ficoLabel": "740-759", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "75%", "lte2M": "70%", "lte2_5M": "65%", "lte3M": "60%", "lte3_5M": "N/A" } },
+            { "ficoMin": 720, "ficoMax": 739, "ficoLabel": "720-739", "ltvByLoanAmount": { "lte1M": "75%", "lte1_5M": "75%", "lte2M": "70%", "lte2_5M": "65%", "lte3M": "60%", "lte3_5M": "N/A" } },
+            { "ficoMin": 700, "ficoMax": 719, "ficoLabel": "700-719", "ltvByLoanAmount": { "lte1M": "70%", "lte1_5M": "70%", "lte2M": "65%", "lte2_5M": "60%", "lte3M": "60%", "lte3_5M": "N/A" } },
+            { "ficoMin": 680, "ficoMax": 699, "ficoLabel": "680-699", "ltvByLoanAmount": { "lte1M": "65%", "lte1_5M": "65%", "lte2M": "60%", "lte2_5M": "60%", "lte3M": "60%", "lte3_5M": "N/A" } },
+            { "ficoMin": 660, "ficoMax": 679, "ficoLabel": "660-679", "ltvByLoanAmount": { "lte1M": "N/A", "lte1_5M": "N/A", "lte2M": "N/A", "lte2_5M": "N/A", "lte3M": "N/A", "lte3_5M": "N/A" } }
+          ]
+        }
+      ],
+      "productTypeRestrictions": {
+        "1YearProfitAndLoss": { "maxLTVPurchase": "80%", "maxLTVRateTerm": "75%", "maxLTVCashOut": "70%" },
+        "assetQualifier": { "maxLTVPurchase": "80%", "maxLTVRateTerm": "75%", "maxLTVCashOut": "70%" },
+        "interestOnly": { "maxLTVPurchase": "85%", "maxLTVRateTerm": "85%", "maxLTVCashOut": "80%" },
+        "foreignNational": { "maxLTVPurchase": "75%", "maxLTVRateTerm": "70%", "maxLTVCashOut": "70%" },
+        "nonPermanentResident": { "maxLTVPurchase": "75%", "maxLTVRateTerm": "70%", "maxLTVCashOut": "70%" },
+        "nonWarrantableCondo": { "maxLTVPurchase": "75%", "maxLTVRateTerm": "75%", "maxLTVCashOut": "70%" },
+        "condotel": { "maxLTVPurchase": "75%", "maxLTVRateTerm": "70%", "maxLTVCashOut": "65%" }
+      },
+      "product": {
+        "fixedProducts": "30 Year fixed or 40 Year fixed interest only",
+        "armProducts": "Not Allowed",
+        "1YearProfitAndLoss": {
+          "minCreditScore": 700,
+          "minLoanAmount": 150000,
+          "maxLoanAmount": 2000000,
+          "reserves": "12 months PITIA",
+          "maxDTI": "45%",
+          "requirements": "CPA/EA/CTEC/Tax Attorney must attest they have completed or filed borrower's most recent business tax return. 2 months most recent bank statements to support P&L income.",
+          "occupancy": "Primary Residence Only",
+          "stackingNotAllowed": true
+        },
+        "interestOnlyTerm": "120 Months",
+        "loanAmount": { "minimum": 100000, "maximum": 3000000 },
+        "prepaymentPenalty": "Not Allowed",
+        "escrows": "Escrow waiver allowed with conditions, see client guide",
+        "cashOutProceeds": {
+          "maxCashInHand_LTV_gt_65": 500000,
+          "noLimitation_LTV_lte_65": true
+        },
+        "seasoning": {
+          "rateTermRefinance": "No seasoning required",
+          "cashOutRefinance_3months": {
+            "maxLoanAmount": "Lesser of $750,000 or purchase price plus improvements",
+            "minFico": 680
+          },
+          "cashOutRefinance_6months": "No additional restrictions",
+          "inheritanceDivorceSeparation": "No seasoning required"
+        },
+        "occupancy": "Primary and Second Home only",
+        "secondaryFinancing": "Max CLTV restricted to max qualifying LTV",
+        "landContract": "Eligible as RT refi if seasoned 12 months with 0x30 for 12 months supported by canceled checks",
+        "texasCashOut": "Max 80% LTV. Financed points cannot exceed 80% LTV. 12 day waiting period required.",
+        "delayedFinancing": "Eligible when property purchased for cash within 180 days of loan application. Purchase loan/LTV limits apply."
+      },
+      "borrower": {
+        "eligibleBorrowers": ["US Citizen", "Permanent Resident", "Non-Permanent Resident", "Foreign National"],
+        "foreignNational": {
+          "minCreditScore": 680,
+          "defaultScoreWhenUnavailable": 680,
+          "minLoanAmount": 150000,
+          "reserves": "12 Months",
+          "occupancy": "Second Home Only",
+          "visaRequirements": "See guide"
+        },
+        "maxBorrowers": "4 individuals",
+        "vesting": ["Natural persons", "US Domiciled Entity", "Living Trusts"],
+        "firstTimeHomebuyer": "See Client Guide",
+        "exposure": "No more than $5,000,000 or 15 properties to one single borrower"
+      },
+      "credit": {
+        "qualifyingCreditScore": {
+          "minimum": 660,
+          "minScoresReporting": 2,
+          "method": "Lower of two or middle of three. Use decision score for primary wage earner. All borrowers must meet minimum."
+        },
+        "mortgageStatus": "All mortgages must be current at time of closing",
+        "mortgageRating": "0x30x12 months for all mortgages",
+        "consumerCredit": "No requirement",
+        "creditEventSeasoning": "BK, FC, SS, FB, Mod require 48 month seasoning",
+        "covidForbearance": "Eligible if all missed payments repaid or 3 regular payments over 90 days paid after forbearance ended",
+        "chargeOffsAndCollections": "Individual collection and non-mortgage charge-off >= $250, and accounts totaling > $2,000, must be paid in full. Medical collections excluded up to $10,000 cumulative.",
+        "judgmentsAndLiens": "All open judgments, garnishments, and outstanding liens affecting title must be paid off prior to or at closing",
+        "tradelines": "One (1) active tradeline rated 24 months and Two (2) tradelines rated 12 months open or closed. One (1) mortgage tradeline rated 12 months open or closed in last 24 months and One (1) additional tradeline."
+      },
+      "assetsReserves": {
+        "assets": "Seasoned for 60 days. Large deposits exceeding 50% of qualifying income must be sourced.",
+        "reserves": {
+          "ltvLte65": "0 Months PITIA",
+          "ltvGt65": "6 Months PITIA",
+          "purchaseException": "3 Months PITIA with credit score >= 720 and LTV <= 80",
+          "loanAmountGt1_5M": "12 Months PITIA regardless of LTV",
+          "foreignNationals": "12 Months PITIA",
+          "profitAndLoss": "12 Months PITIA",
+          "loanProceedsForReserves": true
+        },
+        "concessions": {
+          "ltvLte80": "6%",
+          "ltvGt80": "4%",
+          "usage": "Must be used for closing costs and prepaids"
+        },
+        "giftFunds": {
+          "withBorrowerContribution": "Allowed with minimum 5% borrower contribution with max 80% LTV",
+          "noBorrowerContribution": "Allowed with no borrower contribution to max 75% LTV on Primary Home",
+          "secondHome": "Allowed with minimum 10% borrower contribution"
+        },
+        "giftEquity": {
+          "withBorrowerContribution": "Allowed with minimum 5% borrower contribution with max 80% LTV",
+          "noBorrowerContribution": "Allowed with no borrower contribution to max 75% LTV on Primary Home",
+          "secondHome": "Allowed with minimum 10% borrower contribution"
+        }
+      },
+      "property": {
+        "propertyTypes": ["SFR 1-4 Units", "PUD", "Condo", "Non-Warrantable Condo", "Condotel"],
+        "nonWarrantableCondo": { "minFico": 680 },
+        "propertyCondition": "C4 or better",
+        "minimumSquareFootage": {
+          "sfrAndPud": 600,
+          "condoUnits": 500,
+          "2_4Units": 400
+        },
+        "acreage": "Max 10 acres",
+        "ruralProperties": "Not allowed",
+        "appraisalRequirements": {
+          "amcRequired": true,
+          "ssrsRequired": true,
+          "forms": { "sfr": "1004", "2_4Units": "1025", "condo": "1073" },
+          "secondAppraisal": "Required for loan amounts > $2,000,000",
+          "datedWithin": "120 days of the Note",
+          "deskReview": "Required on all loans or CU Score of 2.5 or less with restrictions"
+        },
+        "appraisalTransfers": "Allowed with signed transfer letter from lender, invoice, and first generation report",
+        "listedForSale": {
+          "rateTerm": "Listing must be canceled prior to Note date",
+          "cashOut": "Listing must be canceled 90 days prior to Note date",
+          "valuationRule": "Lesser of recent list price or appraised value within 6 months of listing"
+        },
+        "unavailableStates": ["AK", "HI", "MO", "ND", "NY", "SD"]
+      },
+      "compliance": {
+        "maxBrokerFees": {
+          "loanAmountLt150k": "5% in aggregate",
+          "loanAmountGte150k": "3% compensation, 5% total fee aggregate",
+          "stackingFees": "Not allowed to exceed max compensation"
+        },
+        "highCost": "No High Cost Loans (Max 5% of Amount Financed or Rate 6.5% above APOR)",
+        "section32": "No Section 32",
+        "abilityToRepay": "All loans require the ability to repay",
+        "stateAndFederalLaws": "All federal and state regulations must be followed"
+      }
+    }
+  ],
+  "crossProgramSummary": {
+    "shortTermRental": {
+      "allowedPrograms": ["INVEST STAR DSCR"],
+      "notAllowedPrograms": ["INVEST STAR INCOME (Investment Full/Alt Doc)", "ALL STAR (Primary/Second Home Full/Alt Doc)"],
+      "requirements": {
+        "purchaseAndRefinance": "100% of income documented by 12 month history of deposits from Airbnb/VRBO",
+        "purchaseOnly": "75% of income documented by 1007 or property management report",
+        "maxLTVPurchase": "75%",
+        "maxLTVRateTerm": "70%",
+        "maxLTVCashOut": "70%",
+        "minFicoForMaxLTV": 700,
+        "minDSCR": 1.00,
+        "maxLoanAmount": 1500000,
+        "mortgageRating": "0x30x12",
+        "notPermittedOn": "5-10 unit properties"
+      }
+    },
+    "ruralProperties": {
+      "allowedPrograms": ["INVEST STAR INCOME (Investment Full/Alt Doc)"],
+      "notAllowedPrograms": ["INVEST STAR DSCR", "ALL STAR (Primary/Second Home Full/Alt Doc)"],
+      "requirements": {
+        "maxLTVPurchase": "80%",
+        "maxLTVRateTerm": "75%",
+        "maxLTVCashOut": "70%",
+        "minFico": 680,
+        "maxAcreage": "10 acres",
+        "compsRequirement": "At least two comps within 5 miles",
+        "roadRequirement": "Property must be on paved road, no dirt roads"
+      }
+    },
+    "incomeDocMethodsByProgram": {
+      "fullDoc_primary": {
+        "program": "ALL STAR",
+        "occupancy": "Primary",
+        "docTypes": ["W-2 & Paystubs", "Tax Returns (1 or 2 years)"],
+        "maxLTV_purchase": "90%",
+        "maxLoanAmount": 3500000,
+        "minFico": 660
+      },
+      "fullDoc_secondHome": {
+        "program": "ALL STAR",
+        "occupancy": "Second Home",
+        "docTypes": ["W-2 & Paystubs", "Tax Returns (1 or 2 years)"],
+        "maxLTV_purchase": "85%",
+        "maxLoanAmount": 3000000,
+        "minFico": 680
+      },
+      "fullDoc_investment": {
+        "program": "INVEST STAR INCOME",
+        "occupancy": "Investment",
+        "docTypes": ["W-2 & Paystubs", "Tax Returns (1 or 2 years)"],
+        "maxLTV_purchase": "85%",
+        "maxLoanAmount": 2000000,
+        "minFico": 660
+      },
+      "altDoc_1099_primary": {
+        "program": "ALL STAR",
+        "occupancy": "Primary",
+        "docTypes": ["1099 (1 or 2 years)"],
+        "maxLTV_purchase": "90%",
+        "maxLoanAmount": 3500000,
+        "minFico": 660
+      },
+      "altDoc_1099_secondHome": {
+        "program": "ALL STAR",
+        "occupancy": "Second Home",
+        "docTypes": ["1099 (1 or 2 years)"],
+        "maxLTV_purchase": "85%",
+        "maxLoanAmount": 3000000,
+        "minFico": 680
+      },
+      "altDoc_1099_investment": {
+        "program": "INVEST STAR INCOME",
+        "occupancy": "Investment",
+        "docTypes": ["1099 (1 or 2 years)"],
+        "maxLTV_purchase": "85%",
+        "maxLoanAmount": 2000000,
+        "minFico": 660
+      },
+      "bankStatement_primary": {
+        "program": "ALL STAR",
+        "occupancy": "Primary",
+        "docTypes": ["Personal or Business Bank Statements (12 or 24 months)"],
+        "selfEmploymentRequired": "2 years in same business",
+        "maxLTV_purchase": "90%",
+        "maxLoanAmount": 3500000,
+        "minFico": 660
+      },
+      "bankStatement_secondHome": {
+        "program": "ALL STAR",
+        "occupancy": "Second Home",
+        "docTypes": ["Personal or Business Bank Statements (12 or 24 months)"],
+        "selfEmploymentRequired": "2 years in same business",
+        "maxLTV_purchase": "85%",
+        "maxLoanAmount": 3000000,
+        "minFico": 680
+      },
+      "bankStatement_investment": {
+        "program": "INVEST STAR INCOME",
+        "occupancy": "Investment",
+        "docTypes": ["Personal or Business Bank Statements (12 or 24 months)"],
+        "selfEmploymentRequired": "2 years in same business",
+        "maxLTV_purchase": "85%",
+        "maxLoanAmount": 2000000,
+        "minFico": 660
+      },
+      "1YearProfitAndLoss_primary": {
+        "program": "ALL STAR",
+        "occupancy": "Primary Only",
+        "minCreditScore": 700,
+        "minLoanAmount": 150000,
+        "maxLoanAmount": 2000000,
+        "maxLTV_purchase": "80%",
+        "maxLTV_rateTerm": "75%",
+        "maxLTV_cashOut": "70%",
+        "reserves": "12 months PITIA",
+        "maxDTI": "45%",
+        "stackingNotAllowed": true
+      },
+      "assetQualifier_primary": {
+        "program": "ALL STAR",
+        "occupancy": "Primary",
+        "maxLTV_purchase": "80%",
+        "maxLTV_rateTerm": "75%",
+        "maxLTV_cashOut": "70%",
+        "calculation": "Qualified Assets / 60 months",
+        "requirement": "Assets post close > 110% of loan amount + reserves",
+        "maxDTI": "43%"
+      },
+      "assetIncomeLift_primary": {
+        "program": "ALL STAR",
+        "occupancy": "Primary",
+        "calculation": "Qualified Assets / 120 months",
+        "requirement": "Must be paired with Full Doc, Bank Statements, or 1099 Income",
+        "maxDTI": "45%"
+      },
+      "dscr_standard": {
+        "program": "INVEST STAR DSCR",
+        "occupancy": "Investment",
+        "docTypes": ["DSCR - rental income / PITIAA"],
+        "maxLTV_purchase": "85%",
+        "maxLoanAmount": 3000000,
+        "minFico": 660,
+        "minDSCR": "No minimum (matrices cover DSCR >= 1.00, 0.75-1.00, and < 0.75)"
+      },
+      "dscr_str": {
+        "program": "INVEST STAR DSCR",
+        "occupancy": "Investment",
+        "docTypes": ["DSCR - Short Term Rental"],
+        "maxLTV_purchase": "75%",
+        "maxLoanAmount": 1500000,
+        "minFico": 700,
+        "minDSCR": 1.00,
+        "proofOfRents": [
+          "Purchase and Refinance: 100% of income from 12 month deposit history (Airbnb/VRBO)",
+          "Purchase Only: 75% of income from 1007 or property management report"
+        ]
+      }
+    },
+    "prepaymentPenaltyByProgram": {
+      "INVEST_STAR_DSCR": {
+        "allowed": true,
+        "terms": "Fixed percentage 1-5 year term with 5% fixed penalty. Declining structure starting at 5% with floor of 3%.",
+        "restrictedStates": ["AK", "KS", "MN", "NM", "RI"],
+        "conditionalStates": ["IL", "MS", "NJ", "OH", "PA"]
+      },
+      "INVEST_STAR_INCOME": {
+        "allowed": true,
+        "terms": "Fixed percentage 1-5 year term with 5% fixed penalty. Declining structure starting at 5% with floor of 3%."
+      },
+      "ALL_STAR": {
+        "allowed": false
+      }
+    },
+    "interestOnlyByProgram": {
+      "INVEST_STAR_DSCR": {
+        "term": "120 Months",
+        "minFico": 700,
+        "maxLTV_dscr_gte_1": "80% purchase / 75% RT / 75% CO",
+        "maxLTV_dscr_075_to_1": "75% (requires 700 FICO)",
+        "maxLTV_dscr_lt_075": "70% (requires 700 FICO)"
+      },
+      "INVEST_STAR_INCOME": {
+        "term": "120 Months",
+        "maxLTV": "80% purchase / 80% RT / 75% CO"
+      },
+      "ALL_STAR": {
+        "term": "120 Months",
+        "maxLTV": "85% purchase / 85% RT / 80% CO"
+      }
+    },
+    "maxDTIByProgram": {
+      "INVEST_STAR_DSCR": "N/A (DSCR-based qualification)",
+      "INVEST_STAR_INCOME": {
+        "ltvGt80": "45%",
+        "ltvLte80": "50%",
+        "livingRentFree": "43%",
+        "interestOnly": "45%"
+      },
+      "ALL_STAR": {
+        "ltvGt80": "45%",
+        "ltvLte80": "50%",
+        "assetQualifier": "43%",
+        "incomeLift": "45%",
+        "livingRentFree": "43%",
+        "interestOnly": "45%"
+      }
+    },
+    "reservesByProgram": {
+      "INVEST_STAR_DSCR": {
+        "standard": "6 Months PITIA",
+        "purchaseWithHighFICO": "3 Months PITIA (FICO >= 720, LTV <= 80)",
+        "loanGt1_5M": "12 Months PITIA",
+        "dscrLt1": "12 Months PITIA",
+        "foreignNationals": "12 Months PITIA",
+        "ltvGt80": "12 Months PITIA"
+      },
+      "INVEST_STAR_INCOME": {
+        "ltvLte65": "0 Months PITIA",
+        "ltvGt65": "6 Months PITIA",
+        "purchaseWithHighFICO": "3 Months PITIA (FICO >= 720, LTV <= 80)",
+        "loanGt1_5M": "12 Months PITIA"
+      },
+      "ALL_STAR": {
+        "ltvLte65": "0 Months PITIA",
+        "ltvGt65": "6 Months PITIA",
+        "purchaseWithHighFICO": "3 Months PITIA (FICO >= 720, LTV <= 80)",
+        "loanGt1_5M": "12 Months PITIA",
+        "foreignNationals": "12 Months PITIA",
+        "profitAndLoss": "12 Months PITIA"
+      }
+    },
+    "loanAmountsByProgram": {
+      "INVEST_STAR_DSCR": { "min": 75000, "max": 3000000, "5_10UnitMin": 250000 },
+      "INVEST_STAR_INCOME": { "min": 100000, "max": 2000000 },
+      "ALL_STAR": { "min": 100000, "max": 3000000 }
+    },
+    "creditEventSeasoningByProgram": {
+      "INVEST_STAR_DSCR": "36 months",
+      "INVEST_STAR_INCOME": "36 months (24 months by exception: max 75% LTV, max $1.5M)",
+      "ALL_STAR": "48 months"
+    },
+    "citizenshipByProgram": {
+      "INVEST_STAR_DSCR": {
+        "usCitizen": true,
+        "permanentResident": true,
+        "nonPermanentResident": true,
+        "foreignNational": true,
+        "itin": false
+      },
+      "INVEST_STAR_INCOME": {
+        "usCitizen": true,
+        "permanentResident": true,
+        "nonPermanentResident": true,
+        "foreignNational": false,
+        "itin": false
+      },
+      "ALL_STAR": {
+        "usCitizen": true,
+        "permanentResident": true,
+        "nonPermanentResident": true,
+        "foreignNational": true,
+        "foreignNationalOccupancy": "Second Home Only",
+        "itin": false
+      }
+    }
+  }
+}

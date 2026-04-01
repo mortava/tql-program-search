@@ -1,0 +1,1244 @@
+{
+  "investor": "LoanStream Mortgage (OCMBC, Inc.)",
+  "nmls_id": "2125",
+  "effective_date": "02/10/2026",
+  "revised_date": "02/10/2026",
+  "source_documents": [
+    "LOANSTREAM_DSCR_MATRICES.pdf",
+    "LOANSTREAM_NONQM_FULL and ALT DOC.pdf"
+  ],
+  "programs": {
+    "dscr": {
+      "program_name": "Non-QM DSCR Programs",
+      "occupancy": "Non-Owner Occupied, Investment Properties Only",
+      "property_units": "1-4 Units only",
+      "suspended_areas": [
+        "Baltimore City, MD (and its neighborhoods)",
+        "Philadelphia County, PA"
+      ],
+      "sub_programs": {
+        "select_dscr": {
+          "program_name": "Select DSCR",
+          "dscr_ratio": "1.25 minimum",
+          "min_loan_amount": 250000,
+          "ltv_matrix": [
+            {
+              "max_loan_amount": 1000000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 700, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null, "note": "Not shown in matrix - appears blank" },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 1500000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 700, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 2000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 720, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 700, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 2500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 720, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 700, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 3000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 720, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 700, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 3500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 720, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            }
+          ],
+          "max_ltv_by_property_type": {
+            "condo": { "max_ltv": 75, "fl_condo": 70 },
+            "non_warrantable_condo": "Not Allowed",
+            "two_to_four_unit": "Not Allowed",
+            "rural": "Not Allowed"
+          },
+          "interest_only": {
+            "allowed": true,
+            "qualify_on": "IO Payment ALL States",
+            "reserves": "Based on IO Payment",
+            "min_fico": 640,
+            "max_ltv": 80
+          },
+          "housing_history": "0 x 30 x 12",
+          "credit_event_seasoning": "> 48 months",
+          "short_term_rentals": "Not Allowed",
+          "reserves": {
+            "base": "3 months, cash-out cannot be utilized",
+            "over_2m_la": "6 months - cash-out can be used to satisfy up to 50% of reserve requirement",
+            "additional_financed_properties": "Not applicable"
+          },
+          "recently_listed_with_cashout": {
+            "delisted_requirement": ">= 1 day prior to application date",
+            "not_listed_for_sale": "> 180 days",
+            "value_determination": "Lower of lowest listing price within 180 days or appraised value",
+            "ppp_required": "3 year minimum PPP required, transactions where PPP is prohibited are ineligible"
+          },
+          "itin": "Not Allowed",
+          "foreign_national": "Not Allowed - See Foreign National DSCR",
+          "daca": "Not Allowed",
+          "gift_funds": "100% allowed with 10% LTV reduction from program Max LTV, no LTV reduction with min 5% buyer own funds. Gift of Equity not allowed."
+        },
+        "core_dscr": {
+          "program_name": "Core DSCR",
+          "dscr_ratio": "1.00 minimum (> 80% LTV requires 1.20 minimum)",
+          "min_loan_amount": 100000,
+          "ltv_matrix": [
+            {
+              "max_loan_amount": 1000000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 85, "rate_term_ltv": 85, "cashout_ltv": 75 },
+                { "fico_min": 700, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 680, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 640, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 620, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 }
+              ]
+            },
+            {
+              "max_loan_amount": 1500000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 85, "rate_term_ltv": 85, "cashout_ltv": 75 },
+                { "fico_min": 700, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 680, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 640, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 620, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 }
+              ]
+            },
+            {
+              "max_loan_amount": 2000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 720, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 700, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 680, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 640, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 620, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 }
+              ]
+            },
+            {
+              "max_loan_amount": 2500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 720, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 700, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 680, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 640, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 620, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 }
+              ]
+            },
+            {
+              "max_loan_amount": 3000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 720, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 700, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 680, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 640, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 620, "purchase_ltv": 55, "rate_term_ltv": 55, "cashout_ltv": 50 }
+              ]
+            },
+            {
+              "max_loan_amount": 3500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 720, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            }
+          ],
+          "max_ltv_by_property_type": {
+            "condo": { "max_ltv": 80, "fl_condo": 70 },
+            "non_warrantable_condo": { "max_ltv": 75, "max_loan_amount": 3000000, "fl_condo": 65 },
+            "two_to_four_unit": 80,
+            "rural": 65
+          },
+          "interest_only": {
+            "allowed": false,
+            "note": "Not shown as available for Core DSCR in matrix"
+          },
+          "housing_history": {
+            "experienced_investors": "1 x 30 x 12",
+            "inexperienced_investors": "0 x 30 x 12"
+          },
+          "credit_event_seasoning": {
+            "fc_ccc": "> 36 months",
+            "bk_ch13_with_pay_history": "> 12 months",
+            "ss_dil_bk_ch7": "> 24 months"
+          },
+          "short_term_rentals": {
+            "allowed": true,
+            "ltv_reduction": "5% reduction from max LTV",
+            "max_ltv": 80,
+            "max_ltv_cashout": 70
+          },
+          "reserves": {
+            "over_65_ltv": "3 months",
+            "over_2m_la": "6 months",
+            "over_3m_la": "12 months",
+            "cashout_utilization": "Cash-out may be used",
+            "additional_financed_properties": "Not applicable"
+          },
+          "itin": {
+            "allowed": true,
+            "min_fico": 700,
+            "max_loan_amount": 1500000,
+            "max_ltv": 75,
+            "max_ltv_cashout": 65
+          },
+          "foreign_national": "Not Allowed - See Foreign National DSCR",
+          "daca": {
+            "allowed": true,
+            "max_ltv": 80,
+            "max_ltv_cashout": 75
+          }
+        },
+        "dscr_fusion": {
+          "program_name": "DSCR Fusion - DSCR + Asset Utilization",
+          "dscr_ratio": {
+            "initial_without_asset_utilization": ">= 0.75 and <= 0.99",
+            "final_with_asset_utilization": ">= 1.15"
+          },
+          "min_loan_amount": 100000,
+          "ltv_matrix": [
+            {
+              "max_loan_amount": 1000000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 80, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 700, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 680, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 1500000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 700, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 680, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 2000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 720, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 700, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 680, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 2500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 720, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 700, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 680, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 3000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 720, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 700, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 3500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 720, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            }
+          ],
+          "max_ltv_by_property_type": {
+            "condo": { "max_ltv": 70, "fl_condo": 50 },
+            "non_warrantable_condo": { "max_ltv": 60, "fl_condo": 50 },
+            "two_to_four_unit": 60,
+            "rural": "Not Allowed"
+          },
+          "housing_history": "0 x 30 x 12",
+          "credit_event_seasoning": "> 36 months",
+          "short_term_rentals": "Not Allowed",
+          "reserves": {
+            "base": "6 months",
+            "over_2m_la": "6 months",
+            "cashout_utilization": "Cash-out may be used",
+            "additional_financed_properties": "Not applicable"
+          },
+          "itin": "Not Allowed",
+          "foreign_national": "Not Allowed",
+          "daca": "Not Allowed"
+        },
+        "sub1_dscr": {
+          "program_name": "Sub1 DSCR",
+          "dscr_ratio": "0.75 minimum",
+          "min_loan_amount": 100000,
+          "ltv_matrix": [
+            {
+              "max_loan_amount": 1000000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 75, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 700, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 680, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 640, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 1500000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 700, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 680, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 640, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 2000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 720, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 700, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 680, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 640, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 2500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 55, "rate_term_ltv": 55, "cashout_ltv": 50 },
+                { "fico_min": 720, "purchase_ltv": 55, "rate_term_ltv": 55, "cashout_ltv": 50 },
+                { "fico_min": 700, "purchase_ltv": 55, "rate_term_ltv": 55, "cashout_ltv": 50 },
+                { "fico_min": 680, "purchase_ltv": 55, "rate_term_ltv": 55, "cashout_ltv": 50 },
+                { "fico_min": 640, "purchase_ltv": 55, "rate_term_ltv": 55, "cashout_ltv": 50 },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 3000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 50, "rate_term_ltv": 50, "cashout_ltv": 45 },
+                { "fico_min": 720, "purchase_ltv": 50, "rate_term_ltv": 50, "cashout_ltv": 45 },
+                { "fico_min": 700, "purchase_ltv": 50, "rate_term_ltv": 50, "cashout_ltv": 45 },
+                { "fico_min": 680, "purchase_ltv": 50, "rate_term_ltv": 50, "cashout_ltv": 45 },
+                { "fico_min": 640, "purchase_ltv": 50, "rate_term_ltv": 50, "cashout_ltv": 45 },
+                { "fico_min": 620, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 3500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 720, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            }
+          ],
+          "max_ltv_by_property_type": {
+            "condo": { "max_ltv": 70, "fl_condo": 50 },
+            "non_warrantable_condo": { "max_ltv": 60, "fl_condo": 50 },
+            "two_to_four_unit": 60,
+            "rural": "Not Allowed"
+          },
+          "housing_history": "0 x 30 x 12",
+          "credit_event_seasoning": "> 36 months",
+          "short_term_rentals": "Not Allowed",
+          "reserves": {
+            "base": "6 months",
+            "over_2m_la": "6 months",
+            "cashout_utilization": "Cash-out may be used",
+            "additional_financed_properties": "Not applicable"
+          },
+          "itin": "Not Allowed",
+          "foreign_national": "Not Allowed",
+          "daca": "Not Allowed"
+        },
+        "no_ratio_dscr": {
+          "program_name": "No Ratio DSCR",
+          "dscr_ratio": "No minimum ratio (< 0.75)",
+          "min_loan_amount": 100000,
+          "ltv_matrix": [
+            {
+              "max_loan_amount": 1000000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 70, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 700, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 1500000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 55 },
+                { "fico_min": 700, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 2000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 720, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 700, "purchase_ltv": 55, "rate_term_ltv": 55, "cashout_ltv": 50 },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 2500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 55, "rate_term_ltv": 55, "cashout_ltv": null },
+                { "fico_min": 720, "purchase_ltv": 55, "rate_term_ltv": 55, "cashout_ltv": null },
+                { "fico_min": 700, "purchase_ltv": 55, "rate_term_ltv": 55, "cashout_ltv": null },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 3000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 720, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 700, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 650, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 3500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 720, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            }
+          ],
+          "max_ltv_by_property_type": {
+            "condo": { "max_ltv": 70, "fl_condo": 50 },
+            "non_warrantable_condo": { "max_ltv": 60, "fl_condo": 50 },
+            "two_to_four_unit": 60,
+            "rural": "Not Allowed"
+          },
+          "housing_history": "0 x 30 x 12",
+          "credit_event_seasoning": "> 36 months",
+          "short_term_rentals": "Not Allowed",
+          "reserves": {
+            "base": "6 months",
+            "cashout_utilization": "Cash-out may be used",
+            "additional_financed_properties": "Not applicable"
+          },
+          "itin": "Not Allowed",
+          "foreign_national": "Not Allowed",
+          "daca": "Not Allowed"
+        },
+        "foreign_national_dscr": {
+          "program_name": "Foreign National DSCR",
+          "dscr_ratio": "1.00 minimum",
+          "min_loan_amount": 100000,
+          "ltv_matrix": [
+            {
+              "max_loan_amount": 1000000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 75, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 700, "purchase_ltv": 70, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 680, "fico_note": "680+ or No FICO", "purchase_ltv": 65, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 1500000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 70, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 700, "purchase_ltv": 65, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 680, "fico_note": "680+ or No FICO", "purchase_ltv": 60, "rate_term_ltv": 55, "cashout_ltv": 50 },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 2000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 65, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 720, "purchase_ltv": 65, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 700, "fico_note": "700+ or No FICO", "purchase_ltv": 60, "rate_term_ltv": 55, "cashout_ltv": 50 },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 2500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 720, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 700, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 3000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 720, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 700, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 650, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 3500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 720, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 680, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            }
+          ],
+          "max_ltv_by_property_type": {
+            "condo": { "max_ltv": 60, "fl_condo": 50 },
+            "two_to_four_unit": 60,
+            "rural": "Not Allowed"
+          },
+          "housing_history": "0 x 30 x 12 & 2 year history required",
+          "credit_event_seasoning": "> 36 months",
+          "short_term_rentals": "Not Allowed",
+          "reserves": {
+            "base": "12 months",
+            "cashout_utilization": "Cash-out can be utilized",
+            "additional_financed_properties": "Not applicable"
+          },
+          "interest_only": {
+            "allowed": true,
+            "qualify_on": "IO Payment ALL States",
+            "reserves": "Based on IO Payment"
+          },
+          "borrower_eligibility": {
+            "eligible_countries_regions": [
+              "Canada",
+              "Caribbean (excluding Cuba)",
+              "China (excluding Hong Kong) - as permitted by applicable state law",
+              "Europe (excluding Russia)",
+              "Japan",
+              "Latin America (excluding Nicaragua)",
+              "South America (excluding Venezuela)"
+            ],
+            "ineligible": "Citizens or individuals from countries subject to OFAC sanctions",
+            "tradeline_requirements": {
+              "with_fico": "Must meet minimum standard tradeline requirements. Limited tradelines not allowed.",
+              "without_fico": "12 month credit rating from an internationally known financial institution in the borrower country of origin",
+              "us_credit_report": "US tri-merge credit report required for each borrower to verify credit or confirm no credit history"
+            }
+          },
+          "cash_in_hand_limits": {
+            "lte_50_ltv": "$500k max",
+            "gt_50_ltv": "$300k max"
+          }
+        }
+      },
+      "dscr_qualifying_ratio": {
+        "formula": "Gross Income / PITIA or ITIA",
+        "qualification_basis": "Cash flow of subject property",
+        "fusion_formula": "(Gross Income + Asset Utilization) / PITIA or ITIA",
+        "gross_income_definition": "Lower of estimated market rent from Form 1007 or monthly rent from existing lease with 2 months proof of receipt",
+        "higher_rents_rule": "If current rents are more than market rents, the lesser of actual rents or 125% of market rents used"
+      },
+      "cash_in_hand_limits": {
+        "lte_65_ltv": "$1.5M max",
+        "gt_65_lte_75_ltv_fico_gte_700": "$1.5M max",
+        "gt_65_lte_75_ltv_fico_lt_700": "$1.0M max",
+        "gt_75_ltv": "$500k max",
+        "lt_1_dscr": "$500k max",
+        "no_ratio_dscr": "$500k max",
+        "foreign_national_lte_50_ltv": "$500k max",
+        "foreign_national_gt_50_ltv": "$300k max"
+      },
+      "loan_programs": {
+        "fixed": ["15 Year Fixed", "30 Year Fixed", "40 Year Fixed", "Nonstandard Terms Available"],
+        "arm_fully_amortized": [
+          "5/6 SOFR (2/1/5 Cap) - 30-Year & 40-Year terms",
+          "7/6 SOFR (5/1/5 Cap) - 30-Year & 40-Year terms"
+        ],
+        "interest_only": [
+          "30 Year Fixed IO (120 mos IO + 240 mos Amortization)",
+          "40 Year Fixed IO (120 mos IO + 360 mos Amortization)",
+          "30-Year 5/6 ARM IO (2/1/5 Cap)",
+          "30-Year 7/6 ARM IO (5/1/5 Cap)"
+        ]
+      },
+      "experienced_investor": {
+        "definition": "Borrower(s) with history of owning & managing NOO income-producing investment real estate for at least 1 year within the last 3 years",
+        "notes": [
+          "Only 1 borrower has to meet the Experienced Investor definition",
+          "Living rent free allowed",
+          "Mortgage tradelines reflected on credit report paid off or sold in last 12 months can be used",
+          "All properties to meet above definitions must be domiciled in the US (Foreign National excluded)"
+        ]
+      },
+      "inexperienced_investor": {
+        "definition": "Borrower without history of owning & managing NOO income-producing investment real estate for at least 1 year within the last 3 years",
+        "restrictions": {
+          "max_ltv": 80,
+          "max_loan_amount": 1500000,
+          "housing_history": "0x30x12 (VOM/VOR)",
+          "reserves": "Min 3 months, cash-out cannot be utilized",
+          "sub1_max_ltv": 60,
+          "sub1_cashout": "Not allowed",
+          "ineligible_programs": ["No Ratio", "DSCR Fusion", "STR", "5-8 unit"],
+          "all_borrowers_must_meet_inexperienced": true,
+          "fthb_not_allowed": true,
+          "living_rent_free_not_allowed": true
+        }
+      },
+      "vacant_unleased_properties": {
+        "purchase": "Follow Program Max",
+        "refinance_rate_term": "70% Max LTV",
+        "refinance_cashout": "65% Max LTV",
+        "loe_required": "LOE for cause of vacancy",
+        "no_ratio_ineligible": "Refinances only"
+      },
+      "short_term_rentals": {
+        "eligible_programs": ["Core DSCR"],
+        "ineligible_programs": ["Select DSCR", "DSCR Fusion", "Sub1 DSCR", "No Ratio DSCR", "Foreign National DSCR"],
+        "requirements": {
+          "transaction_types": "Purchase or Refi (R/T & C/O)",
+          "eligible_property_types": ["1 Unit SFR", "2-4 Unit", "PUD", "Condo"],
+          "experience_required": "Experienced investors only",
+          "purchase_str_history": "12+ months STR rental history in last 3 years required for purchases",
+          "less_than_12_months_str_history": "Additional 5% LTV reduction required",
+          "management_fee_reduction": "20% management fee reduction applied",
+          "rent_documentation": "Rents documented with 1007/1025 supported by 12 months history of payments OR AirDNA/Overview Report",
+          "vacant_allowed": true,
+          "rural_not_allowed": true,
+          "core_dscr_ltv_reduction": "5% reduction from max LTV",
+          "core_dscr_max_ltv": 80,
+          "core_dscr_max_ltv_cashout": 70
+        }
+      },
+      "rural_properties": {
+        "select_dscr": "Not Allowed",
+        "core_dscr": { "allowed": true, "max_ltv": 65 },
+        "dscr_fusion": "Not Allowed",
+        "sub1_dscr": "Not Allowed",
+        "no_ratio_dscr": "Not Allowed",
+        "foreign_national_dscr": "Not Allowed",
+        "str_rural": "Not Allowed"
+      },
+      "additional_guidelines": {
+        "appraisals": {
+          "lte_2m_loan_amount": {
+            "cu_lte_2_5": "No additional requirements",
+            "cu_gt_2_5_or_no_score": "Enhanced desk review (ARR, CCA or CDA) required, 10% variance allowed"
+          },
+          "gt_2m_loan_amount": "2 appraisals required"
+        },
+        "tradeline_requirements": {
+          "standard": [
+            "3 tradelines reporting 12 months with activity in last 12 months",
+            "OR 2 tradelines reporting for 24 months with activity in last 12 months",
+            "OR 1 revolving tradeline reporting for 60 months with activity in last 12 months",
+            "OR 1 installment tradeline reporting for 36 months with activity in last 12 months"
+          ],
+          "three_credit_scores_rule": "If each borrower has 3 credit scores, minimum tradeline requirement is met (not available for ITINs)",
+          "entity_closing": "If member with highest percentage of ownership has 3 credit scores, minimum tradeline requirement is met",
+          "thin_credit_note": "Borrower's credit scores primarily based on thin credit must still meet one of the standard tradeline requirements",
+          "limited_tradelines": {
+            "max_ltv": 70,
+            "not_available_on": ["Select DSCR", "Sub1 DSCR", "No Ratio DSCR", "DSCR Fusion", "Foreign National DSCR"]
+          }
+        },
+        "declining_markets": "> 70% LTV: Areas designated declining value on appraisal take 5% LTV reduction from program Max LTV",
+        "delayed_financing": "> $1.5M loan amount, 70% max LTV/CLTV. Vacant/unleased > 3 months must follow unleased property LTV/CLTV restrictions",
+        "financed_property_limits": "Unlimited financed properties. OCMBC exposure: $5.0M or 6 properties",
+        "first_time_home_buyer": "Not Allowed",
+        "geographic_restrictions": {
+          "baltimore_city_md": "Temporarily ineligible (and its neighborhoods)",
+          "philadelphia_county_pa": "Temporarily ineligible",
+          "georgia_dscr": "$2,000,000 max loan amount",
+          "texas_sb17": "Prohibits loans when borrower is restricted person connected to China, Russia, Iran, or North Korea. US citizens and Permanent Resident Aliens exempt. Non-Permanent Resident Aliens limited to primary residences only.",
+          "arizona_sb1082": "Prohibits loans when borrower or any >= 30% beneficial owner is classified as foreign adversary nation or agent"
+        },
+        "gift_funds": "100% allowed with 10% LTV reduction from program Max LTV. No LTV reduction required with min 5% buyer own funds. Gift of Equity not allowed for Select DSCR.",
+        "impound_waivers": "Allowed (see rate sheet)",
+        "interested_party_contributions": {
+          "lte_80_ltv": "6% Max",
+          "gt_80_ltv": "4% Max"
+        },
+        "minimum_square_footage": {
+          "sfr": "700 sq ft",
+          "condo": "500 sq ft",
+          "two_to_four_units": "400 sq ft each"
+        },
+        "prepayment_penalty": "Eligible for investment properties only where permitted by applicable state law and regulations",
+        "private_party_vors": {
+          "option_1": "LTV <= 80% & >= 660 FICO",
+          "option_2": "LTV <= 70% & >= 600 FICO"
+        },
+        "seasoning": {
+          "cashout": ">= 6 months ownership or since prior cash-out",
+          "less_than_6_months": "All borrowers on original Note at acquisition or prior cash-out must be on current Note. LTV based off lesser of purchase price + documented improvements (if acquired in past 6 months) or appraised value."
+        },
+        "temporary_buydowns": "Ineligible"
+      }
+    },
+    "non_qm_full_and_alt_doc": {
+      "program_name": "Non-QM Full Doc and Alt Doc Programs",
+      "income_types": {
+        "full_doc": ["12 months", "24 months"],
+        "alt_doc": ["1099", "WVOE", "Asset Utilization", "Bank Statements", "P&L with 3 months Bank Statements", "One Year Self-Employment", "Assets as Blended Income"]
+      },
+      "suspended_areas_investment_non_trid": [
+        "Baltimore City, MD (and its neighborhoods)",
+        "Philadelphia County, PA"
+      ],
+      "sub_programs": {
+        "select_non_qm": {
+          "program_name": "Select Non-QM",
+          "min_loan_amount": 150000,
+          "ltv_matrix": [
+            {
+              "max_loan_amount": 1000000,
+              "tiers": [
+                { "fico_min": 700, "purchase_ltv": 85, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 680, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 600, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 1500000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 85, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 700, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 680, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 640, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null },
+                { "fico_min": 600, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 2000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 85, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 720, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 700, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 680, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 }
+              ]
+            },
+            {
+              "max_loan_amount": 2500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 720, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 700, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 680, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 660, "purchase_ltv": null, "rate_term_ltv": null, "cashout_ltv": null }
+              ]
+            },
+            {
+              "max_loan_amount": 3000000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 700, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 680, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 }
+              ]
+            },
+            {
+              "max_loan_amount_note": "> $3,000,000",
+              "note": "See Guides for Appraisal & Credit Overlay"
+            }
+          ],
+          "max_ltv_by_property_type": {
+            "non_owner_occupied": 75,
+            "second_home": 75,
+            "condo": { "max_ltv": 85, "fl_condo": 75 },
+            "non_warrantable_condo": "Not Allowed",
+            "two_unit": 80,
+            "three_to_four_unit": 75,
+            "rural": "Not Allowed"
+          },
+          "interest_only": "Not Allowed",
+          "housing_history": {
+            "requirement": "0 x 30 x 24",
+            "rent_free_not_allowed": true
+          },
+          "credit_event_seasoning": {
+            "requirement": "> 48 months",
+            "multiple_unrelated_events": "Not allowed"
+          },
+          "max_dti": 45,
+          "one_year_self_employed": "Not Allowed",
+          "asset_utilization": "Not Allowed",
+          "1099_only": "Not Allowed",
+          "wvoe_only": "Not Allowed",
+          "itin": "Not Allowed",
+          "daca": "Not Allowed",
+          "foreign_national": "Not Allowed",
+          "reserves": {
+            "base": "6 months minimum, cash-out cannot be utilized",
+            "over_2m_la": "6 months, cash-out cannot be utilized",
+            "over_3m_la": "12 months, cash-out cannot be utilized",
+            "additional_financed_properties": "2 months for each additional financed property (based on subject property PITIA)"
+          }
+        },
+        "core_non_qm": {
+          "program_name": "Core Non-QM",
+          "min_loan_amount": 125000,
+          "ltv_matrix": [
+            {
+              "max_loan_amount": 1000000,
+              "tiers": [
+                { "fico_min": 700, "purchase_ltv": 90, "rate_term_ltv": 85, "cashout_ltv": 80 },
+                { "fico_min": 680, "purchase_ltv": 85, "rate_term_ltv": 85, "cashout_ltv": 80 },
+                { "fico_min": 600, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 }
+              ]
+            },
+            {
+              "max_loan_amount": 1500000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 90, "rate_term_ltv": 85, "cashout_ltv": 80 },
+                { "fico_min": 700, "purchase_ltv": 90, "rate_term_ltv": 85, "cashout_ltv": 80 },
+                { "fico_min": 680, "purchase_ltv": 85, "rate_term_ltv": 85, "cashout_ltv": 80 },
+                { "fico_min": 640, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 600, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 }
+              ]
+            },
+            {
+              "max_loan_amount": 2000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 85, "rate_term_ltv": 85, "cashout_ltv": 80 },
+                { "fico_min": 720, "purchase_ltv": 85, "rate_term_ltv": 85, "cashout_ltv": 80 },
+                { "fico_min": 700, "purchase_ltv": 85, "rate_term_ltv": 85, "cashout_ltv": 80 },
+                { "fico_min": 680, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 640, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 }
+              ]
+            },
+            {
+              "max_loan_amount": 2500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 720, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 700, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 680, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 660, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 }
+              ]
+            },
+            {
+              "max_loan_amount": 3000000,
+              "tiers": [
+                { "fico_min": 720, "purchase_ltv": 80, "rate_term_ltv": 80, "cashout_ltv": 75 },
+                { "fico_min": 700, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 70 },
+                { "fico_min": 680, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 660, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 }
+              ]
+            },
+            {
+              "max_loan_amount": 3500000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 75, "rate_term_ltv": 75, "cashout_ltv": 65 },
+                { "fico_min": 720, "purchase_ltv": 70, "rate_term_ltv": 70, "cashout_ltv": 65 },
+                { "fico_min": 680, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 660, "purchase_ltv": 50, "rate_term_ltv": 50, "cashout_ltv": 45 }
+              ]
+            },
+            {
+              "max_loan_amount": 4000000,
+              "tiers": [
+                { "fico_min": 740, "purchase_ltv": 65, "rate_term_ltv": 65, "cashout_ltv": 60 },
+                { "fico_min": 720, "purchase_ltv": 60, "rate_term_ltv": 60, "cashout_ltv": 55 },
+                { "fico_min": 700, "purchase_ltv": 50, "rate_term_ltv": 50, "cashout_ltv": 45 }
+              ]
+            }
+          ],
+          "max_ltv_by_property_type": {
+            "non_owner_occupied": 85,
+            "second_home": 85,
+            "warrantable_condo": 90,
+            "high_rise_condo": 85,
+            "fl_condo": 75,
+            "non_warrantable_condo": 75,
+            "fl_non_warrantable_condo": 65,
+            "two_unit": 85,
+            "three_to_four_unit": 80,
+            "rural": 70
+          },
+          "interest_only": {
+            "allowed": true,
+            "min_fico": 640,
+            "max_ltv": 80,
+            "reserves": "Based on IO payment"
+          },
+          "housing_history": {
+            "base": "0 x 30 x 12",
+            "1x30x12": "5% LTV reduction, > $2.5M: 10% LTV reduction, $3.5M max LA",
+            "1x60x12": "10% LTV reduction (must be 0 x 60 in most recent 6), > $2.5M: 15% LTV reduction, $3.0M max LA",
+            "1x30x6": "10% LTV reduction, > $2.5M: 20% LTV reduction"
+          },
+          "credit_event_seasoning": {
+            "gt_36_months": "Standard (12 mos seasoning on discharged BK 13 or CCC w/pay history allowed)",
+            "gt_24_months": "10% LTV reduction, $3.5M max LA (discharged BK 13 or CCC w/pay history allowed)",
+            "gt_12_months": "15% LTV reduction, $3.0M max LA (discharged BK 13 or CCC allowed)"
+          },
+          "max_dti": {
+            "standard": 50,
+            "gt_85_ltv": 45,
+            "high_dti_50_to_55": {
+              "allowed": true,
+              "restrictions": "Full doc only, 6 months reserves, 80% max LTV, 660 min FICO, Primary only, Purchase only, $1.5M max LA"
+            }
+          },
+          "one_year_self_employed": {
+            "allowed": true,
+            "max_ltv": 80,
+            "max_ltv_cashout": 75,
+            "min_fico": 660,
+            "income_type": "Bank Statement only",
+            "housing_allowance": "1 x 30 x 12 allowed"
+          },
+          "asset_utilization": {
+            "allowed": true,
+            "max_ltv": 80,
+            "max_ltv_cashout": 75,
+            "max_loan_amount": 2000000,
+            "housing_allowance": "1 x 60 x 12 allowed"
+          },
+          "1099_only": {
+            "allowed": true,
+            "max_loan_amount": 3000000,
+            "bank_statements_required": "2 months recent",
+            "housing_allowance": "1 x 60 x 12 allowed"
+          },
+          "wvoe_only": {
+            "allowed": true,
+            "min_fico": 620,
+            "max_ltv": 80,
+            "max_ltv_cashout": 70,
+            "max_ltv_fthb": 70,
+            "housing_history": "0 x 30 x 12"
+          },
+          "itin": {
+            "allowed": true,
+            "min_fico": 660,
+            "max_ltv": 85,
+            "max_ltv_noo": 80,
+            "max_ltv_cashout": 65,
+            "max_loan_amount": 1500000,
+            "max_loan_amount_gt_80_ltv": 1000000,
+            "income_types": "Full Doc & 12 months Bank Statement only",
+            "housing_history": "0 x 30 x 12"
+          },
+          "daca": {
+            "allowed": true,
+            "max_ltv": 85,
+            "max_ltv_cashout": 75,
+            "housing_history": "0 x 30 x 12"
+          },
+          "foreign_national": "Not Allowed",
+          "reserves": {
+            "owner_occupied_and_second_home": {
+              "lte_75_ltv": "No reserves",
+              "gt_75_ltv": "3 months",
+              "purchase_and_rt_gt_80_ltv": "6 months (3 months with 0x30x12)"
+            },
+            "non_owner_occupied": {
+              "lte_70_ltv": "No reserves",
+              "gt_70_ltv": "3 months",
+              "purchase_and_rt_gt_80_ltv": "6 months (3 months with 0x30x12)"
+            },
+            "all_occupancies": {
+              "over_2m_la": "6 months",
+              "over_3m_la": "12 months",
+              "additional_financed_properties": "2 months for each additional financed property (based on subject property PITIA)",
+              "additional_with_1x60x12": "Additional 3 months required",
+              "cashout_utilization": "Cash-out may be utilized"
+            }
+          }
+        }
+      },
+      "loan_programs": {
+        "fixed": ["15 Year Fixed", "30 Year Fixed", "40 Year Fixed", "Nonstandard Terms Available"],
+        "arm_fully_amortized": [
+          "5/6 SOFR (2/1/5 Cap) with 30-Year & 40-Year terms",
+          "7/6 SOFR (5/1/5 Cap) with 30-Year & 40-Year terms"
+        ],
+        "interest_only": [
+          "30 Year Fixed IO (120 mos IO + 240 mos Amortization)",
+          "40 Year Fixed IO (120 mos IO + 360 mos Amortization)",
+          "30-Year 5/6 ARM IO (2/1/5 Cap)",
+          "30-Year 7/6 ARM IO (5/1/5 Cap)"
+        ],
+        "io_not_available_on": "Select Non-QM"
+      },
+      "additional_guidelines": {
+        "appraisals": {
+          "lte_2m_loan_amount": {
+            "cu_lte_2_5": "No additional requirements",
+            "cu_gt_2_5_or_no_score": "Enhanced desk review (ARR, CCA or CDA) required, 10% variance allowed"
+          },
+          "gt_2m_loan_amount": "2 appraisals required"
+        },
+        "cash_in_hand_limits": {
+          "lte_65_ltv": "$1.5M max",
+          "gt_65_lte_75_ltv_fico_gte_700": "$1.5M max",
+          "gt_65_lte_75_ltv_fico_lt_700": "$1.0M max",
+          "gt_75_ltv": "$500k max"
+        },
+        "non_qm_professional": {
+          "pricing_improvement": "+25 bps",
+          "primary_residence_only": true,
+          "transaction_types": ["Purchase", "Rate/Term Refinance", "Cash-Out Refinance"],
+          "min_fico": 680,
+          "full_time_practicing": true,
+          "license_or_degree_required": true,
+          "eligible_doctors": [
+            "Medical Doctor (MD)",
+            "Medical Fellows",
+            "Medical Resident (Educational License)",
+            "Doctor of Dental Medicine (DMD)",
+            "Doctor of Dental Surgery (DDS)",
+            "Doctor of Ophthalmology (MD)",
+            "Doctor of Optometry (OD)",
+            "Doctor of Osteopathy (DO)",
+            "Doctor of Pharmacy (PharmD)",
+            "Doctor of Podiatric Medicine (DPM)",
+            "Doctor of Veterinary Medicine (DVM)"
+          ],
+          "eligible_professionals": {
+            "requirement": "Postgraduate degree + at least 2 years current employment",
+            "fields": ["Accounting", "Architecture", "Engineering", "Legal"]
+          }
+        },
+        "tradeline_requirements": {
+          "standard": [
+            "3 tradelines reporting 12 months with activity in last 12 months",
+            "OR 2 tradelines reporting for 24 months with activity in last 12 months",
+            "OR 1 revolving tradeline reporting for 60 months with activity in last 12 months",
+            "OR 1 installment tradeline reporting for 36 months with activity in last 12 months"
+          ],
+          "trid": "If primary wage earner has 3 credit scores reporting, minimum standard tradeline requirement is met",
+          "non_trid_business_purpose": "If each borrower has 3 credit scores, minimum tradeline requirement is met (not available for ITINs)",
+          "entity_closing": "If member with highest % ownership has 3 credit scores, requirement met",
+          "thin_credit_note": "Must still meet one of the standard tradeline requirements",
+          "limited_tradelines": {
+            "primary_and_second_home_max_ltv": 80,
+            "investment_max_ltv": 70,
+            "not_available_on": "Select Non-QM",
+            "itin": "See ITIN Guides"
+          }
+        },
+        "high_dti_50_to_55": "Full doc, 6 months reserves, 80% max LTV, 660 min FICO, Primary only, Purchase only, $1.5M max LA",
+        "debt_consolidation": "Follows R/T Refi LTV w/80% max LTV, Owner Occupied only ($5k max cash in hand)",
+        "declining_markets": "> 70% LTV: Areas designated declining value on appraisal take 5% LTV reduction from program max LTV",
+        "delayed_financing": {
+          "lte_1_5m_la": "Follow program max",
+          "gt_1_5m_la": "70% max LTV/CLTV"
+        },
+        "geographic_restrictions": {
+          "texas_cashout": "80% max LTV (Owner-Occ, per TX 50(a)(6))",
+          "texas_sb17": "Prohibits loans when borrower is restricted person connected to China, Russia, Iran, or North Korea. US citizens and Permanent Resident Aliens exempt. Non-Permanent Resident Aliens limited to primary residences only.",
+          "arizona_sb1082": "Prohibits loans when borrower or any >= 30% beneficial owner is classified as foreign adversary nation or agent",
+          "trid_non_business_purpose": "Row Homes ineligible in Baltimore City, MD",
+          "investment_and_non_trid": "All subject properties in Baltimore City, MD (and neighborhoods) and Philadelphia County, PA temporarily ineligible"
+        },
+        "gift_funds": "100% allowed with 10% LTV reduction from max LTV. No LTV reduction with min 5% buyer own funds. Gift of Equity not allowed on Select Non-QM.",
+        "financed_property_limits": "20 financed properties including subject. OCMBC exposure: $5.0M or 6 properties.",
+        "first_time_homebuyers": {
+          "primary_residence": "Allowed",
+          "investment": "Purchase & Refinance: Full Doc and Bank Statement income only, 80% Max LTV, 660 Min FICO, 50% Max DTI, $1.5M Max LA",
+          "second_home": "Ineligible",
+          "payment_shock": "Should not exceed 300%"
+        },
+        "impound_waivers": {
+          "owner_second_home": "Allowed if NOT HPML loan",
+          "non_owner": "Allowed (see rate sheet)"
+        },
+        "interested_party_contributions": {
+          "lte_80_ltv": "6% max",
+          "gt_80_ltv": "4% max"
+        },
+        "minimum_square_footage": {
+          "sfr": "700 sq ft",
+          "condo": "500 sq ft",
+          "two_to_four_units": "400 sq ft each"
+        },
+        "non_occupant_co_borrower": "Purchase, Rate & Term & Core Non-QM only",
+        "prepayment_penalty": "Eligible for investment properties only where permitted by applicable state law and regulations",
+        "private_party_vors": {
+          "option_1": "LTV <= 80% & >= 660 FICO",
+          "option_2": "LTV <= 70% & >= 600 FICO"
+        },
+        "residual_income": "$1,250/month + $250 first dependent + $125 each additional",
+        "seasoning": {
+          "cashout": ">= 6 months ownership or since prior cash-out",
+          "less_than_6_months": "All borrowers on original Note at acquisition or prior cash-out must be on current Note. LTV based off lesser of purchase price + documented improvements (if acquired in past 6 months) or appraised value."
+        },
+        "temporary_buydowns": {
+          "types": ["2:1", "1:0"],
+          "terms": "30 year fixed, Purchase transactions only",
+          "eligible": "Primary & Second Home",
+          "ineligible": "Investment loans"
+        }
+      }
+    }
+  },
+  "income_documentation_methods": {
+    "full_doc_primary_residence": {
+      "programs": ["Core Non-QM"],
+      "max_ltv_purchase": 90,
+      "max_ltv_rate_term": 85,
+      "max_ltv_cashout": 80,
+      "doc_periods": ["12 months", "24 months"],
+      "notes": "Select Non-QM also allows Full Doc but max LTV is lower (85% purchase)"
+    },
+    "full_doc_second_home": {
+      "programs": ["Core Non-QM"],
+      "max_ltv": 85,
+      "doc_periods": ["12 months", "24 months"]
+    },
+    "full_doc_investment": {
+      "programs": ["Core Non-QM", "Select Non-QM"],
+      "core_max_ltv": 85,
+      "select_max_ltv": 75,
+      "doc_periods": ["12 months", "24 months"]
+    },
+    "alt_doc_bank_statements": {
+      "programs": ["Core Non-QM"],
+      "available_for": ["Primary", "Second Home", "Investment"],
+      "notes": "Part of Alt Doc income types"
+    },
+    "alt_doc_1099": {
+      "programs": ["Core Non-QM"],
+      "max_loan_amount": 3000000,
+      "requires": "2 months recent bank statements",
+      "housing_allowance": "1 x 60 x 12 allowed"
+    },
+    "alt_doc_wvoe": {
+      "programs": ["Core Non-QM"],
+      "min_fico": 620,
+      "max_ltv": 80,
+      "max_ltv_cashout": 70,
+      "max_ltv_fthb": 70,
+      "housing_history": "0 x 30 x 12"
+    },
+    "alt_doc_asset_utilization": {
+      "programs": ["Core Non-QM"],
+      "max_ltv": 80,
+      "max_ltv_cashout": 75,
+      "max_loan_amount": 2000000,
+      "housing_allowance": "1 x 60 x 12 allowed"
+    },
+    "alt_doc_pnl_with_bank_stmts": {
+      "programs": ["Core Non-QM"],
+      "description": "P&L with 3 months Bank Statements"
+    },
+    "one_year_self_employed": {
+      "programs": ["Core Non-QM"],
+      "max_ltv": 80,
+      "max_ltv_cashout": 75,
+      "min_fico": 660,
+      "income_type": "Bank Statement only",
+      "housing_allowance": "1 x 30 x 12 allowed"
+    },
+    "assets_as_blended_income": {
+      "programs": ["Core Non-QM"],
+      "description": "Assets as Blended Income - Alt Doc type"
+    },
+    "dscr_standard": {
+      "programs": ["Select DSCR", "Core DSCR", "DSCR Fusion", "Sub1 DSCR", "No Ratio DSCR", "Foreign National DSCR"],
+      "occupancy": "Non-Owner Occupied Investment Only",
+      "qualifying": "Gross Income (market rent from 1007 or lease rent) / PITIA or ITIA",
+      "property_units": "1-4 Units"
+    },
+    "dscr_short_term_rental": {
+      "programs": ["Core DSCR only"],
+      "eligible_property_types": ["1 Unit SFR", "2-4 Unit", "PUD", "Condo"],
+      "experience_required": "Experienced investors only",
+      "rent_documentation": [
+        "1007/1025 supported by 12 months history of payments",
+        "OR AirDNA/Overview Report"
+      ],
+      "management_fee_reduction": "20%",
+      "ltv_reduction": "5% from Core DSCR max LTV",
+      "max_ltv": 80,
+      "max_ltv_cashout": 70,
+      "vacant_allowed": true,
+      "rural_not_allowed": true,
+      "purchase_requirement": "12+ months STR rental history in last 3 years (if < 12 months, additional 5% LTV reduction)"
+    },
+    "dscr_rural": {
+      "programs": ["Core DSCR only"],
+      "max_ltv": 65,
+      "other_dscr_programs": "Not Allowed"
+    },
+    "str_rural": {
+      "allowed": false,
+      "note": "Rural not allowed for STR on any DSCR program"
+    }
+  },
+  "cumulative_adjustments_note": "All adjustments on this matrix are cumulative. All LTV calculations start from the highest LTV allowed per product."
+}

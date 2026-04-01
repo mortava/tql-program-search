@@ -1,0 +1,458 @@
+{
+  "investor": "Ellington Financial",
+  "programs": [
+    {
+      "program_name": "Ellington Investor DSCR",
+      "effective_date": "5/1/25",
+      "doc_type": "DSCR",
+      "occupancy": "Non-Owner Occupied",
+      "eligible_borrowers": "US Citizen, Permanent Resident, Non-Permanent Resident. No ITIN, DACA, Asylees, or borrowers under deferred deportation orders.",
+      "loan_amount": {
+        "min": 75000,
+        "max": 3000000
+      },
+      "mortgage_rating": "1x30x12",
+      "credit_event_seasoning_months": 36,
+      "max_borrowers": 4,
+      "max_cash_out_proceeds": 500000,
+      "property_types": ["SFR", "1-4 Units", "PUD", "Condo", "Non-Warrantable Condo", "Condotel"],
+      "rural_allowed": false,
+      "fixed_products": ["15 Year Fixed", "20 Year Fixed", "30 Year Fixed", "40 Year Fixed w/ 10 Year IO"],
+      "arm_products": {
+        "types": ["5/6 SOFR ARM", "7/6 SOFR ARM"],
+        "margin": "3.5%",
+        "index": "30-day average SOFR",
+        "floor": "Start rate",
+        "initial_cap": "2.0%",
+        "annual_cap": "2.0%",
+        "life_cap": "5.0%"
+      },
+      "interest_only_term_months": 120,
+      "non_warrantable_condo_min_fico": 680,
+      "reserves": {
+        "default": "6 Months PITIA",
+        "exceptions": [
+          "3 Months PITIA for purchase loans with credit score > 720 and LTV <= 80%",
+          "12 Months PITIA for loan amounts greater than $1,500,000",
+          "12 Months PITIA for DSCR < 1.00",
+          "12 Months PITIA for > 80% LTV",
+          "Cash Out can be used for reserves"
+        ]
+      },
+      "ach_requirements": [
+        "Required on all cash out refinances with qualifying score below 700",
+        "Required on all cash out refinances with LTV greater than 70%",
+        "Required on all DSCR ratios less than 1"
+      ],
+      "product_type_restrictions": {
+        "2_4_units": { "max_ltv_purchase": 80, "max_ltv_rate_term": 80, "max_ltv_cash_out": 75 },
+        "short_term_rental": { "max_ltv_purchase": 75, "max_ltv_rate_term": 70, "max_ltv_cash_out": 70 },
+        "non_warrantable_condo": { "max_ltv_purchase": 75, "max_ltv_rate_term": 75, "max_ltv_cash_out": 70 },
+        "condotel": { "max_ltv_purchase": 75, "max_ltv_rate_term": 70, "max_ltv_cash_out": 65 },
+        "interest_only": { "max_ltv_purchase": 80, "max_ltv_rate_term": 75, "max_ltv_cash_out": 75 },
+        "non_permanent_resident": { "max_ltv_purchase": 75, "max_ltv_rate_term": 70, "max_ltv_cash_out": 70 }
+      },
+      "ltv_matrices": {
+        "dscr_greater_than_1": {
+          "purchase": [
+            { "fico": "760+", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 75, "lt_3M": 70, "notes": "(4) LTV > 80% restrictions apply" },
+            { "fico": "740-759", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 75, "lt_3M": 70, "notes": "(4) LTV > 80% restrictions apply" },
+            { "fico": "720-739", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_3M": 65 },
+            { "fico": "700-719", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_3M": 60 },
+            { "fico": "680-699", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_3M": 60 },
+            { "fico": "660-679", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": 55 }
+          ],
+          "rate_term_refinance": [
+            { "fico": "760+", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_3M": 65 },
+            { "fico": "740-759", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_3M": 65 },
+            { "fico": "720-739", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_3M": 65 },
+            { "fico": "700-719", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_3M": 60 },
+            { "fico": "680-699", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_3M": 60 },
+            { "fico": "660-679", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": 55 }
+          ],
+          "cash_out_refinance": [
+            { "fico": "760+", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 70, "lt_3M": 65 },
+            { "fico": "740-759", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 70, "lt_3M": 65 },
+            { "fico": "720-739", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 70, "lt_3M": 65 },
+            { "fico": "700-719", "lt_1M": 75, "lt_1_5M": 65, "lt_2M": 65, "lt_3M": 60, "notes": "(1) Cash Out FICO < 720 restrictions" },
+            { "fico": "680-699", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 65, "lt_3M": 60, "notes": "(1) Cash Out FICO < 720 restrictions" },
+            { "fico": "660-679", "lt_1M": 65, "lt_1_5M": 60, "lt_2M": 60, "lt_3M": 55, "notes": "(1) Cash Out FICO < 720 restrictions" }
+          ]
+        },
+        "dscr_075_to_1": {
+          "purchase": [
+            { "fico": "760+", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_3M": "N/A" },
+            { "fico": "740-759", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_3M": "N/A" },
+            { "fico": "720-739", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_3M": "N/A" },
+            { "fico": "700-719", "lt_1M": 75, "lt_1_5M": 70, "lt_2M": 65, "lt_3M": "N/A" },
+            { "fico": "680-699", "lt_1M": 70, "lt_1_5M": 70, "lt_2M": 65, "lt_3M": "N/A" },
+            { "fico": "660-679", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": "N/A" }
+          ],
+          "rate_term_refinance": [
+            { "fico": "760+", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": "N/A" },
+            { "fico": "740-759", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": "N/A" },
+            { "fico": "720-739", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": "N/A" },
+            { "fico": "700-719", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": "N/A" },
+            { "fico": "680-699", "lt_1M": 65, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": "N/A" },
+            { "fico": "660-679", "lt_1M": 65, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": "N/A" }
+          ],
+          "cash_out_refinance": [
+            { "fico": "760+", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": "N/A" },
+            { "fico": "740-759", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": "N/A" },
+            { "fico": "720-739", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": "N/A" },
+            { "fico": "700-719", "lt_1M": 70, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": "N/A", "notes": "(1) Cash Out FICO < 720 restrictions" },
+            { "fico": "680-699", "lt_1M": 65, "lt_1_5M": 65, "lt_2M": 60, "lt_3M": "N/A", "notes": "(1) Cash Out FICO < 720 restrictions" },
+            { "fico": "660-679", "lt_1M": 65, "lt_1_5M": 60, "lt_2M": 60, "lt_3M": "N/A", "notes": "(1) Cash Out FICO < 720 restrictions" }
+          ],
+          "restrictions": [
+            "2-4 Units and Condos Max LTV Purchase 75% / Refinance 70%",
+            "Interest only requires 700 FICO and max LTV of 75%",
+            "Vacant properties ineligible for refinances",
+            "5% LTV reduction on declining markets",
+            "Minimum $150,000 loan amount",
+            "No Non-Warrantable Condo",
+            "No Condotel",
+            "Mortgage History rating of 0x30x12",
+            "First time investors not allowed",
+            "12 Months Reserves Required"
+          ]
+        }
+      },
+      "footnotes": {
+        "1_cash_out_fico_lt_720": {
+          "description": "When FICO 680-719 and LTV > 70%, or FICO 660-679 and LTV > 65%:",
+          "limitations": [
+            "Max loan amount of $750,000",
+            "Max cash out proceeds $100,000"
+          ]
+        },
+        "2_short_term_rental": {
+          "additional_requirements": [
+            "75% max LTV purchase requires 700 FICO",
+            "0x30x12 mortgage rating",
+            "1.00 short term rental DSCR ratio",
+            "Max $1,500,000 loan amount",
+            "2-4 Units and Condos Max LTV Purchase 75% / Refinance 70%",
+            "Interest only requires 700 FICO and max LTV of 75%",
+            "Vacant properties ineligible for refinances"
+          ]
+        },
+        "4_ltv_over_80": {
+          "requirements": [
+            "Minimum credit score 740",
+            "Minimum DSCR 1.00",
+            "12 months PITIA reserves",
+            "No First Time Investors",
+            "0x30x12 required"
+          ]
+        }
+      },
+      "short_term_rental": {
+        "allowed": true,
+        "max_ltv_purchase": 75,
+        "max_ltv_rate_term": 70,
+        "max_ltv_cash_out": 70,
+        "min_fico_for_75_ltv_purchase": 700,
+        "mortgage_rating_required": "0x30x12",
+        "min_dscr": 1.0,
+        "max_loan_amount": 1500000,
+        "2_4_units_and_condos_max_ltv_purchase": 75,
+        "2_4_units_and_condos_max_ltv_refinance": 70,
+        "io_requires_700_fico_and_75_max_ltv": true,
+        "vacant_properties_ineligible_for_refi": true
+      }
+    },
+    {
+      "program_name": "Ellington Non-QM Full Doc & Alt Doc - Prime Bank Statement",
+      "effective_date": "8/15/25",
+      "doc_type": "12 & 24 month Bank Statement",
+      "eligible_borrowers": "US Citizen, Permanent Resident",
+      "occupancy": ["Owner Occupied", "Second Home"],
+      "loan_amount": {
+        "min": 100000,
+        "max": 3500000
+      },
+      "dti_max": "45% (50% when LTV <= 80%)",
+      "mortgage_rating": "0x30x12 for all mortgages",
+      "credit_event_seasoning": "48 Months (BK, FC, SS, FB, Mod)",
+      "max_cash_out_proceeds": 1000000,
+      "property_types": ["SFR", "1-4 Units", "PUD", "Condo", "Non-Warrantable Condo"],
+      "rural_allowed": true,
+      "rural_max_ltv": 80,
+      "max_acreage": 10,
+      "condotel_eligible": false,
+      "non_warrantable_condo_min_fico": 680,
+      "fixed_products": ["15 Year Fixed", "20 Year Fixed", "30 Year Fixed", "40 Year Fixed w/ 10 Year IO"],
+      "arm_products": {
+        "types": ["5/6 SOFR ARM", "7/6 SOFR ARM"],
+        "margin": "3.5%",
+        "index": "30-day average SOFR",
+        "floor": "Start rate",
+        "initial_cap": "2.0%",
+        "annual_cap": "2.0%",
+        "life_cap": "5.0%"
+      },
+      "interest_only_term_months": 120,
+      "interest_only_min_fico": 680,
+      "interest_only_qualification": "Qualify off of 30 year amortization",
+      "reserves": {
+        "rules": [
+          "0 Months PITIA when LTV <= 65%",
+          "6 Months PITIA when LTV > 65%",
+          "3 Months PITIA for purchase loans with credit score > 720 and LTV >65 & <= 80",
+          "12 Months PITIA for loan amounts greater than $1,500,000 regardless of LTV",
+          "Cash Out can be used for reserves"
+        ]
+      },
+      "product_type_restrictions": {
+        "interest_only": { "max_ltv_purchase": 85, "max_ltv_rate_term": 85, "max_ltv_cash_out": 80 },
+        "non_warrantable_condo": { "max_ltv_purchase": 75, "max_ltv_rate_term": 75, "max_ltv_cash_out": 70 },
+        "2_4_unit": { "max_ltv_purchase": 85, "max_ltv_rate_term": 80, "max_ltv_cash_out": 75 }
+      },
+      "ltv_matrices": {
+        "primary_residence": {
+          "purchase": [
+            { "fico": "760+", "lt_1M": 90, "lt_1_5M": 90, "lt_2M": 80, "lt_2_5M": 80, "lt_3M": 75, "lt_3_5M": 70 },
+            { "fico": "740-759", "lt_1M": 90, "lt_1_5M": 90, "lt_2M": 80, "lt_2_5M": 80, "lt_3M": 75, "lt_3_5M": 70 },
+            { "fico": "720-739", "lt_1M": 90, "lt_1_5M": 90, "lt_2M": 80, "lt_2_5M": 80, "lt_3M": 75, "lt_3_5M": 70 },
+            { "fico": "700-719", "lt_1M": 90, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75, "lt_3M": 75, "lt_3_5M": "N/A" },
+            { "fico": "680-699", "lt_1M": 85, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 70, "lt_3M": 70, "lt_3_5M": "N/A" },
+            { "fico": "660-679", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": 70, "lt_3M": 70, "lt_3_5M": "N/A" }
+          ],
+          "rate_term_refinance": [
+            { "fico": "760+", "lt_1M": 85, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75, "lt_3M": 70, "lt_3_5M": 70 },
+            { "fico": "740-759", "lt_1M": 85, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75, "lt_3M": 70, "lt_3_5M": 70 },
+            { "fico": "720-739", "lt_1M": 85, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75, "lt_3M": 70, "lt_3_5M": 70 },
+            { "fico": "700-719", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 70, "lt_3_5M": "N/A" },
+            { "fico": "680-699", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 70, "lt_3_5M": "N/A" },
+            { "fico": "660-679", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 70, "lt_3_5M": "N/A" }
+          ],
+          "cash_out_refinance": [
+            { "fico": "760+", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 65, "lt_3_5M": "N/A" },
+            { "fico": "740-759", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 65, "lt_3_5M": "N/A" },
+            { "fico": "720-739", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 65, "lt_3_5M": "N/A" },
+            { "fico": "700-719", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65, "lt_3M": 60, "lt_3_5M": "N/A" },
+            { "fico": "680-699", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65, "lt_3M": 60, "lt_3_5M": "N/A" },
+            { "fico": "660-679", "lt_1M": 70, "lt_1_5M": 70, "lt_2M": "N/A", "lt_2_5M": "N/A", "lt_3M": "N/A", "lt_3_5M": "N/A" }
+          ]
+        },
+        "second_home": {
+          "purchase": [
+            { "fico": "760+", "lt_1M": 85, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75, "lt_3M": 70, "lt_3_5M": "N/A" },
+            { "fico": "740-759", "lt_1M": 85, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75, "lt_3M": 70, "lt_3_5M": "N/A" },
+            { "fico": "720-739", "lt_1M": 85, "lt_1_5M": 85, "lt_2M": 80, "lt_2_5M": 75, "lt_3M": 70, "lt_3_5M": "N/A" },
+            { "fico": "700-719", "lt_1M": 80, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65, "lt_3M": 60, "lt_3_5M": "N/A" },
+            { "fico": "680-699", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65, "lt_3M": 60, "lt_3_5M": "N/A" },
+            { "fico": "660-679", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A", "lt_2_5M": "N/A", "lt_3M": "N/A", "lt_3_5M": "N/A" }
+          ],
+          "rate_term_refinance": [
+            { "fico": "760+", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 65, "lt_3_5M": "N/A" },
+            { "fico": "740-759", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 65, "lt_3_5M": "N/A" },
+            { "fico": "720-739", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 65, "lt_3_5M": "N/A" },
+            { "fico": "700-719", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65, "lt_3M": 60, "lt_3_5M": "N/A" },
+            { "fico": "680-699", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65, "lt_3M": 60, "lt_3_5M": "N/A" },
+            { "fico": "660-679", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A", "lt_2_5M": "N/A", "lt_3M": "N/A", "lt_3_5M": "N/A" }
+          ],
+          "cash_out_refinance": [
+            { "fico": "760+", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65, "lt_3M": 60, "lt_3_5M": "N/A" },
+            { "fico": "740-759", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65, "lt_3M": 60, "lt_3_5M": "N/A" },
+            { "fico": "720-739", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65, "lt_3M": 60, "lt_3_5M": "N/A" },
+            { "fico": "700-719", "lt_1M": 70, "lt_1_5M": 70, "lt_2M": 65, "lt_2_5M": 60, "lt_3M": 60, "lt_3_5M": "N/A" },
+            { "fico": "680-699", "lt_1M": 65, "lt_1_5M": 65, "lt_2M": 60, "lt_2_5M": 60, "lt_3M": 60, "lt_3_5M": "N/A" },
+            { "fico": "660-679", "lt_1M": "N/A", "lt_1_5M": "N/A", "lt_2M": "N/A", "lt_2_5M": "N/A", "lt_3M": "N/A", "lt_3_5M": "N/A" }
+          ]
+        }
+      }
+    },
+    {
+      "program_name": "Ellington Non-QM Asset Depletion",
+      "effective_date": "8/15/25",
+      "doc_type": "Asset Depletion/Qualifier (Primary only)",
+      "eligible_borrowers": "US Citizen, Permanent Resident",
+      "occupancy": "Owner Occupied",
+      "loan_amount": {
+        "min": 100000,
+        "max": 3500000
+      },
+      "dti_max": "45% (50% when LTV <= 80%)",
+      "mortgage_rating": "0x30x12 for all mortgages",
+      "credit_event_seasoning": "48 Months (BK, FC, SS, FB, Mod)",
+      "max_cash_out_proceeds": 1000000,
+      "property_types": ["SFR", "1-4 Units", "PUD", "Condo", "Non-Warrantable Condo"],
+      "rural_allowed": true,
+      "rural_max_ltv": 80,
+      "max_acreage": 10,
+      "condotel_eligible": false,
+      "non_warrantable_condo_min_fico": 680,
+      "fixed_products": ["15 Year Fixed", "20 Year Fixed", "30 Year Fixed"],
+      "arm_products": {
+        "types": ["5/6 SOFR ARM", "7/6 SOFR ARM"],
+        "margin": "3.5%",
+        "index": "30-day average SOFR",
+        "floor": "Start rate",
+        "initial_cap": "2.0%",
+        "annual_cap": "2.0%",
+        "life_cap": "5.0%"
+      },
+      "reserves": {
+        "rules": [
+          "0 Months PITIA when LTV <= 65%",
+          "6 Months PITIA when LTV > 65%",
+          "3 Months PITIA for purchase loans with credit score > 720 and LTV >65 & <= 80",
+          "12 Months PITIA for loan amounts greater than $1,500,000 regardless of LTV",
+          "Cash Out can be used for reserves"
+        ]
+      },
+      "product_type_restrictions": {
+        "asset_depletion": { "max_ltv_purchase": 80, "max_ltv_rate_term": 75, "max_ltv_cash_out": 75 },
+        "asset_qualifier": { "max_ltv_purchase": 80, "max_ltv_rate_term": 75, "max_ltv_cash_out": 75 },
+        "non_warrantable_condo": { "max_ltv_purchase": 75, "max_ltv_rate_term": 75, "max_ltv_cash_out": 70 },
+        "2_4_unit": { "max_ltv_purchase": 80, "max_ltv_rate_term": 80, "max_ltv_cash_out": 75 }
+      },
+      "ltv_matrices": {
+        "primary_residence": {
+          "purchase": [
+            { "fico": "760+", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": 80, "lt_3M": 75, "lt_3_5M": 70 },
+            { "fico": "740-759", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": 80, "lt_3M": 75, "lt_3_5M": 70 },
+            { "fico": "720-739", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": 80, "lt_3M": 75, "lt_3_5M": 70 },
+            { "fico": "700-719", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": 75, "lt_3M": 75, "lt_3_5M": "N/A" },
+            { "fico": "680-699", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": 70, "lt_3M": 70, "lt_3_5M": "N/A" },
+            { "fico": "660-679", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": 70, "lt_3M": 70, "lt_3_5M": "N/A" }
+          ],
+          "rate_term_refinance": [
+            { "fico": "760+", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": 75, "lt_3M": 70, "lt_3_5M": 70 },
+            { "fico": "740-759", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": 75, "lt_3M": 70, "lt_3_5M": 70 },
+            { "fico": "720-739", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": 75, "lt_3M": 70, "lt_3_5M": 70 },
+            { "fico": "700-719", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 70, "lt_3_5M": "N/A" },
+            { "fico": "680-699", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 70, "lt_3_5M": "N/A" },
+            { "fico": "660-679", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 70, "lt_3_5M": "N/A" }
+          ],
+          "cash_out_refinance": [
+            { "fico": "760+", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 65, "lt_3_5M": "N/A" },
+            { "fico": "740-759", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 65, "lt_3_5M": "N/A" },
+            { "fico": "720-739", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": 70, "lt_3M": 65, "lt_3_5M": "N/A" },
+            { "fico": "700-719", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65, "lt_3M": 60, "lt_3_5M": "N/A" },
+            { "fico": "680-699", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 70, "lt_2_5M": 65, "lt_3M": 60, "lt_3_5M": "N/A" },
+            { "fico": "660-679", "lt_1M": 70, "lt_1_5M": 70, "lt_2M": "N/A", "lt_2_5M": "N/A", "lt_3M": "N/A", "lt_3_5M": "N/A" }
+          ]
+        }
+      }
+    },
+    {
+      "program_name": "Ellington Investor Income Qualified",
+      "effective_date": "10/24/25",
+      "doc_type": "1 & 2 year Full Doc, 12 & 24 month Bank Statement, 1 & 2 year 1099",
+      "eligible_borrowers": "US Citizen, Permanent Resident, Non-Permanent Resident. No ITIN, DACA, Asylees, or borrowers under deferred deportation orders.",
+      "occupancy": "Non-Owner Occupied",
+      "loan_amount": {
+        "min": 100000,
+        "max": 2000000
+      },
+      "dti_max": "45% (50% when LTV <= 80%)",
+      "property_types": ["SFR", "1-4 Units", "PUD", "Condo", "Non-Warrantable Condo", "Condotel", "Rural"],
+      "rural_allowed": true,
+      "fixed_products": ["15 Year Fixed", "20 Year Fixed", "30 Year Fixed", "40 Year Fixed w/ 10 Year IO"],
+      "arm_products": {
+        "types": ["5/6 SOFR ARM", "7/6 SOFR ARM"],
+        "margin": "3.5%",
+        "index": "30-day average SOFR",
+        "floor": "Start rate",
+        "initial_cap": "2.0%",
+        "annual_cap": "2.0%",
+        "life_cap": "5.0%"
+      },
+      "interest_only_term_months": 120,
+      "interest_only_qualification": "Qualify off of 30 Year amortization, A Credit Only, Full/Bank Statement doc only",
+      "reserves": {
+        "rules": [
+          "0 Months PITIA when LTV <= 65%",
+          "6 Months PITIA when LTV > 65%",
+          "3 Months PITIA for purchase loans with credit score > 720 and LTV < 80",
+          "12 Months PITIA for loan amounts greater than $1,500,000 regardless of LTV",
+          "Cash Out can be used for reserves"
+        ]
+      },
+      "credit_grade_matrix": {
+        "grade_A": {
+          "mortgage_history": "0x30x12",
+          "foreclosure_seasoning": "36 Months",
+          "bankruptcy_seasoning": "36 Months",
+          "short_sale_seasoning": "36 Months",
+          "deed_in_lieu_seasoning": "36 Months",
+          "modification_seasoning": "36 Months",
+          "max_loan_amount": 2000000,
+          "occupancy": "All"
+        },
+        "grade_B": {
+          "mortgage_history": "1x30x12",
+          "foreclosure_seasoning": "24 Months",
+          "bankruptcy_seasoning": "24 Months",
+          "short_sale_seasoning": "24 Months",
+          "deed_in_lieu_seasoning": "24 Months",
+          "modification_seasoning": "24 Months",
+          "max_loan_amount": 1500000,
+          "occupancy": "All"
+        },
+        "grade_C": {
+          "mortgage_history": "1x60x12",
+          "foreclosure_seasoning": "12 Months",
+          "bankruptcy_seasoning": "12 Months",
+          "short_sale_seasoning": "12 Months",
+          "deed_in_lieu_seasoning": "12 Months",
+          "modification_seasoning": "12 Months",
+          "max_loan_amount": "N/A",
+          "occupancy": "N/A"
+        }
+      },
+      "product_type_restrictions": {
+        "credit_grade_A": { "max_ltv_purchase": 85, "max_ltv_rate_term": 80, "max_ltv_cash_out": 80 },
+        "credit_grade_B": { "max_ltv_purchase": 75, "max_ltv_rate_term": 75, "max_ltv_cash_out": 70 },
+        "credit_grade_C": { "max_ltv_purchase": "N/A", "max_ltv_rate_term": "N/A", "max_ltv_cash_out": "N/A" },
+        "asset_depletion_qualifier": { "max_ltv_purchase": "N/A", "max_ltv_rate_term": "N/A", "max_ltv_cash_out": "N/A" },
+        "interest_only": { "max_ltv_purchase": 80, "max_ltv_rate_term": 80, "max_ltv_cash_out": 75 },
+        "non_permanent_resident": { "max_ltv_purchase": 75, "max_ltv_rate_term": 70, "max_ltv_cash_out": 70 },
+        "non_warrantable_condo": { "max_ltv_purchase": 75, "max_ltv_rate_term": 75, "max_ltv_cash_out": 70 },
+        "condotel": { "max_ltv_purchase": 75, "max_ltv_rate_term": 70, "max_ltv_cash_out": 65 },
+        "2_4_unit": { "max_ltv_purchase": 80, "max_ltv_rate_term": 75, "max_ltv_cash_out": 70 },
+        "short_term_rental": { "max_ltv_purchase": 75, "max_ltv_rate_term": 75, "max_ltv_cash_out": 70 }
+      },
+      "short_term_rental": {
+        "allowed": true,
+        "max_ltv_purchase": 75,
+        "max_ltv_rate_term": 75,
+        "max_ltv_cash_out": 70
+      },
+      "ltv_matrices": {
+        "investment_property": {
+          "purchase": [
+            { "fico": "760+", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "740-759", "lt_1M": 85, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "720-739", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "700-719", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "680-699", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "660-679", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "640-659", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": "N/A", "lt_2_5M": "N/A", "lt_3M": "N/A" }
+          ],
+          "rate_term_refinance": [
+            { "fico": "760+", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "740-759", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "720-739", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "700-719", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "680-699", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "660-679", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 75, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "640-659", "lt_1M": 70, "lt_1_5M": 70, "lt_2M": "N/A", "lt_2_5M": "N/A", "lt_3M": "N/A" }
+          ],
+          "cash_out_refinance": [
+            { "fico": "760+", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "740-759", "lt_1M": 80, "lt_1_5M": 80, "lt_2M": 80, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "720-739", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "700-719", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "680-699", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "660-679", "lt_1M": 75, "lt_1_5M": 75, "lt_2M": 75, "lt_2_5M": "N/A", "lt_3M": "N/A" },
+            { "fico": "640-659", "lt_1M": 65, "lt_1_5M": 65, "lt_2M": "N/A", "lt_2_5M": "N/A", "lt_3M": "N/A" }
+          ]
+        }
+      }
+    }
+  ]
+}

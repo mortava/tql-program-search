@@ -1,0 +1,139 @@
+{
+  "investor": "AD (A&D Mortgage)",
+  "source_file": "AD Product Martrix 2 19 2026.pdf",
+  "last_updated": "02/19/2026",
+  "programs": {
+    "AD_Power_Jumbo": {
+      "income_verification": "Refer to AUS / Fannie Mae Seller Guide, VOE within 10 days of consummation is required",
+      "max_loan_amount": "$5,000,000",
+      "min_loan_amount": "$1 over Conforming Loan Limit",
+      "max_cltv": 89.99,
+      "min_fico": 660,
+      "max_dti": 50,
+      "occupancy": ["Owner-Occupied", "Second Home", "Investment"],
+      "property_types": ["Single Family Residences", "PUD", "Condo", "2-4 Unit"],
+      "mortgage_history": "DU AUS requirement",
+      "credit_event": "Refer to AUS for BK, FCL, SS, DL, Modification; 6 payments out of Forbearance required",
+      "credit_history_tradelines": "Refer to AUS / Fannie Mae Guideline",
+      "appraisal": "PIW is not allowed; Second Appraisal over $2 million; Appraisal transfer is not allowed",
+      "min_reserves": {
+        "LA_lte_2MM": "Per AUS",
+        "FTHB_and_LA_lte_2MM": "12 months",
+        "LA_gt_2MM_lte_3MM": "12 months",
+        "LA_gt_3MM": "24 months"
+      },
+      "residual_income": "N/A",
+      "assets": "Assets per DU",
+      "gift_funds": "Gift funds are eligible. Gifts of equity are ineligible",
+      "term_amortization": "15 & 30 Years Fixed, 5/6, 7/6, 10/6 ARM",
+      "interest_only": "No",
+      "cash_out": "No max cash-out limit",
+      "citizenship": ["US Citizenship", "Permanent Resident", "Non-Permanent Resident"]
+    },
+    "Super_Prime_Prime": {
+      "income_verification": "1Y & 2Y Full Doc, 1Y & 2Y P&L, 12M & 24M Bank Statement, Asset Utilization, WVOE, 1099",
+      "max_loan_amount": "$4,000,000 ($2,500,000 for P&L)",
+      "min_loan_amount": "$100,000",
+      "max_cltv_breakdown": {
+        "non_qm_full_doc_bank_statement": 90,
+        "1099": 85,
+        "wvoe_pl_asset_utilization_fthb_bank_statement": 80
+      },
+      "min_fico": 620,
+      "no_score_allowed": true,
+      "max_dti": 55,
+      "occupancy": ["Owner-Occupied", "Second Home (1 unit only)", "Investment (Vacant or Tenant Occupied - Lease Agreement not required if not used in DTI)"],
+      "property_types": ["Single Family Residences", "Townhomes", "Condo Warrantable", "Condo Non-Warrantable", "Condotel (Investment & 2nd Home)", "2-4 Units", "PUD", "SFR Rural", "Short Term Rentals", "Leasehold"],
+      "mortgage_history": "0x30x12 and 0x90x24",
+      "credit_event": "48 Months out of Credit Event (BK, FCL, SS, DL, modification, forbearance) and 120+ days are considered as a Credit Event",
+      "credit_history_tradelines": "If 3 scores not available: 3 for past >=12 months OR 2 for past >=24 months. Middle Lowest for multiple borrowers, Lowest if only 2 scores. 120 days age max. Limited tradelines are allowed",
+      "appraisal": "Full Appraisal completed within last 360 days supported by AVM ordered by AD internally (10% variance with confidence score >= 90%). LA <= $250K: AVM with 90%+ confidence score (supported by different AVM with 10% variance & confidence score >= 90%) and a new Property Condition. LA > $250K: 120 days age max. Second Appraisal required for loan amounts > $2 million",
+      "min_reserves": {
+        "LA_lte_1MM": "min 3 months",
+        "LA_gt_1MM_lte_2MM": "min 6 months",
+        "LA_gt_2MM": "min 12 months"
+      },
+      "residual_income": "$2,000",
+      "assets": "Assets sourced and seasoned for 30 days, 120 days age max. Overseas Assets sourced for 60 days. 1031 Exchange Eligible",
+      "gift_funds": "Gift funds allowed (Borrower Contribution Required under 80% CLTV: OO - 0%, Investment - 10%; over 80% CLTV: OO - 5%, Investment - NA) for down payment, closing costs",
+      "term_amortization": "30 & 40 Years Fixed, 5/6 & 7/6 ARM",
+      "interest_only": "120 Months of Interest Only Period, 240/360 Months of Amortization",
+      "cash_out": "Max cash-in-hand $500,000 for CLTV >65%, $1,000,000 for CLTV <=65% to >=55%, no max cash-in-hand limitation for CLTV <55%",
+      "citizenship": ["US Citizenship", "Permanent Resident", "Non-Permanent Resident", "ITIN"]
+    },
+    "ITIN_DSCR": {
+      "income_verification": "DSCR = Gross Income / Proposed PITIA. Borrower income is not required. DSCR < 1 requires min FICO 680 or No FICO",
+      "max_loan_amount": "$3,000,000",
+      "min_loan_amount": "$50,000",
+      "max_cltv": 70,
+      "min_fico": 660,
+      "no_score_allowed": true,
+      "max_dti": 50,
+      "dti_not_required_for_dscr": true,
+      "occupancy": ["Owner-Occupied", "Second Home (1 unit only)", "Investment (Vacant or Tenant Occupied - Lease Agreement not required if not used in DTI)"],
+      "property_types": ["Single Family Residences", "Townhomes", "Condo Warrantable", "Condo Non-Warrantable", "Condotels", "2-4 Units", "PUD", "Short Term Rentals", "Leasehold", "SFR Rural", "Multifamily Property", "Mixed Use"],
+      "mortgage_history": "0x30x12 and 0x90x24",
+      "credit_event": "48 Months out of Credit Event (BK, FCL, SS, DL, modification, forbearance) and 120+ days are considered as a Credit Event",
+      "credit_history_tradelines": "If 3 scores not available: 3 for past >=12 months OR 2 for past >=24 months. Middle Lowest for multiple borrowers, Lowest if only 2 scores. 120 days age max",
+      "min_reserves": {
+        "LA_lte_1MM": "min 3 months",
+        "LA_gt_1MM_lte_2MM": "min 6 months",
+        "LA_gt_2MM": "min 12 months",
+        "rate_term_and_cash_out": "no minimum requirement"
+      },
+      "residual_income": "$2,000",
+      "assets": "Assets sourced and seasoned for 30 days, 120 days age max. Overseas Assets sourced for 60 days. 1031 Exchange Eligible",
+      "gift_funds": "Gift funds allowed (Borrower Contribution Required - 10%) for down payment, closing costs",
+      "term_amortization": "30 & 40 Years Fixed, 5/6 & 7/6 ARM",
+      "interest_only": "120 Months of Interest Only Period, 240/360 Months of Amortization",
+      "cash_out": "Max cash-in-hand $500,000 for CLTV >65%, $1,000,000 for CLTV <=65% to >=55%, no max cash-in-hand limitation for CLTV <55%",
+      "citizenship": ["US Citizenship", "Permanent Resident", "Non-Permanent Resident", "ITIN"]
+    },
+    "Foreign_National_DSCR": {
+      "income_verification": "Letter from a Foreign CPA providing income for the last 2 years and YTD earnings. DSCR = Gross Income / Proposed PITIA. Borrower income is not required. DSCR must be equal to 1 or above",
+      "max_loan_amount": "$3,000,000",
+      "min_fico": "No Score or FICO 680",
+      "max_dti": 43,
+      "occupancy": ["Investment only"],
+      "property_types": ["Single Family Residences", "Condo Warrantable", "Condo Non-Warrantable", "2-4 Units", "PUD", "Short Term Rental"],
+      "mortgage_history": "0x30x12 and 0x90x24",
+      "credit_event": "12 Months out of Credit Event (BK, FCL, SS, DL, modification, forbearance) and 120+ days are considered as a Credit Event",
+      "credit_history_tradelines": "1 Bank Reference Letter. No Score is allowed. Foreign National: No score or 680 min FICO (No FICO). 1 Bank Reference Letter",
+      "residual_income": "N/A",
+      "cash_out": "Max cash-in-hand $500,000",
+      "citizenship": ["Foreign National"]
+    },
+    "Foreign_National_Full_Doc": {
+      "income_verification": "2Y Full Doc, 12M & 24M Bank Statement, Asset Utilization, WVOE, 1099, DSCR = Gross Income / Proposed PITIA. Borrower income is not required",
+      "max_loan_amount": "$500,000",
+      "min_loan_amount": "$50,000",
+      "max_cltv": 75,
+      "min_fico": "No Score for FN or FICO 680",
+      "max_dti": 50,
+      "occupancy": ["Owner-Occupied", "Second Home", "Investment (Vacant or Tenant Occupied - Lease Agreement not required if not used in DTI)", "Foreign National (Investment only)"],
+      "property_types": ["Single Family Residences", "Condo Warrantable", "Condo Non-Warrantable", "2-4 Units", "PUD", "Short Term Rental"],
+      "interest_only": "No",
+      "residual_income": "$2,000",
+      "gift_funds": "Gift funds allowed (under 80% CLTV Borrower Contribution Required: OO - 0%, Inv - 10%; over 80% CLTV: OO - 5%, Inv - NA)",
+      "term_amortization": "10, 15, 20 & 30 Years Fixed",
+      "citizenship": ["US Citizenship", "Permanent Resident", "Non-Permanent Resident", "Foreign National"]
+    },
+    "Second_Lien": {
+      "max_cltv": 90,
+      "min_fico": 660,
+      "max_dti": 50,
+      "mortgage_history": "0x60x12",
+      "credit_event_seasoning": "0x30x12 and 0x90x24"
+    }
+  },
+  "short_term_rental": {
+    "allowed": true,
+    "programs": ["Super_Prime_Prime", "ITIN_DSCR", "Foreign_National_DSCR", "Foreign_National_Full_Doc"],
+    "notes": "STR is listed as eligible property type across multiple programs"
+  },
+  "rural_property": {
+    "allowed": true,
+    "programs": ["Super_Prime_Prime", "ITIN_DSCR"],
+    "notes": "SFR Rural listed as eligible property type"
+  }
+}

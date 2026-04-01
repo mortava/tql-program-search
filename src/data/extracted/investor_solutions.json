@@ -1,0 +1,375 @@
+{
+  "investor": "Investor Solutions (Verus)",
+  "source_files": [
+    "Investor Solutions - DSCR (1).pdf",
+    "Investor Solutions - DSCR (5-8 Units or 2-8 Mixed Use) (1).pdf"
+  ],
+  "programs": {
+    "DSCR_1_to_4_Units": {
+      "program_name": "Investor Solutions - DSCR (Single Investment Property)",
+      "occupancy": "Investment",
+      "loan_purpose": ["Purchase", "Rate/Term Refinance", "Cash Out"],
+      "product_type": ["15-Year Fixed", "30-Year Fixed", "40-Year Fixed", "5/6 ARM", "7/6 ARM", "10/6 ARM (30-year term)"],
+      "loan_amounts": {
+        "min": 100000,
+        "max": 3500000
+      },
+      "loan_amt_lt_150k": {
+        "max_ltv_purchase": 70,
+        "max_ltv_refinance": 65,
+        "min_dscr": 1.0
+      },
+      "interest_only": {
+        "allowed": true,
+        "min_credit_score": 680,
+        "max_ltv_purchase": 75,
+        "max_ltv_rate_term": 75,
+        "max_ltv_cash_out": 70,
+        "note": "40-year term ARMs eligible with IO feature"
+      },
+      "ltv_matrices": {
+        "dscr_gte_1.00": {
+          "single_investment_property": [
+            { "fico": 740, "max_loan": 2500000, "purchase": 80, "rate_term": 80, "cash_out": 80 },
+            { "fico": 720, "max_loan": 1000000, "purchase": 85, "rate_term": 85, "cash_out": 80 },
+            { "fico": 720, "max_loan": 1500000, "purchase": 85, "rate_term": 85, "cash_out": 80 },
+            { "fico": 700, "max_loan": 1000000, "purchase": 80, "rate_term": 75, "cash_out": 75 },
+            { "fico": 700, "max_loan": 1500000, "purchase": 80, "rate_term": 75, "cash_out": 75 },
+            { "fico": 700, "max_loan": 2000000, "purchase": 75, "rate_term": 70, "cash_out": 70 },
+            { "fico": 700, "max_loan": 3000000, "purchase": 70, "rate_term": 65, "cash_out": 65 },
+            { "fico": 700, "max_loan": 3500000, "purchase": 70, "rate_term": 65, "cash_out": "N/A" },
+            { "fico": 660, "max_loan": 1000000, "purchase": 75, "rate_term": 75, "cash_out": 70 },
+            { "fico": 660, "max_loan": 1500000, "purchase": 75, "rate_term": 70, "cash_out": 70 },
+            { "fico": 660, "max_loan": 2000000, "purchase": 70, "rate_term": 65, "cash_out": 65 },
+            { "fico": 660, "max_loan": 2500000, "purchase": 70, "rate_term": 65, "cash_out": 65 },
+            { "fico": 660, "max_loan": 3000000, "purchase": 65, "rate_term": "N/A", "cash_out": "N/A" },
+            { "fico": 640, "max_loan": 1000000, "purchase": 75, "rate_term": 70, "cash_out": "N/A" },
+            { "fico": 640, "max_loan": 1500000, "purchase": 65, "rate_term": 65, "cash_out": "N/A" },
+            { "fico": 640, "max_loan": 2000000, "purchase": 65, "rate_term": "N/A", "cash_out": "N/A" },
+            { "fico": 640, "max_loan": 3000000, "purchase": 60, "rate_term": "N/A", "cash_out": "N/A" }
+          ]
+        },
+        "dscr_lt_1.00": {
+          "single_investment_property": [
+            { "fico": 700, "max_loan": 1000000, "purchase": 75, "rate_term": 70, "cash_out": 70 },
+            { "fico": 700, "max_loan": 1500000, "purchase": 75, "rate_term": 70, "cash_out": 70 },
+            { "fico": 700, "max_loan": 2000000, "purchase": 70, "rate_term": 65, "cash_out": 65 },
+            { "fico": 700, "max_loan": 2500000, "purchase": 65, "rate_term": "N/A", "cash_out": "N/A" },
+            { "fico": 700, "max_loan": 3000000, "purchase": 60, "rate_term": "N/A", "cash_out": "N/A" },
+            { "fico": 680, "max_loan": 1000000, "purchase": 70, "rate_term": 65, "cash_out": "N/A" },
+            { "fico": 680, "max_loan": 1500000, "purchase": 70, "rate_term": 65, "cash_out": "N/A" },
+            { "fico": 680, "max_loan": 2000000, "purchase": 65, "rate_term": 60, "cash_out": "N/A" },
+            { "fico": 680, "max_loan": 3000000, "purchase": 60, "rate_term": "N/A", "cash_out": "N/A" },
+            { "fico": 660, "max_loan": 1000000, "purchase": 65, "rate_term": "N/A", "cash_out": "N/A" }
+          ]
+        }
+      },
+      "dscr_ratio_rules": {
+        "above_1_percent": "Cash out at 80% LTV allowed",
+        "below_1_percent": "5% LTV hit"
+      },
+      "property_types": {
+        "eligible": ["Single Family Attached", "Single Family Detached", "2-4 Units", "Condominiums"],
+        "condo_hotel": {
+          "max_ltv_purchase": 75,
+          "max_ltv_refinance": 65,
+          "max_loan_amount": 1500000
+        },
+        "rural": {
+          "allowed": true,
+          "max_ltv_purchase": 75,
+          "max_ltv_refinance": 70
+        }
+      },
+      "acreage": "Property up to 5 acres",
+      "cash_in_hand": {
+        "ltv_gt_65": "$500,000",
+        "ltv_lt_65": "$1,000,000",
+        "note": "Total equity withdrawn cannot exceed these limits. Not applicable to Delayed Financing transactions"
+      },
+      "short_term_rentals": {
+        "allowed": true,
+        "ltv_reduction": "5% reduction from matrix",
+        "max_ltv": 80,
+        "max_ltv_cash_out": 70,
+        "income_documentation": {
+          "dscr_calculation": {
+            "method": "Monthly gross rents based upon 12-month average (for seasonality). Gross rents reduced by 20% for extraordinary costs (advertising, furnishings, cleaning). If actual expenses > 20%, use actual. Min 20% expense factor required.",
+            "pitia_formula": "(Gross Rents * 0.80) / PITIA = DSCR",
+            "itia_formula": "(Gross Rents * 0.80) / ITIA = DSCR",
+            "multiple_sources": "When using multiple sources, lowest monthly income is utilized"
+          },
+          "acceptable_methods": [
+            {
+              "method": "STR Analysis Form or 1007/1025",
+              "requirements": [
+                "Source of data used to complete STR analysis",
+                "Include comparable STR properties (room count, GLA, location, market appeal)",
+                "Include daily rental rate and occupancy percentage",
+                "Factor seasonality and vacancy",
+                "Must be completed by licensed appraiser"
+              ]
+            },
+            {
+              "method": "12-month rental history statement from 3rd party rental/management service",
+              "requirements": [
+                "Must identify subject property/unit",
+                "Rents collected for previous 12 months",
+                "All vendor management fees listed",
+                "Qualifying income must be net of all vendor or management fees"
+              ]
+            },
+            {
+              "method": "12-month bank statements from borrower/guarantor",
+              "requirements": [
+                "Must evidence short-term rental deposits",
+                "Borrower must provide rental records for subject property to support monthly deposits"
+              ]
+            },
+            {
+              "method": "AirDNA Rentalizer/Property Earning Potential Report",
+              "requirements": [
+                "Only allowed for purchase transactions",
+                "Gross rents = revenue projection less 20% extraordinary expense factor",
+                "Forecast period must cover 12 months and dated 90 days within Note date",
+                "Maximum occupancy limited to 2 individuals per bedroom",
+                "Must have 3 comparable properties similar in size, room count, amenities, availability, occupancy",
+                "Market Score or Sub-Market Score must be 60 or greater"
+              ]
+            }
+          ]
+        }
+      },
+      "housing_history": {
+        "1x30x12": "No reduction",
+        "0x60x12": {
+          "max_ltv": 70,
+          "purchase": "Max 65% LTV",
+          "rate_term_cash_out": "Max 70% LTV"
+        }
+      },
+      "credit_event_seasoning": {
+        "bk_fc_ss_dil_prefc_mc": {
+          "gte_36_months": "No reduction",
+          "gte_24_months": {
+            "max_ltv": 75,
+            "purchase": "Max 75% LTV",
+            "rate_term_cash_out": "Max 70% LTV"
+          }
+        },
+        "forbearance_modification_deferral": "> 12 months"
+      },
+      "investor_experience": {
+        "experienced": "Borrower/guarantor must have history of owning and managing commercial or non-owner occupied residential real estate for at least 1 year in last 3 years",
+        "first_time_investor": {
+          "eligible": true,
+          "restrictions": [
+            "First-time homebuyer not allowed",
+            "Min credit score: 700",
+            ">= 36 months seasoning from any credit event",
+            "1-Unit only",
+            "DSCR > 1.00",
+            "Must own a primary residence"
+          ]
+        }
+      },
+      "unleased_properties": "All long-term rental refinances: vacant or unleased property allowed subject to max LTV 70%. Not applicable for short-term rentals.",
+      "long_term_rental_income": {
+        "purchase": {
+          "gross_rents": "Monthly rents established on FNMA Form 1007 or 1025 reflecting long term market rents",
+          "tenant_occupied": "1007 or 1025 must reflect current monthly rent. Evaluated per unit individually",
+          "lower_of_actual_or_market": "Nothing further required",
+          "higher_actual_lease": "Evidence of 2 months receipt required, lease must be within 120% of estimated market rent. If exceeds 120%, rents capped at 120%",
+          "higher_market_rent": "Must be within 120% of lease amount. If exceeds 120%, capped at 120%",
+          "vacant_unleased": "Allowed without LTV restriction",
+          "rent_control_subsidy": "Must use current contractual rent to calculate DSCR"
+        },
+        "refinance": {
+          "required_docs": [
+            "Original appraisal report reflecting tenant-occupied",
+            "FNMA Form 1007 or 1025 reflecting long-term market rents",
+            "Executed lease agreement (month-to-month conversions allowed)"
+          ],
+          "no_lease": "LTV/CLTV limited to lesser of 70% or per DSCR/FICO/Loan balance matrix",
+          "vacant_property": {
+            "ltv_limits": "Lesser of 70% or per DSCR/FICO/Loan balance matrix",
+            "same_rent_rules_as_purchase": true
+          }
+        },
+        "dscr_formula": "Monthly Gross Rents / PITIA (or ITIA) = DSCR"
+      },
+      "refinance_ownership_seasoning": {
+        "0_to_6_months": {
+          "rate_term": "Lesser of Purchase Price + Improvements or Appraisal",
+          "cash_out": "Lesser of Purchase Price + Improvements or Appraisal"
+        },
+        "gt_6_months": {
+          "rate_term": "Appraised Value",
+          "cash_out": "Appraised Value"
+        },
+        "rtl_renovation_cash_out": "If purchased & renovated per appraisal w/ SSR of 2.5 and below, can use appraised value under 6 months ownership"
+      },
+      "underwriting_requirements": {
+        "credit_score": "Use representative credit score of borrower/guarantor with highest representative score",
+        "tradelines": {
+          "3_scores": "Minimum tradeline requirement is waived",
+          "min": "2 reporting 24 months w/activity in last 12 months or 3 reporting 12 months w/recent activity"
+        },
+        "assets": "Min 30 days asset verification required",
+        "reserves": {
+          "standard": "2 months PITIA",
+          "loan_gt_1.5M": "6 months PITIA",
+          "loan_gt_2.5M": "12 months PITIA",
+          "cash_out_for_reserves": true
+        },
+        "gift_funds": "Allowed after min 10% borrower contribution",
+        "document_age": "120 days"
+      },
+      "prepayment_penalty": {
+        "investment_property_only": true,
+        "max_period": "5 years",
+        "structures": [
+          "Fixed percentage of no less than 3%",
+          "Declining structures that do not exceed 5% and do not drop below 3% in first 3 years"
+        ],
+        "not_allowed_states": ["AK", "KS", "MI", "MN", "NM", "RI"],
+        "not_allowed_individuals_in": ["IL", "NJ"],
+        "PA_restriction": "Not allowed on loan amounts less than $319,777",
+        "OH_restriction": "1-2 unit properties cannot exceed 1% of loan balance during 1st 5 years"
+      },
+      "escrows": "May be waived per Section 2.4.5",
+      "appraisals": {
+        "forms": ["FNMA Form 1004", "FNMA Form 1025", "FNMA Form 1073"],
+        "inspection": "Interior/exterior inspection required",
+        "review_product": "Required unless 2nd appraisal obtained",
+        "second_appraisal": "Required for loans > $2,000,000"
+      }
+    },
+    "DSCR_5_to_8_Units_and_Mixed_Use": {
+      "program_name": "Investor Solutions - DSCR (5-8 Units or 2-8 Mixed Use)",
+      "occupancy": "Investment",
+      "loan_purpose": ["Purchase", "Rate/Term Refinance", "Cash Out"],
+      "product_type": ["15-Year Fixed", "30-Year Fixed", "5/6 ARM", "7/6 ARM", "10/6 ARM"],
+      "max_loan_term": "30 years",
+      "interest_only": "Eligible",
+      "loan_amounts": {
+        "min": 400000,
+        "max": 2000000
+      },
+      "ltv_matrix": {
+        "dscr_gte_1.00": [
+          { "fico": 700, "max_loan": 1500000, "purchase": 75, "rate_term": 70, "cash_out": 65 },
+          { "fico": 700, "max_loan": 2000000, "purchase": 70, "rate_term": 65, "cash_out": 65 }
+        ]
+      },
+      "dscr_requirement": {
+        "minimum": 1.0,
+        "formula": "Eligible monthly rents / PITIA (or ITIA for IO loans)",
+        "note": "Reduce qualifying rents by any management fee reflected on appraisal report"
+      },
+      "property_types": {
+        "residential_5_to_8_units": true,
+        "mixed_use_2_to_8_units": {
+          "commercial_usage": "Limited to Retail/Office/Restaurant",
+          "max_commercial_units": {
+            "2_to_3_units": "Max 1 commercial unit",
+            "4_to_5_units": "Max 2 commercial units",
+            "6_to_8_units": "Max 3 commercial units"
+          },
+          "commercial_space_limit": "Must not exceed 49.99% of total building area"
+        },
+        "rural": "Not eligible"
+      },
+      "acreage": "Property up to 2 acres, not meeting rural definition",
+      "cash_in_hand": "$1,000,000 max",
+      "eligible_borrower": ["US Citizen", "Non-Permanent Resident Alien", "Permanent Resident Alien"],
+      "eligibility_restrictions": "Citizens and individuals from OFAC sanctioned countries are not eligible",
+      "housing_history": "0x30x12",
+      "credit_event_seasoning": {
+        "bk_fc_ss_dil_prefc_mc": ">= 36 months any event",
+        "forbearance_modification_deferral": "> 12 months"
+      },
+      "investor_experience": {
+        "experienced": "Required - must have history of owning/managing commercial or non-owner occupied residential real estate for at least 1 year in last 3 years",
+        "first_time_investor": "Not eligible",
+        "first_time_homebuyer": "Not eligible"
+      },
+      "unleased_units": {
+        "max_vacant_2_to_3_units": 1,
+        "max_vacant_4_plus_units": 2,
+        "vacant_unit_qualification": "75% of market rent"
+      },
+      "state_restrictions": {
+        "ineligible_states": ["IL", "NY"],
+        "state_overlays_CT_FL_NJ": {
+          "purchase_max_ltv": 70,
+          "purchase_min_score": 720,
+          "refinance_max_ltv": 65,
+          "refinance_min_score": 720
+        },
+        "ineligible_locations": ["Puerto Rico", "Guam", "US Virgin Islands"]
+      },
+      "declining_market": "Maximum eligible LTVs do not require a market adjustment for 5-8 multifamily and 2-8 mixed use",
+      "income_requirements": {
+        "leased": "Use lower of estimated market rent or lease agreement",
+        "short_term_rental": "NOT eligible",
+        "vacant_units": {
+          "qualification": "75% of market rents",
+          "max_vacant_2_to_3": 1,
+          "max_vacant_4_plus": 2,
+          "must_be_actively_marketed": true,
+          "documentation": "Screenshot of listing or other documentation"
+        },
+        "vacant_commercial_space": "Not allowed",
+        "management_fee": "Reduce qualifying rents by any management fee on appraisal report",
+        "mixed_use_income_limit": "Income from commercial space must not exceed 49.99% of total property income"
+      },
+      "property_condition": [
+        "No fair or poor ratings",
+        "No environmental issues (storage or use of hazardous material)",
+        "No health or safety issues",
+        "No excessive deferred maintenance",
+        "No structural deferred maintenance"
+      ],
+      "mixed_use_commercial": "Limited to retail, restaurant, or office space. Residential/Commercial zoning acceptable. Vacant commercial space not allowed.",
+      "underwriting_requirements": {
+        "credit_score": "Use representative credit score of borrower/guarantor with highest representative score",
+        "tradelines": {
+          "min": "2 reporting 24 months w/activity in last 12 months or 3 reporting 12 months w/recent activity",
+          "3_scores": "Minimum tradeline requirement waived (all borrowers evaluated individually)"
+        },
+        "assets": "Min 30 days asset verification required",
+        "reserves": {
+          "standard": "6 months PITIA",
+          "loan_gt_1.5M": "9 months PITIA",
+          "loan_gt_2.5M": "12 months PITIA",
+          "cash_out_for_reserves": false
+        },
+        "gift_funds": "Not eligible",
+        "document_age": "120 days"
+      },
+      "prepayment_penalty": {
+        "structures": "Fixed percentage of no less than 3%",
+        "not_allowed_states": ["AK", "MS", "MI", "OH", "MN", "NM", "RI"],
+        "not_allowed_individuals_in": ["IL", "NJ"],
+        "PA_restriction": "Not allowed on loan amounts less than $319,777"
+      },
+      "escrows": "May be waived per Section 2.4.5",
+      "appraisals": {
+        "5_to_8_residential": "FHLMC 71A, FHLMC 71B, FNMA 1050 or similar short form; or narrative report",
+        "2_to_8_mixed_use": "General Purpose Commercial Forms (CoreLogic a la mode)",
+        "full_interior_inspection": "Required for all units with photos",
+        "required_attachments": [
+          "Rent Roll",
+          "Income and Expense Statement",
+          "Photos (exterior/interior and street scene)",
+          "Aerial photo",
+          "Sketch or floor plan of typical units",
+          "Map",
+          "Appraiser qualifications"
+        ],
+        "review_product": "Commercial BPO or second appraisal (PA and NC: commercial evaluation product instead of BPO)"
+      }
+    }
+  }
+}

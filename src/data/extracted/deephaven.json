@@ -1,0 +1,1246 @@
+{
+  "investor": "Deephaven Mortgage",
+  "nmls": "958425",
+  "contact": {
+    "email": "correspondentlock@deephavenmortgage.com",
+    "phone": "(844) 346-2677 - Option 3"
+  },
+  "programs": {
+    "expanded_prime": {
+      "program_name": "Expanded Prime",
+      "channel": "Correspondent",
+      "effective_date": "03/03/2026",
+      "ltv_matrix": [
+        {
+          "max_loan_amount": 1500000,
+          "reserves": "6 Months",
+          "tiers": [
+            {
+              "fico": 720,
+              "primary_residence": {
+                "full_doc": { "purchase_rt": "90%", "cash_out": "80%" },
+                "alt_doc": { "purchase_rt": "90%", "cash_out": "80%" }
+              },
+              "second_home_investment": {
+                "full_doc": { "purchase_rt": "85%", "cash_out": "80%" },
+                "alt_doc": { "purchase_rt": "85%", "cash_out": "80%" }
+              }
+            },
+            {
+              "fico": 680,
+              "primary_residence": {
+                "full_doc": { "purchase_rt": "85%", "cash_out": "80%" },
+                "alt_doc": { "purchase_rt": "85%", "cash_out": "80%" }
+              },
+              "second_home_investment": {
+                "full_doc": { "purchase_rt": "80%", "cash_out": "75%" },
+                "alt_doc": { "purchase_rt": "80%", "cash_out": "75%" }
+              }
+            },
+            {
+              "fico": 660,
+              "primary_residence": {
+                "full_doc": { "purchase_rt": "80%", "cash_out": "75%" },
+                "alt_doc": { "purchase_rt": "80%", "cash_out": "75%" }
+              },
+              "second_home_investment": {
+                "full_doc": { "purchase_rt": "75%", "cash_out": "70%" },
+                "alt_doc": { "purchase_rt": "75%", "cash_out": "70%" }
+              }
+            }
+          ]
+        },
+        {
+          "max_loan_amount": 2000000,
+          "reserves": "6 Months",
+          "tiers": [
+            {
+              "fico": 700,
+              "primary_residence": {
+                "full_doc": { "purchase_rt": "85%", "cash_out": "80%" },
+                "alt_doc": { "purchase_rt": "85%", "cash_out": "80%" }
+              },
+              "second_home_investment": {
+                "full_doc": { "purchase_rt": "75%", "cash_out": "75%" },
+                "alt_doc": { "purchase_rt": "75%", "cash_out": "75%" }
+              }
+            },
+            {
+              "fico": 660,
+              "primary_residence": {
+                "full_doc": { "purchase_rt": "80%", "cash_out": "75%" },
+                "alt_doc": { "purchase_rt": "80%", "cash_out": "75%" }
+              },
+              "second_home_investment": {
+                "full_doc": { "purchase_rt": "70%", "cash_out": "70%" },
+                "alt_doc": { "purchase_rt": "70%", "cash_out": "70%" }
+              }
+            }
+          ]
+        },
+        {
+          "max_loan_amount": 2500000,
+          "reserves": "9 Months",
+          "tiers": [
+            {
+              "fico": 700,
+              "primary_residence": {
+                "full_doc": { "purchase_rt": "80%", "cash_out": "75%" },
+                "alt_doc": { "purchase_rt": "80%", "cash_out": "75%" }
+              },
+              "second_home_investment": {
+                "full_doc": { "purchase_rt": "75%", "cash_out": "70%" },
+                "alt_doc": { "purchase_rt": "75%", "cash_out": "70%" }
+              }
+            },
+            {
+              "fico": 660,
+              "primary_residence": {
+                "full_doc": { "purchase_rt": "75%", "cash_out": "70%" },
+                "alt_doc": { "purchase_rt": "75%", "cash_out": "70%" }
+              },
+              "second_home_investment": {
+                "full_doc": { "purchase_rt": "70%", "cash_out": "65%" },
+                "alt_doc": { "purchase_rt": "70%", "cash_out": "65%" }
+              }
+            }
+          ]
+        },
+        {
+          "max_loan_amount": 3000000,
+          "reserves": "12 Months",
+          "tiers": [
+            {
+              "fico": 700,
+              "primary_residence": {
+                "full_doc": { "purchase_rt": "80%", "cash_out": "75%" },
+                "alt_doc": { "purchase_rt": "80%", "cash_out": "75%" }
+              },
+              "second_home_investment": {
+                "full_doc": { "purchase_rt": "70%", "cash_out": "65%" },
+                "alt_doc": { "purchase_rt": "70%", "cash_out": "65%" }
+              }
+            },
+            {
+              "fico": 680,
+              "primary_residence": {
+                "full_doc": { "purchase_rt": "75%", "cash_out": "70%" },
+                "alt_doc": { "purchase_rt": "75%", "cash_out": "70%" }
+              },
+              "second_home_investment": {
+                "full_doc": { "purchase_rt": "65%", "cash_out": "60%" },
+                "alt_doc": { "purchase_rt": "65%", "cash_out": "60%" }
+              }
+            }
+          ]
+        },
+        {
+          "max_loan_amount": 3500000,
+          "reserves": "12 Months",
+          "tiers": [
+            {
+              "fico": 700,
+              "primary_residence": {
+                "full_doc": { "purchase_rt": "70%", "cash_out": "N/A" },
+                "alt_doc": { "purchase_rt": "70%", "cash_out": "N/A" }
+              },
+              "second_home_investment": {
+                "full_doc": { "purchase_rt": "N/A", "cash_out": "N/A" },
+                "alt_doc": { "purchase_rt": "N/A", "cash_out": "N/A" }
+              }
+            }
+          ]
+        }
+      ],
+      "note_90_ltv": "Up to 90%; Max 89.99%",
+      "program_parameters": {
+        "min_loan_amount": 100000,
+        "max_loan_amount": 3500000,
+        "max_cash_out_ltv_lte_65": "Unlimited",
+        "max_cash_out_ltv_gt_65": 500000,
+        "max_cash_out_noo": 1000000,
+        "mortgage_history": "1x30x12",
+        "fc_dil_ss_seasoning": "48 Months",
+        "bk_seasoning": "48 Months",
+        "residual_income": 2500,
+        "standard_dti": "55%"
+      },
+      "products": [
+        "15Y Fixed", "30Y Fixed", "40Y Fixed",
+        "30Y Fixed-IO", "40Y Fixed-IO",
+        "5/6 ARM", "30Y 5/6 ARM-IO", "40Y 5/6 ARM-IO"
+      ],
+      "interest_only": {
+        "max_ltv": "80%",
+        "options": [
+          { "io_period": "10 Years", "amort": "20 Years", "maturity": "30 Years" },
+          { "io_period": "10 Years", "amort": "30 Years", "maturity": "40 Years" }
+        ]
+      },
+      "income_documentation": {
+        "full_doc": "1 Yr W-2s or Tax Returns (Full Doc - 12M)",
+        "asset_utilization": "Max 80% LTV (Full Doc Matrix); Purchase & Rate/Term Only",
+        "alt_doc": "12 Months Personal (or) Business Bank Statements; 12 Months 1099 Income; 12 Month Profit & Loss Statement",
+        "alt_doc_requirements": "Must be S/E for 2 yrs. See Guidelines for details."
+      },
+      "overlays": {
+        "interest_only": "Max 80% LTV",
+        "pl_only_with_2mo_bs": "Qualify off Alt Doc grids; Max 80% LTV (Purchase); Max 70% LTV (Refinance)",
+        "pl_only_without_bs": "Qualify off Alt Doc grids; Max 70% LTV (Purchase); Max 60% LTV (Refinance); Min FICO 720; Max $2.0MM Loan Amt",
+        "investment": "No subordinate financing; Prepayment restrictions may apply; FTHB is not eligible"
+      },
+      "property_types": {
+        "eligible": ["SFR", "PUD", "Townhomes", "Condos", "2-4 Unit", "Rural"],
+        "property_ltv_limits": {
+          "condominium": "90%",
+          "non_warrantable_condo": "80%",
+          "2_4_unit": "80%",
+          "rural_purchase_only": "75%"
+        }
+      },
+      "occupancy": ["Primary Residence", "Second Homes", "Investment Properties"],
+      "cash_out_rules": {
+        "max_cash_out_lte_65_ltv": "Unlimited",
+        "max_cash_out_gt_65_ltv": 500000,
+        "cash_out_proceeds_for_reserves": true,
+        "cash_out_with_appraised_value": "6 month ownership seasoning; Max 75% LTV; CDA or SSR of 2.5 or less required"
+      },
+      "dti_over_50": "Primary residence only; Min 700 FICO; Max 80% LTV/CLTV; No FTHB",
+      "declining_markets": "Max LTV reduced by 5%",
+      "subordinate_financing": "Max CLTV = Grid Max LTV (Institutional seconds only)",
+      "citizenship": ["US Citizens", "Permanent Resident Aliens", "Non-Permanent Resident Aliens (w/ US Credit)"],
+      "appraisal": {
+        "lt_80_ltv": "Clear Capital AVM or like product",
+        "gt_80_ltv": "Clear Capital CDA, Field Review, or FNMA Collateral Underwriter Review w/ SRR and score of 2.5 or less",
+        "gt_2m_loan": "Full 2nd Appraisal required"
+      },
+      "assets": "Sourced or seasoned for 30 days; Gift Funds allowed",
+      "credit": {
+        "standard": "3 tradelines reporting for 12+ months or 2 tradelines reporting for 24+ months all with activity in the last 12 months or one mortgage or installment tradeline for 36+ months with 12 months activity",
+        "max_late": "0x60x12 on acceptable tradelines",
+        "qualifying_fico": "Middle score of 3 or lower score when only 2 agency scores provided, of primary wage earner",
+        "tradeline_waiver": "Waived if primary wage earner credit report reflects scores from all 3 bureaus & qualifying FICO score is 700+"
+      },
+      "prepayment_penalty": {
+        "applies_to": "Investment Only",
+        "options": [
+          "5-year: 5%, 4%, 3%, 2%, 1% stepdown",
+          "4-year: 5%, 4%, 3%, 2% stepdown",
+          "3-year: 5%, 4%, 3% stepdown",
+          "2-year: 3% (year 1 and year 2 = 3%)",
+          "1-year: 3% fee"
+        ]
+      },
+      "seller_concessions": "Up to 6% towards closing for all occupancies",
+      "ineligible_geos": {
+        "delegated": "Primary & Second Home - NY; All Occupancies: HI lava zones 1 & 2; Investor Occupancy: Baltimore City, MD & Philadelphia, PA",
+        "non_delegated": "Primary & Second Home - NY; All Occupancies: HI lava zones 1 & 2; Investor Occupancy: Baltimore, MD & Philadelphia, PA"
+      }
+    },
+    "non_prime": {
+      "program_name": "Non-Prime",
+      "channel": "Correspondent",
+      "effective_date": "03/03/2026",
+      "ltv_matrix": [
+        {
+          "max_loan_amount": 2000000,
+          "reserves": "3 Months",
+          "tiers": [
+            {
+              "fico": 700,
+              "primary_residence": {
+                "standard": { "purchase_rt": "80%", "cash_out": "80%" },
+                "recent_event": { "purchase_rt": "70%", "cash_out": "N/A" }
+              },
+              "second_home_investment": { "purchase_rt": "75%", "cash_out": "65%" }
+            },
+            {
+              "fico": 660,
+              "primary_residence": {
+                "standard": { "purchase_rt": "80%", "cash_out": "75%" },
+                "recent_event": { "purchase_rt": "70%", "cash_out": "N/A" }
+              },
+              "second_home_investment": { "purchase_rt": "75%", "cash_out": "60%" }
+            },
+            {
+              "fico": 620,
+              "primary_residence": {
+                "standard": { "purchase_rt": "75%", "cash_out": "65%" },
+                "recent_event": { "purchase_rt": "70%", "cash_out": "N/A" }
+              },
+              "second_home_investment": { "purchase_rt": "70%", "cash_out": "N/A" }
+            }
+          ]
+        }
+      ],
+      "program_parameters": {
+        "min_loan_amount": 100000,
+        "max_loan_amount": 2000000,
+        "max_cash_out": 500000,
+        "residual_income": 1500,
+        "residual_income_note": "$1,500 plus an additional $150 per dependent",
+        "standard_max_dti": "50%"
+      },
+      "mortgage_history": {
+        "standard": "0x60x12",
+        "recent_event": "1x120x12"
+      },
+      "seasoning": {
+        "fc_ss_dil": { "standard": "24 Months", "recent_event": "Settled" },
+        "chapter_13": { "standard": "24 Months", "recent_event": "Discharged/Dismissed" },
+        "chapter_7_11": { "standard": "24 Months", "recent_event": "Discharged/Dismissed" },
+        "second_home_investment": "24 Months"
+      },
+      "products": [
+        "15Y Fixed", "30Y Fixed", "40Y Fixed",
+        "30Y Fixed-IO", "40Y Fixed-IO",
+        "5/6 ARM", "30Y 5/6 ARM-IO", "40Y 5/6 ARM-IO"
+      ],
+      "interest_only": {
+        "max_ltv": "80%",
+        "options": [
+          { "io_period": "10 Years", "amort": "20 Years", "maturity": "30 Years" },
+          { "io_period": "10 Years", "amort": "30 Years", "maturity": "40 Years" }
+        ]
+      },
+      "income_documentation": {
+        "full_doc": "1 Yr W-2 or Tax Return",
+        "alt_doc": "12 Months Personal (or) Business Bank Statements; 12 Months 1099 Income; 12 Month Profit & Loss Statement"
+      },
+      "occupancy": ["Primary Residence", "Second Homes", "Investment Properties"],
+      "occupancy_notes": "Investment - no subordinate financing and no FTHB",
+      "property_types": {
+        "eligible": ["SFR", "PUD", "Townhomes", "Condos", "2-4 Unit", "Rural"],
+        "limits": {
+          "2_4_unit_and_nw_condo": "Max 80% LTV",
+          "rural": "Purchase only and Max 75% LTV"
+        }
+      },
+      "pl_only": "2 Mo BS required; Min FICO 660; Max LTV 80% (Purchase) / 70% (Refinance)",
+      "citizenship": ["US Citizen", "Permanent Resident Alien", "Non-Permanent Resident Alien (w/ US Credit)"],
+      "credit": {
+        "standard": "3 tradelines reporting for 12+ months or 2 tradelines reporting for 24+ months all with activity in the last 12 months or 1 mortgage or installment tradeline for 36+ months with 12 months activity",
+        "limited": "No minimum tradeline requirements",
+        "qualifying_fico": "Middle score if 3 agency scores or lower score when only 2 agency scores provided, of primary wage earner",
+        "tradeline_waiver": "Waived if primary wage earner credit report reflects scores from all 3 bureaus & qualifying FICO score is 700+"
+      },
+      "prepayment_penalty": {
+        "applies_to": "Investment Only",
+        "options": [
+          "5-year: 5%, 4%, 3%, 2%, 1% stepdown",
+          "4-year: 5%, 4%, 3%, 2% stepdown",
+          "3-year: 5%, 4%, 3% stepdown",
+          "2-year: 3% (year 1 and year 2 = 3%)",
+          "1-year: 3% fee"
+        ]
+      },
+      "seller_concessions": "Up to 6% towards closing for all occupancies",
+      "ineligible_geos": {
+        "delegated": "Primary & Second Home - NY; All Occupancies: HI lava zones 1 & 2; Investor Occupancy: Baltimore City, MD & Philadelphia, PA",
+        "non_delegated": "Primary & Second Home - NY; All Occupancies: HI lava zones 1 & 2; Investor Occupancy: Baltimore, MD & Philadelphia, PA"
+      }
+    },
+    "dscr": {
+      "program_name": "DSCR",
+      "channel": "Correspondent",
+      "effective_date": "03/03/2026",
+      "ltv_matrix": {
+        "dscr_gte_1_00": [
+          {
+            "max_loan_amount": 1500000,
+            "tiers": [
+              { "fico": 720, "purchase_rt": "80%", "cash_out": "80%" },
+              { "fico": 700, "purchase_rt": "80%", "cash_out": "75%" },
+              { "fico": 680, "purchase_rt": "75%", "cash_out": "75%" },
+              { "fico": 640, "purchase_rt": "70%", "cash_out": "70%" },
+              { "fico": "Foreign National", "purchase_rt": "70%", "cash_out": "60%" }
+            ]
+          },
+          {
+            "max_loan_amount": 2000000,
+            "tiers": [
+              { "fico": 700, "purchase_rt": "80%", "cash_out": "75%" },
+              { "fico": 680, "purchase_rt": "75%", "cash_out": "75%" },
+              { "fico": 660, "purchase_rt": "65%", "cash_out": "65%" }
+            ]
+          },
+          {
+            "max_loan_amount": 2500000,
+            "tiers": [
+              { "fico": 700, "purchase_rt": "70%", "cash_out": "70%" },
+              { "fico": 660, "purchase_rt": "65%", "cash_out": "65%" }
+            ]
+          }
+        ],
+        "dscr_lt_1_00": [
+          {
+            "max_loan_amount": 1500000,
+            "tiers": [
+              { "fico": 720, "purchase_rt": "75%", "cash_out": "70%" },
+              { "fico": 700, "purchase_rt": "75%", "cash_out": "65%" },
+              { "fico": 680, "purchase_rt": "70%", "cash_out": "65%" },
+              { "fico": 640, "purchase_rt": "N/A", "cash_out": "N/A" },
+              { "fico": "Foreign National", "purchase_rt": "N/A", "cash_out": "N/A" }
+            ]
+          },
+          {
+            "max_loan_amount": 2000000,
+            "tiers": [
+              { "fico": 700, "purchase_rt": "70%", "cash_out": "65%" },
+              { "fico": 680, "purchase_rt": "65%", "cash_out": "65%" },
+              { "fico": 660, "purchase_rt": "N/A", "cash_out": "N/A" }
+            ]
+          },
+          {
+            "max_loan_amount": 2500000,
+            "tiers": [
+              { "fico": 700, "purchase_rt": "60%", "cash_out": "60%" },
+              { "fico": 660, "purchase_rt": "N/A", "cash_out": "N/A" }
+            ]
+          }
+        ]
+      },
+      "program_parameters": {
+        "min_loan_amount": 100000,
+        "min_loan_amount_dscr_lt_1": 200000,
+        "max_loan_amount": 2500000,
+        "max_cash_out_ltv_lte_65": 1000000,
+        "max_cash_out_ltv_gt_65": 500000,
+        "foreign_national_max_loan": 1500000,
+        "mortgage_history": "0x30x12",
+        "bk_fc_ss_dil_seasoning": "36 Months"
+      },
+      "products": ["5/6 ARM", "5/6 ARM-IO", "15Y Fixed", "30Y Fixed", "30Y Fixed-IO"],
+      "interest_only": {
+        "max_ltv": "80%",
+        "min_dscr": "1.00x",
+        "options": [
+          { "product": "30Y Fixed-IO", "io_period": "10 Years", "amort": "20 Years", "maturity": "30 Years" },
+          { "product": "5/6 ARM-IO", "io_period": "10 Years", "amort": "20 Years", "maturity": "30 Years" }
+        ]
+      },
+      "occupancy": "Business Purpose Investment Properties only",
+      "property_types": {
+        "eligible": ["SFR", "PUD", "Townhome", "2-4 Units", "Condos"],
+        "non_warrantable_condo": "Max LTV 75%",
+        "rural": "Max 65% LTV / Purchase Only (Long Term Rent only & DSCR > 1.0x)"
+      },
+      "short_term_rentals": {
+        "allowed": true,
+        "requirements": {
+          "property_guard_report": "Required on all STR transactions",
+          "min_dscr": "1.15x",
+          "ltv_reduction": "5% LTV reduction vs matrix (75% Max)",
+          "min_fico": 720,
+          "restrictions": "No First Time Investor / 2+ Unit / Rural / Unique Properties",
+          "refinance": "Eligible with documented 12mo history of short term rental income",
+          "purchase_income": "AirDNA to be used for monthly rental income. Min 60% Occupancy Rate. Property income for qualifying: 80% of annual revenue divided by 12. Must document ST rental operator experience in last 12 months"
+        }
+      },
+      "reserves": {
+        "standard_lte_1m": "3 Months PITIA",
+        "standard_gt_1m": "6 Months PITIA",
+        "dscr_lt_1": "6 Months PITIA",
+        "foreign_national": "6 Months PITIA"
+      },
+      "cash_out": {
+        "max": 1000000,
+        "may_use_towards_reserves": true
+      },
+      "ownership_seasoning": {
+        "0_to_6_months": {
+          "rate_term": "Lesser of Purchase Price + Improvements (or) Appraisal",
+          "cash_out": "Lesser of Purchase Price + Improvements (or) Appraisal"
+        },
+        "gt_6_months": {
+          "rate_term": "Appraised Value",
+          "cash_out": "Appraised Value"
+        },
+        "rtl_renovation_cash_out": "If purchased & renovated per appraisal w/ SSR of 2.5 and below; can use appraised value under 6 months ownership w/ 5% LTV reduction"
+      },
+      "dscr_calculation": "DSCR = Gross Rents / PITIA (fully amortizing) or Gross Rents / ITIA (interest only loans)",
+      "dscr_lt_1_rules": {
+        "min_dscr": "0.75x",
+        "vacant_unleased": "Ineligible for rate/term or cash-out refinances",
+        "rural": "No Rural Properties; No Rural locations per CFPB Rural/Underserved Designation",
+        "markets": "Major Markets only"
+      },
+      "lease_gross_income": {
+        "standard": "Lesser of Estimated Market Rent from Form 1007 or monthly rent from existing lease - higher lease rent allowed with 3 months receipt",
+        "unleased_refi": "Max LTV 70% on Refinances; no LTV reduction for Purchase",
+        "unleased_2_plus_unit": "Max 1 vacant unit on Refinances"
+      },
+      "citizenship": [
+        "US Citizens",
+        "Permanent Resident Aliens",
+        "Non-Permanent Resident Aliens (w/ US Credit)",
+        "Foreign Nationals (Min DSCR 1.00x)"
+      ],
+      "first_time_investor": "Min DSCR 1.00, Min FICO 700, Long-Term Rental Only",
+      "first_time_homebuyers": "Not Eligible",
+      "eligible_borrowers": {
+        "standard": "Borrowers with 12-month history of investment property ownership in the most recent 12 months",
+        "llc": "Domestic LLC required; US Citizen / Perm Resident / Non-Perm / Foreign National guarantors allowed"
+      },
+      "credit": {
+        "standard": "3 tradelines reporting for 12+ months or 2 tradelines reporting for 24+ months or one mortgage or installment tradeline for 36+ months",
+        "max_late": "0x60 in most recent 12 months from application date",
+        "qualifying_fico": "Higher middle score when 3 agency scores or lower score when only 2, of all borrowers/guarantors",
+        "tradeline_waiver": "Waived if credit report reflects scores from all 3 bureaus & qualifying FICO score is 700+"
+      },
+      "appraisal": "One full appraisal and CDA required; If CDA variance > 10%, second full appraisal required; C5 or C6 condition not acceptable",
+      "prepayment_penalty": {
+        "applies_to": "Investment Only",
+        "options": [
+          "5-year: 5%, 4%, 3%, 2%, 1% stepdown",
+          "4-year: 5%, 4%, 3%, 2% stepdown",
+          "3-year: 5%, 4%, 3% stepdown",
+          "2-year: 3% (year 1 and year 2 = 3%)",
+          "1-year: 3% fee"
+        ]
+      },
+      "seller_concessions": "Up to 6% towards closing",
+      "declining_markets": "Max LTV reduced by 5%",
+      "ineligible_geos": "HI lava zones 1 & 2; Baltimore City, MD & Philadelphia, PA"
+    },
+    "itin": {
+      "program_name": "ITIN",
+      "channel": "Correspondent",
+      "effective_date": "03/03/2026",
+      "ltv_matrix": [
+        {
+          "max_loan_amount": 1500000,
+          "tiers": [
+            {
+              "fico": 720,
+              "primary_residence": { "purchase": "80%", "rate_term": "80%", "cash_out": "65%" },
+              "second_home_investment": { "purchase_rt": "70%", "cash_out": "65%" }
+            },
+            {
+              "fico": 700,
+              "primary_residence": { "purchase": "80%", "rate_term": "80%", "cash_out": "60%" },
+              "second_home_investment": { "purchase_rt": "70%", "cash_out": "N/A" }
+            },
+            {
+              "fico": 680,
+              "primary_residence": { "purchase": "75%", "rate_term": "75%", "cash_out": "N/A" },
+              "second_home_investment": { "purchase_rt": "N/A", "cash_out": "N/A" }
+            }
+          ]
+        }
+      ],
+      "program_parameters": {
+        "min_loan_amount": 100000,
+        "max_loan_amount": 1500000,
+        "max_cash_out": 500000,
+        "mortgage_rental_history": "0x30x12",
+        "fc_ss_dil_bk_seasoning": "48 months",
+        "residual_income": 1500,
+        "residual_income_note": "$1,500 plus an additional $150 per dependent",
+        "standard_max_dti": "50%"
+      },
+      "products": ["30Y Fixed", "5/6 ARM"],
+      "interest_only": "Not permitted",
+      "income_documentation": {
+        "full_doc": "1 Yr W-2 or Tax Return",
+        "alt_doc": "12 Months Personal (or) Business Bank Statements; 12 Months 1099 Income; 12 Month Profit & Loss Statement"
+      },
+      "occupancy": ["Primary Residence", "Second Homes", "Investment Properties"],
+      "reserves": {
+        "standard": "3 Months PITIA",
+        "cash_out_2nd_home_investor_gt80": "6 Months PITIA",
+        "note": "Minimum 3 months reserves must come from borrowers own funds"
+      },
+      "property_types": {
+        "eligible": ["SFR", "PUD", "Townhomes", "Condos", "NW Condos", "2-4 Unit"],
+        "ineligible": ["Rural Properties", "Condotels", "Co-ops", "Manufactured Homes", "Mobile Homes", "Geodomes", "Unique Properties"],
+        "notes": "2-4 Units are ineligible on Second Home transactions"
+      },
+      "pl_only": "2 Mo BS required; Max LTV 80% (Purchase) / 75% (Refinance)",
+      "subordinate_financing": "Not permitted under the ITIN program",
+      "escrow_waivers": "Not permitted under the ITIN program",
+      "assets": "Sourced or seasoned for 30 days; Gift Funds allowed - Minimum 5% Borrower Contribution",
+      "credit": {
+        "standard": "3 tradelines reporting for 12+ months or 2 tradelines reporting for 24+ months or 1 mortgage or installment tradeline for 36+ months with 12 months activity",
+        "limited_tradelines": "Ineligible",
+        "qualifying_fico": "Middle score if 3 agency scores or lower score when only 2, of primary wage earner",
+        "tradeline_waiver": "Waived if primary wage earner credit report reflects scores from all 3 bureaus & qualifying FICO score is 700+"
+      },
+      "prepayment_penalty": {
+        "applies_to": "Investment Only",
+        "options": [
+          "5-year: 5%, 4%, 3%, 2%, 1% stepdown",
+          "4-year: 5%, 4%, 3%, 2% stepdown",
+          "3-year: 5%, 4%, 3% stepdown",
+          "2-year: 3% (year 1 and year 2 = 3%)",
+          "1-year: 3% fee"
+        ]
+      },
+      "seller_concessions": "Up to 6% towards closing for all occupancies",
+      "ineligible_geos": {
+        "delegated": "Primary & Second Home - NY; All Occupancies: HI lava zones 1 & 2; Investor Occupancy: Baltimore City, MD & Philadelphia, PA",
+        "non_delegated": "Primary & Second Home - NY; All Occupancies: HI lava zones 1 & 2; Investor Occupancy: Baltimore, MD & Philadelphia, PA"
+      }
+    },
+    "expanded_prime_super_jumbo": {
+      "program_name": "Expanded Prime Super Jumbo",
+      "channel": "Correspondent",
+      "effective_date": "03/03/2026",
+      "ltv_matrix": [
+        {
+          "max_loan_amount": 4000000,
+          "reserves": "24 Months",
+          "max_dti": "35%",
+          "tiers": [
+            {
+              "fico": 720,
+              "primary_residence": {
+                "full_doc": { "purchase": "75%", "refinance": "65%" },
+                "alt_doc": { "purchase": "70%", "refinance": "60%" }
+              }
+            },
+            {
+              "fico": 680,
+              "primary_residence": {
+                "full_doc": { "purchase": "75%", "refinance": "65%" },
+                "alt_doc": { "purchase": "70%", "refinance": "60%" }
+              }
+            }
+          ]
+        },
+        {
+          "max_loan_amount": 5000000,
+          "reserves": "24 Months",
+          "max_dti": "35%",
+          "tiers": [
+            {
+              "fico": 700,
+              "primary_residence": {
+                "full_doc": { "purchase": "70%", "refinance": "N/A" },
+                "alt_doc": { "purchase": "65%", "refinance": "N/A" }
+              }
+            },
+            {
+              "fico": 680,
+              "primary_residence": {
+                "full_doc": { "purchase": "65%", "refinance": "N/A" },
+                "alt_doc": { "purchase": "65%", "refinance": "N/A" }
+              }
+            }
+          ]
+        }
+      ],
+      "program_parameters": {
+        "min_loan_amount": 3500000,
+        "max_loan_amount": 5000000,
+        "max_cash_out": 1000000,
+        "mortgage_history": "0x30x24",
+        "bk_seasoning": "48 Months",
+        "fc_dil_ss_seasoning": "48 Months"
+      },
+      "products": ["30Y Fixed", "5/6 ARM"],
+      "interest_only": "Not permitted",
+      "income_documentation": {
+        "full_doc": "12 Month W-2s or Tax Returns",
+        "alt_doc": "12 Month Personal (or) Business Bank Statements; 12 Month 1099 Income"
+      },
+      "occupancy": "Primary Residence Only",
+      "property_types": {
+        "eligible": ["SFR", "PUD", "Townhomes", "Warrantable Condos", "2-4 Unit"],
+        "ineligible": ["Rural designated properties"]
+      },
+      "cash_out": {
+        "max": 1000000,
+        "proceeds_for_reserves": false,
+        "texas_co": "Not allowed"
+      },
+      "first_time_homebuyers": "Ineligible",
+      "subordinate_financing": "Not allowed",
+      "citizenship": ["US Citizens", "Permanent Resident Aliens"],
+      "valuation": "Two appraisals required on all loans; lower of both appraised values used for LTV",
+      "assets": "Sourced or seasoned for 30 days; Gift Funds are not allowed",
+      "additional_reserves_reo": "Two months PITIA per additional financed property based on PITIA of subject property, up to max 36 months",
+      "eligible_csa": {
+        "requirement": "Property must be in a CSA with more than 2mm residents as of 2020",
+        "eligible_areas": [
+          "New York-Newark", "Los Angeles-Long Beach", "Washington-Baltimore-Arlington",
+          "Chicago-Naperville", "San Jose-San Francisco-Oakland", "Dallas-Fort Worth",
+          "Boston-Worcester-Providence", "Houston-Pasadena", "Philadelphia-Reading-Camden",
+          "Atlanta-Athens-Clarke County-Sandy Springs", "Miami-Port St. Lucie-Ft Lauderdale",
+          "Detroit-Warren-Ann Arbor", "Phoenix-Mesa", "Seattle-Tacoma",
+          "Orlando-Lakeland-Deltona", "Minneapolis-St. Paul", "Cleveland-Akron-Canton",
+          "Denver-Aurora-Greeley", "Charlotte-Concord", "Portland-Vancouver-Salem",
+          "St. Louis-St. Charles-Farmington", "Salt Lake City-Provo-Orem",
+          "San Antonio-New Braunfels-Kerrville", "Pittsburgh-Weirton-Steubenville",
+          "Sacramento-Roseville", "New Haven-Hartford-Waterbury",
+          "Indianapolis-Carmel-Muncie", "Columbus-Marion-Zanesville",
+          "Kansas City-Overland Park-Kansas City", "Las Vegas-Henderson",
+          "Raleigh-Durham-Cary", "Nashville-Davidson-Murfreesboro",
+          "Cincinnati-Wilmington", "Milwaukee-Racine"
+        ]
+      },
+      "ineligible_geos": "NY, HI lava zones 1 & 2"
+    },
+    "dscr_5_to_9_units": {
+      "program_name": "DSCR 5-9 Unit",
+      "channel": "Correspondent",
+      "effective_date": "09/22/2025",
+      "ltv_matrix": [
+        {
+          "max_loan_amount": 2500000,
+          "tiers": [
+            { "fico": 720, "purchase": "75%", "rate_term": "75%", "cash_out": "70%" },
+            { "fico": 700, "purchase": "75%", "rate_term": "75%", "cash_out": "70%" },
+            { "fico": 680, "purchase": "70%", "rate_term": "70%", "cash_out": "65%" }
+          ]
+        }
+      ],
+      "program_parameters": {
+        "min_loan_amount": 350000,
+        "max_loan_amount": 2500000,
+        "max_cash_out": 500000,
+        "min_dscr": "1.15x",
+        "mortgage_history": "0x30x24",
+        "fc_ss_dil_seasoning": "84 Months",
+        "chapter_7_11_13_bk_seasoning": "84 Months"
+      },
+      "interest_only": "Reduce max LTV by 5%",
+      "interest_only_terms": "10yr IO, 20yr Am, 30yr Term",
+      "products": ["5/6 ARM", "5/6 ARM-IO", "30Y Fixed", "30Y Fixed-IO"],
+      "occupancy": "Business Purpose Investment Properties only",
+      "property_types": {
+        "eligible": "5-9 Unit Residential Properties",
+        "ineligible": "No Mixed Use or Commercial"
+      },
+      "dscr_calculation": "DSCR = Gross Rents / PITIA (fully amortizing) or Gross Rents / ITIA (interest only loans)",
+      "reserves": "6 Months PITIA",
+      "unleased_vacant": {
+        "max_vacant": "2 vacant units",
+        "vacant_dscr": "Use 75% of market rents for DSCR calculation"
+      },
+      "lease_gross_income": {
+        "leased": "Use lower of estimated market rent or lease agreement",
+        "unleased": "Use 75% of market rents",
+        "note": "Copies of any existing leases required on all transactions"
+      },
+      "short_term_rentals": "Not eligible",
+      "eligible_borrowers": {
+        "standard": "12-month history of investment property ownership in most recent 12 months",
+        "first_time_investors": "Not Allowed",
+        "entity_borrowers": "LLC Borrowers with Personal Guarantor required w/ minimum 25% ownership; Domestic LLCs only"
+      },
+      "acreage_rural": "Max 2-acres; Rural Ineligible",
+      "subordinate_financing": "Not Allowed",
+      "assets": "Sourced or seasoned for 60 days",
+      "credit": {
+        "standard": "3 tradelines for 12+ months or 2 tradelines for 24+ months, all with activity in last 12 months",
+        "alternate": "1 mortgage or installment tradeline for 36+ months with activity in last 12 months",
+        "max_late": "0x60 in most recent 12 months",
+        "qualifying_fico": "Lower mid score of all borrowers/guarantors",
+        "limited_tradelines": "Not allowed"
+      },
+      "appraisal": {
+        "required": "One full appraisal (FHLMC 71A, FNMA 1050, or similar) and a Commercial BPO",
+        "attachments": [
+          "Rent Roll",
+          "Income and Expense Statement",
+          "Photos (exterior/interior/street)",
+          "Aerial Photo",
+          "Sketch or floor plan of units",
+          "Map",
+          "Plot Plan or survey"
+        ]
+      },
+      "prepayment_penalty": {
+        "applies_to": "Investment Only",
+        "options": [
+          "5-year: 5%, 4%, 3%, 2%, 1% stepdown",
+          "4-year: 5%, 4%, 3%, 2% stepdown",
+          "3-year: 5%, 4%, 3% stepdown",
+          "2-year: 3% (year 1 and year 2 = 3%)",
+          "1-year: 3% fee"
+        ]
+      },
+      "seller_concessions": "Up to 3% towards closing",
+      "ineligible_geos": "HI lava zones 1 & 2"
+    },
+    "equity_advantage_heloan": {
+      "program_name": "Equity Advantage (HELOAN Second Mortgage Fixed Rates)",
+      "channel": "Correspondent",
+      "effective_date": "09/22/2025",
+      "ltv_matrix": [
+        {
+          "max_loan_amount": 350000,
+          "note": "Max CLTV values",
+          "tiers": [
+            { "fico": 700, "primary": "90%", "second_home": "85%", "investment": "80%" },
+            { "fico": 680, "primary": "85%", "second_home": "80%", "investment": "80%" },
+            { "fico": 660, "primary": "80%", "second_home": "70%", "investment": "70%" }
+          ]
+        },
+        {
+          "max_loan_amount": 500000,
+          "note": "Max CLTV values",
+          "tiers": [
+            { "fico": 720, "primary": "90%", "second_home": "80%", "investment": "80%" },
+            { "fico": 700, "primary": "85%", "second_home": "80%", "investment": "80%" },
+            { "fico": 660, "primary": "75%", "second_home": "70%", "investment": "70%" }
+          ]
+        },
+        {
+          "max_loan_amount": 750000,
+          "note": "Max CLTV values",
+          "tiers": [
+            { "fico": 720, "primary": "80%", "second_home": "75%", "investment": "N/A" },
+            { "fico": 700, "primary": "75%", "second_home": "70%", "investment": "N/A" }
+          ]
+        }
+      ],
+      "program_parameters": {
+        "min_loan_amount": 50000,
+        "max_loan_amount": 750000,
+        "max_cash_out": 750000,
+        "max_dti": "50%",
+        "mortgage_history": "0x30x12",
+        "bk_fc_ss_dil_seasoning": "48 Months"
+      },
+      "products": ["10Y Fixed", "15Y Fixed", "20Y Fixed", "20Y Fixed-IO", "25Y Fixed", "30Y Fixed", "30Y Fixed-IO"],
+      "transaction_type": "Standalone Second only",
+      "occupancy": ["Primary", "Second Homes", "Investment Properties"],
+      "income_documentation": {
+        "full_doc": "1 (or) 2 Yrs W-2s or Tax Returns",
+        "bank_statement": "12 Months Personal (or) Business Bank Statements",
+        "pl_only": "Allowed w/ 5% CLTV Reduction; Max 80% CLTV"
+      },
+      "property_types": {
+        "eligible": ["SFR", "PUD", "Townhome", "2-4 Units", "Warrantable Condos", "Non-Warrantable Condos"],
+        "non_warrantable_condo": "75% CLTV Max",
+        "rural": "Ineligible",
+        "ineligible": ["Condotels", "Commercial/Agricultural", "Leasehold Properties", "Land Trusts", "Age-Restricted Communities", "Hobby Farms", "Modular", "Land Contract", "Log Homes"]
+      },
+      "reserves": "No Minimum Reserves",
+      "ownership_seasoning": {
+        "primary": "No seasoning required. If < 6 months, 10% CLTV reduction",
+        "second_home_investment": "6 months required"
+      },
+      "citizenship": ["US Citizens", "Permanent Resident Aliens", "Non-Permanent Resident Aliens (w/ SSN)"],
+      "citizenship_ineligible": ["Foreign Nationals", "ITIN", "Borrowers w/o valid SSN"],
+      "interest_only": "Max CLTV 70%; FICO 700+; Primary only; 1st Lien must be fully amortizing",
+      "title_policy": {
+        "lte_400k": "Owner and Encumbrance Property Report",
+        "gt_400k": "Full Title Policy"
+      },
+      "credit": {
+        "standard": "3 tradelines for 12+ months or 2 tradelines for 24+ months or 1 tradeline for 36+ months (must be mortgage or installment)",
+        "max_late": "0x60 in most recent 12 months",
+        "limited_tradelines": "Allowed - Primary only; Max CLTV of 75%",
+        "qualifying_fico": "Mid score of primary wage earner"
+      },
+      "appraisal": {
+        "lte_400k": "AVM + Property Condition Report OR Full interior appraisal (1004, 1073 or 1025)",
+        "gt_400k": "Full interior appraisal (1004, 1073 or 1025)",
+        "avm_vendors": ["ClearCapital", "Collateral Analytics", "CoreLogic", "HouseCanary", "Homegenius", "Quantarium", "Veros"],
+        "avm_confidence": "90% or higher / FSD 0.10 or lower"
+      },
+      "listed_properties": "Properties listed for sale in prior 6 months from application are ineligible",
+      "state_limitations": "TN - max 180 term; TX Cashout on Primary Residence Limited to 80% CLTV",
+      "ineligible_states": {
+        "delegated": "Primary & Second Home - NY; All Occupancies: HI lava zones 1 & 2",
+        "non_delegated": "Primary & Second Home - NY; All Occupancies: HI lava zones 1 & 2"
+      }
+    },
+    "equity_advantage_elite": {
+      "program_name": "Equity Advantage Elite (HELOAN Second Mortgage)",
+      "channel": "Correspondent",
+      "effective_date": "09/22/2025",
+      "ltv_matrix": [
+        {
+          "max_loan_amount": 500000,
+          "note": "Max CLTV values",
+          "tiers": [
+            { "fico": 740, "primary_rt": "90%", "primary_co": "90%", "second_inv_rt": "75%", "second_inv_co": "75%" },
+            { "fico": 720, "primary_rt": "90%", "primary_co": "90%", "second_inv_rt": "75%", "second_inv_co": "75%" },
+            { "fico": 700, "primary_rt": "85%", "primary_co": "85%", "second_inv_rt": "70%", "second_inv_co": "70%" },
+            { "fico": 680, "primary_rt": "75%", "primary_co": "75%", "second_inv_rt": "65%", "second_inv_co": "65%" }
+          ]
+        }
+      ],
+      "program_parameters": {
+        "min_loan_amount": 50000,
+        "max_loan_amount": 500000,
+        "max_cash_out": 500000,
+        "max_dti": "50%",
+        "mortgage_history": "0x30x24",
+        "bk_fc_ss_dil_seasoning": "84 Months"
+      },
+      "products": ["10Y Fixed", "15Y Fixed", "20Y Fixed", "25Y Fixed", "30Y Fixed"],
+      "transaction_type": "Standalone Second only",
+      "occupancy": ["Primary", "Second Homes", "Investment Properties"],
+      "income_documentation": {
+        "full_doc_only": "1 (or) 2 Yrs W-2s or Tax Returns"
+      },
+      "property_types": {
+        "eligible": ["SFR", "PUD", "Townhome", "2-4 Units", "Warrantable Condos"],
+        "ineligible": ["Condotels", "Commercial/Agricultural", "Leasehold Properties", "Land Trusts", "Age-Restricted Communities", "Hobby Farms", "Non-Warrantable Condos", "Modular", "Land Contracts", "Rural", "Log Homes"]
+      },
+      "interest_only": "Not Allowed",
+      "reserves": "No Minimum Reserves",
+      "ownership_seasoning": {
+        "primary": "No seasoning required. If < 6 months, 10% CLTV reduction",
+        "second_home_investment": "6 months required"
+      },
+      "citizenship": ["US Citizens", "Permanent Resident Aliens", "Non-Permanent Resident Aliens (w/ SSN)"],
+      "citizenship_ineligible": ["Foreign Nationals", "ITIN"],
+      "state_limitations": "TN - max 180 term; TX Cashout on Primary Residence Limited to 80% CLTV",
+      "ineligible_states": {
+        "delegated": "Primary & Second Home - NY; All Occupancies: HI lava zones 1 & 2",
+        "non_delegated": "Primary & Second Home - NY; All Occupancies: HI lava zones 1 & 2"
+      }
+    },
+    "equity_advantage_dscr": {
+      "program_name": "Equity Advantage DSCR (HELOAN Second Mortgage)",
+      "channel": "Correspondent",
+      "effective_date": "09/22/2025",
+      "ltv_matrix": [
+        {
+          "max_loan_amount": 500000,
+          "note": "Max CLTV values",
+          "tiers": [
+            { "fico": 720, "rate_term": "80%", "cash_out": "80%" },
+            { "fico": 700, "rate_term": "75%", "cash_out": "75%" },
+            { "fico": 680, "rate_term": "65%", "cash_out": "65%" }
+          ]
+        }
+      ],
+      "program_parameters": {
+        "min_loan_amount": 75000,
+        "max_loan_amount": 500000,
+        "min_dscr": "1.00x",
+        "mortgage_history": "0x30x12",
+        "bk_fc_ss_dil_seasoning": "48 Months"
+      },
+      "products": ["15Y Fixed", "20Y Fixed", "25Y Fixed", "30Y Fixed"],
+      "occupancy": "Business Purpose Investment Properties only",
+      "property_types": {
+        "eligible": ["SFR", "PUD", "Townhome", "2-4 Units"],
+        "2_4_unit_reduction": "5% CLTV Reduction",
+        "ineligible": ["Condos", "Non-Warrantable Condos", "Rural", "Condotels", "Commercial/Agricultural", "Leasehold Properties", "Land Trusts", "Age-Restricted Communities", "Hobby Farms", "Modular", "Land Contract", "Log Homes"]
+      },
+      "short_term_rentals": "Not Allowed",
+      "interest_only": "Not Allowed",
+      "dscr_calculation": "DSCR = Gross Rents / PITIA (fully amortizing). Min DSCR 1.00x",
+      "reserves": "No reserves required",
+      "ownership_seasoning": "Minimum 6 months ownership required",
+      "lease_gross_income": "Lesser of Estimated Market Rent from Form 1007 or monthly rent from existing lease. Lease in place required for all properties. 2+ Unit: Max 1 vacant unit allowed",
+      "citizenship": ["US Citizens", "Permanent Resident Aliens", "Non-Permanent Resident Aliens (w/ US Credit)"],
+      "eligible_borrowers": ["Natural Persons", "Corporations", "LLC Entities"],
+      "prepayment_penalty": {
+        "options": [
+          "5-year: 5%, 4%, 3%, 2%, 1% stepdown",
+          "4-year: 5%, 4%, 3%, 2% stepdown",
+          "3-year: 5%, 4%, 3% stepdown",
+          "2-year: 3% (year 1 and year 2 = 3%)",
+          "1-year: 3% fee"
+        ]
+      },
+      "state_limitations": "TN - max 180 term",
+      "ineligible_states": "HI lava zones 1 & 2"
+    }
+  },
+  "tql_overlays": {
+    "source_document": "Deephaven vs TQL Guideline OVERLAYS",
+    "note": "Overlays PDF uses CID-encoded fonts with limited text extraction. Key overlays identified from partially readable content via PyMuPDF.",
+    "expanded_prime_overlays": {
+      "max_ltv": {
+        "deephaven": "Max LTV 90%",
+        "tql_overlay": "Per matrix acreage limits apply"
+      },
+      "interest_only": {
+        "deephaven": "Max LTV 80%",
+        "tql_overlay": "Per matrix 80% LTV reduction applies"
+      },
+      "pl_only_purchase": {
+        "deephaven": "Max LTV per matrix",
+        "tql_overlay": "Min FICO per matrix; Tiered by DSCR"
+      },
+      "pl_only_refinance": {
+        "deephaven": "Max LTV varies",
+        "tql_overlay": "Tiered by DSCR"
+      },
+      "investment_overlay": {
+        "deephaven": "No subordinate financing; Prepayment restrictions may apply; FTHB not eligible",
+        "tql_overlay": "Per Deephaven; Deephaven reserved right to review all rural designated properties for valuation & acceptability"
+      }
+    },
+    "dscr_overlays": {
+      "short_term_rental": {
+        "deephaven_allowed": true,
+        "tql_overlay": "Follow Current Verus Non-Agency Seller Guide; DSCR overlays & categories apply",
+        "purchase_ltv": "Per matrix",
+        "refinance_ltv": "Per matrix; Tiered by DSCR"
+      },
+      "rural_properties": {
+        "deephaven": "Allowed on some programs with restrictions",
+        "tql_overlay": "Per matrix acreage limits apply; Deephaven reserves right to review all rural designated properties for valuation & acceptability"
+      },
+      "cash_out_seasoning": {
+        "deephaven": "Appraised value allowed with 6-month ownership seasoning",
+        "tql_overlay": "Use lesser of appraised value or purchase price + documented improvements; Verus Cash-Out Rule applies"
+      },
+      "first_time_investor": {
+        "deephaven": "Min DSCR 1.00, Min FICO 700, Long-Term Rental Only",
+        "tql_overlay": "Must meet Deephaven guideline criteria for applicable program"
+      },
+      "prepayment_penalty": {
+        "deephaven": "Standard stepdown structures",
+        "tql_overlay": "No additional state PPP restrictions per Deephaven"
+      },
+      "caps": {
+        "deephaven": "Per matrix standard",
+        "tql_overlay": "Purchase various options; Refi various options"
+      }
+    },
+    "non_prime_overlays": {
+      "recent_event_borrowers": {
+        "deephaven": "Allowed per matrix",
+        "tql_overlay": "Follow Current Verus Non-Agency Seller Guide"
+      },
+      "asset_depletion": {
+        "deephaven": "Not addressed in matrix",
+        "tql_overlay": "Asset depletion combined with DSCR underwrite/qualification not allowed"
+      }
+    },
+    "itin_overlays": {
+      "general": "ITIN program follows Deephaven guidelines",
+      "pl_only": {
+        "deephaven": "2 Mo BS required; Max LTV 80% (Purchase) / 75% (Refinance)",
+        "tql_overlay": "Must support deposits with documentation; Must support all transaction participants"
+      },
+      "bank_statements": "Commingled personal & business bank statements are ineligible for qualification purposes"
+    },
+    "heloan_overlays": {
+      "equity_advantage": {
+        "deephaven": "Per Deephaven guidelines",
+        "tql_overlay": "Added depletion combined ineligible for DSCR & CES programs"
+      },
+      "equity_advantage_elite": {
+        "deephaven": "Per guidelines",
+        "tql_overlay": "No DSCR; Qualifying Underwriter qualification is ineligible for CES programs"
+      }
+    },
+    "general_overlays": {
+      "fraud_report": "All programs require FCS/DI screening per current Verus Non-Agency Seller Guide; TQL requires FCS/DI screening for all transaction participants",
+      "lease_income": {
+        "deephaven": "Use lesser of estimated market rent from Form 1007 or monthly rent from existing lease; higher lease rent allowed with 3 months receipt",
+        "tql_overlay": "Lease in place required for all subject properties; 2+ Unit properties: Max 1 vacant unit allowed; Closed loan package must include documentation supporting lease is in place",
+        "note": "TQL follows current Verus DSCR guide"
+      },
+      "county_investor_occupancy": {
+        "deephaven": "Baltimore City and Philadelphia investor occupancy loans ineligible",
+        "tql_overlay": "County level investor occupancy loans are ineligible; Follow current Verus Non-Agency Seller Guide"
+      },
+      "solar_panels": "Presence of solar panels with respect to subject property must meet FHA guidelines",
+      "declining_markets": "Per Deephaven guidelines; Max LTV reduced by 5%",
+      "property_types_ineligible": {
+        "deephaven_and_tql": [
+          "Income Producing Properties", "Mixed-Use (for listed programs)",
+          "Agriculturally Zoned", "Hobby Farms", "Co-ops",
+          "Adult Care & Assisted Living Facilities", "Boarding Houses",
+          "Section 8 Housing", "Condotels", "Row Homes", "Geodomes",
+          "Manufactured Housing", "Room Share Services"
+        ]
+      },
+      "second_lien_ineligible_property_types": [
+        "Income Producing Properties", "Mixed-Use", "Agriculturally Zoned",
+        "Hobby Farms", "Co-ops", "Adult Care", "Assisted Living Facilities",
+        "Boarding Houses", "Condotels", "5+ Units", "Section 8 Housing", "Leaseholds"
+      ],
+      "cash_out_seasoning_all_programs": "6+ months ownership required for cash-out; Use lesser of appraised value or purchase price + documented improvements for < 6 months"
+    }
+  },
+  "rural_property_rules": {
+    "expanded_prime": {
+      "allowed": true,
+      "restrictions": "Purchase Only; Max 75% LTV"
+    },
+    "non_prime": {
+      "allowed": true,
+      "restrictions": "Purchase Only; Max 75% LTV"
+    },
+    "dscr": {
+      "allowed": true,
+      "restrictions": "Max 65% LTV; Purchase Only; Long Term Rent only; DSCR > 1.0x required",
+      "dscr_lt_1": "Not allowed for DSCR < 1.00"
+    },
+    "dscr_str": {
+      "allowed": false,
+      "note": "No Rural for Short Term Rentals"
+    },
+    "dscr_5_to_9_units": {
+      "allowed": false,
+      "max_acreage": "2 acres",
+      "note": "Rural Ineligible"
+    },
+    "itin": {
+      "allowed": false,
+      "note": "Rural Properties are ineligible"
+    },
+    "super_jumbo": {
+      "allowed": false,
+      "note": "Rural designated properties are ineligible"
+    },
+    "equity_advantage_heloan": {
+      "allowed": false,
+      "note": "Rural Ineligible"
+    },
+    "equity_advantage_elite": {
+      "allowed": false,
+      "note": "Rural Ineligible"
+    },
+    "equity_advantage_dscr": {
+      "allowed": false,
+      "note": "Rural Ineligible"
+    }
+  },
+  "str_requirements": {
+    "dscr_program": {
+      "allowed": true,
+      "property_guard_report": "Required on all STR transactions",
+      "min_dscr": "1.15x",
+      "ltv_reduction": "5% LTV reduction vs matrix (75% Max)",
+      "min_fico": 720,
+      "no_first_time_investor": true,
+      "no_2_plus_unit": true,
+      "no_rural": true,
+      "no_unique_properties": true,
+      "refinance": "Eligible with documented 12mo history of short term rental income",
+      "purchase_income_source": "AirDNA",
+      "min_occupancy_rate": "60%",
+      "qualifying_income": "80% of annual revenue divided by 12",
+      "operator_experience": "Must document ST rental operator experience in last 12 months"
+    },
+    "dscr_5_to_9_units": {
+      "allowed": false,
+      "note": "Short-term rental income not eligible"
+    },
+    "equity_advantage_dscr": {
+      "allowed": false,
+      "note": "Not Allowed"
+    },
+    "expanded_prime": {
+      "allowed": false,
+      "note": "Not specifically listed as eligible"
+    },
+    "non_prime": {
+      "allowed": false,
+      "note": "Not specifically listed as eligible"
+    }
+  },
+  "income_documentation_by_program": {
+    "expanded_prime_full_doc_primary": {
+      "doc_type": "Full Doc",
+      "occupancy": "Primary Residence",
+      "requirements": "1 Yr W-2s or Tax Returns",
+      "asset_utilization": "Max 80% LTV (Full Doc Matrix); Purchase & Rate/Term Only"
+    },
+    "expanded_prime_full_doc_second_home": {
+      "doc_type": "Full Doc",
+      "occupancy": "Second Home",
+      "requirements": "1 Yr W-2s or Tax Returns",
+      "uses_same_grid": "Same as Primary Full Doc grid"
+    },
+    "expanded_prime_full_doc_investment": {
+      "doc_type": "Full Doc",
+      "occupancy": "Investment",
+      "requirements": "1 Yr W-2s or Tax Returns",
+      "uses_grid": "Second Home & Investment grid",
+      "notes": "No subordinate financing; Prepayment restrictions may apply; FTHB not eligible"
+    },
+    "expanded_prime_alt_doc_primary": {
+      "doc_type": "Alt Doc",
+      "occupancy": "Primary Residence",
+      "requirements": "12 Months Personal (or) Business Bank Statements; 12 Months 1099 Income; 12 Month P&L Statement",
+      "self_employed_requirement": "Must be S/E for 2 yrs"
+    },
+    "expanded_prime_alt_doc_second_home": {
+      "doc_type": "Alt Doc",
+      "occupancy": "Second Home",
+      "requirements": "Same as Primary Alt Doc",
+      "uses_grid": "Second Home & Investment Alt Doc grid"
+    },
+    "expanded_prime_alt_doc_investment": {
+      "doc_type": "Alt Doc",
+      "occupancy": "Investment",
+      "requirements": "Same as Primary Alt Doc",
+      "uses_grid": "Second Home & Investment Alt Doc grid"
+    },
+    "non_prime_full_doc": {
+      "doc_type": "Full Doc",
+      "occupancy": "All",
+      "requirements": "1 Yr W-2 or Tax Return"
+    },
+    "non_prime_alt_doc": {
+      "doc_type": "Alt Doc",
+      "occupancy": "All",
+      "requirements": "12 Months Personal (or) Business Bank Statements; 12 Months 1099 Income; 12 Month P&L Statement"
+    },
+    "dscr_standard": {
+      "doc_type": "DSCR",
+      "occupancy": "Investment Only",
+      "requirements": "No income documentation required - qualified by DSCR ratio",
+      "dscr_formula": "Gross Rents / PITIA (fully amortizing) or Gross Rents / ITIA (IO loans)"
+    },
+    "dscr_str": {
+      "doc_type": "DSCR STR",
+      "occupancy": "Investment Only",
+      "requirements": "AirDNA for purchase income; 12mo documented STR history for refinance",
+      "min_dscr": "1.15x",
+      "min_occupancy": "60%"
+    },
+    "itin_full_doc": {
+      "doc_type": "Full Doc",
+      "occupancy": "All",
+      "requirements": "1 Yr W-2 or Tax Return"
+    },
+    "itin_alt_doc": {
+      "doc_type": "Alt Doc",
+      "occupancy": "All",
+      "requirements": "12 Months Personal (or) Business Bank Statements; 12 Months 1099 Income; 12 Month P&L Statement"
+    },
+    "super_jumbo_full_doc": {
+      "doc_type": "Full Doc",
+      "occupancy": "Primary Only",
+      "requirements": "12 Month W-2s or Tax Returns"
+    },
+    "super_jumbo_alt_doc": {
+      "doc_type": "Alt Doc",
+      "occupancy": "Primary Only",
+      "requirements": "12 Month Personal (or) Business Bank Statements; 12 Month 1099 Income"
+    },
+    "heloan_full_doc": {
+      "doc_type": "Full Doc",
+      "occupancy": "All",
+      "requirements": "1 (or) 2 Yrs W-2s or Tax Returns"
+    },
+    "heloan_bank_statement": {
+      "doc_type": "Bank Statement",
+      "occupancy": "All",
+      "requirements": "12 Months Personal (or) Business Bank Statements"
+    },
+    "heloan_pl_only": {
+      "doc_type": "P&L Only",
+      "occupancy": "All",
+      "requirements": "P&L Only with 5% CLTV Reduction; Max 80% CLTV"
+    },
+    "heloan_elite_full_doc_only": {
+      "doc_type": "Full Doc Only",
+      "occupancy": "All",
+      "requirements": "1 (or) 2 Yrs W-2s or Tax Returns"
+    },
+    "heloan_dscr": {
+      "doc_type": "DSCR",
+      "occupancy": "Investment Only",
+      "requirements": "No income doc - DSCR qualified. Min DSCR 1.00x"
+    }
+  }
+}

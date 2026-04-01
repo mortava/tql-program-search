@@ -1,0 +1,223 @@
+{
+  "investor": "Champions Funding (Accelerator DSCR)",
+  "source_file": "champions DSCR 1 to 4.pdf",
+  "last_updated": "03/16/2026",
+  "program": "Accelerator DSCR 1-4 Unit",
+  "loan_purpose": ["Purchase", "Rate-Term Refinance", "Cash Out (Investment Business Purpose only)"],
+  "occupancy": "Investment Property (Borrower or Family members not permitted to live in subject)",
+  "product_type": ["30-Yr Fixed", "5/6 ARM", "7/6 ARM", "10/6 ARM"],
+  "loan_amounts": {
+    "min": 125000,
+    "max": 3000000
+  },
+  "interest_only": {
+    "allowed": true,
+    "min_credit_score": 660,
+    "max_ltv_purchase_rt": 75,
+    "max_ltv_cash_out": 70,
+    "note": "Interest Only transactions DSCR is calculated using ITIA"
+  },
+  "ltv_matrices": {
+    "dscr_gte_1.00": {
+      "loan_lt_1M": [
+        { "fico": 700, "purchase": 80, "rate_term": 80, "cash_out": 75 },
+        { "fico": 680, "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 660, "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 640, "purchase": 75, "rate_term": 75, "cash_out": 60 },
+        { "fico": 620, "purchase": 65, "rate_term": 65, "cash_out": 55 },
+        { "fico": 600, "purchase": 60, "rate_term": 60, "cash_out": 55 }
+      ],
+      "loan_1M_to_1.5M": [
+        { "fico": "740+", "purchase": 80, "rate_term": 80, "cash_out": 75 },
+        { "fico": 720, "purchase": 80, "rate_term": 80, "cash_out": 75 },
+        { "fico": 700, "purchase": 80, "rate_term": 80, "cash_out": 75 },
+        { "fico": 680, "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 660, "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 640, "purchase": 65, "rate_term": 65, "cash_out": 55 },
+        { "fico": 620, "purchase": 50, "rate_term": 50, "cash_out": 50 }
+      ],
+      "loan_1.5M_to_2M": [
+        { "fico": "740+", "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 700, "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 680, "purchase": 70, "rate_term": 70, "cash_out": 65 },
+        { "fico": 660, "purchase": 70, "rate_term": 70, "cash_out": 65 },
+        { "fico": 640, "purchase": 65, "rate_term": 65, "cash_out": 60 }
+      ],
+      "loan_2M_to_2.5M": [
+        { "fico": "740+", "purchase": 75, "rate_term": 75, "cash_out": 65 },
+        { "fico": 700, "purchase": 75, "rate_term": 75, "cash_out": 65 },
+        { "fico": 680, "purchase": 70, "rate_term": 70, "cash_out": 65 },
+        { "fico": 660, "purchase": 70, "rate_term": 70, "cash_out": 65 },
+        { "fico": 640, "purchase": 60, "rate_term": 60, "cash_out": "N/A" }
+      ],
+      "loan_2.5M_to_3M": [
+        { "fico": "740+", "purchase": 70, "rate_term": 70, "cash_out": 65 },
+        { "fico": 720, "purchase": 70, "rate_term": 70, "cash_out": 65 },
+        { "fico": 700, "purchase": 70, "rate_term": 70, "cash_out": 65 },
+        { "fico": 680, "purchase": 65, "rate_term": 65, "cash_out": "N/A" },
+        { "fico": 660, "purchase": 65, "rate_term": 65, "cash_out": "N/A" },
+        { "fico": 640, "purchase": 60, "rate_term": 60, "cash_out": "N/A" }
+      ]
+    },
+    "dscr_0.75_to_0.99": {
+      "loan_lt_1M": [
+        { "fico": 700, "purchase": 80, "rate_term": 80, "cash_out": 75 },
+        { "fico": 680, "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 660, "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 640, "purchase": 75, "rate_term": 75, "cash_out": 60 },
+        { "fico": 620, "purchase": 65, "rate_term": 65, "cash_out": 55 },
+        { "fico": 600, "purchase": 60, "rate_term": 60, "cash_out": 55 }
+      ],
+      "loan_1M_to_1.5M": [
+        { "fico": "740+", "purchase": 80, "rate_term": 75, "cash_out": 75 },
+        { "fico": 720, "purchase": 80, "rate_term": 75, "cash_out": 75 },
+        { "fico": 700, "purchase": 80, "rate_term": 75, "cash_out": 75 },
+        { "fico": 680, "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 660, "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 640, "purchase": 65, "rate_term": 65, "cash_out": 55 },
+        { "fico": 620, "purchase": 50, "rate_term": 50, "cash_out": 50 }
+      ],
+      "loan_1.5M_to_2M": [
+        { "fico": "740+", "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 700, "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 680, "purchase": 70, "rate_term": 70, "cash_out": 65 },
+        { "fico": 660, "purchase": 70, "rate_term": 70, "cash_out": 65 },
+        { "fico": 640, "purchase": 65, "rate_term": 65, "cash_out": 60 }
+      ],
+      "loan_2M_to_2.5M": [
+        { "fico": "740+", "purchase": 70, "rate_term": 70, "cash_out": 65 },
+        { "fico": 700, "purchase": 70, "rate_term": 70, "cash_out": 65 },
+        { "fico": 680, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 660, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" }
+      ],
+      "loan_2.5M_to_3M": [
+        { "fico": "740+", "purchase": 60, "rate_term": 60, "cash_out": "N/A" },
+        { "fico": 720, "purchase": 60, "rate_term": 60, "cash_out": "N/A" },
+        { "fico": 700, "purchase": 60, "rate_term": 60, "cash_out": "N/A" },
+        { "fico": 680, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" },
+        { "fico": 660, "purchase": "N/A", "rate_term": "N/A", "cash_out": "N/A" }
+      ]
+    },
+    "no_ratio_lt_0.75": {
+      "loan_lt_1M": [
+        { "fico": 700, "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 680, "purchase": 75, "rate_term": 75, "cash_out": 70 },
+        { "fico": 660, "purchase": 65, "rate_term": 65, "cash_out": 60 },
+        { "fico": 640, "purchase": 60, "rate_term": 60, "cash_out": 60 }
+      ],
+      "loan_1M_to_1.5M": [
+        { "fico": "740+", "purchase": 70, "rate_term": 70, "cash_out": 65 },
+        { "fico": 720, "purchase": 70, "rate_term": 70, "cash_out": 65 },
+        { "fico": 700, "purchase": 70, "rate_term": 70, "cash_out": 65 }
+      ],
+      "loan_1.5M_to_2M": [
+        { "fico": "740+", "purchase": 65, "rate_term": 65, "cash_out": 60 },
+        { "fico": 700, "purchase": 65, "rate_term": 65, "cash_out": 60 }
+      ],
+      "asset_depletion": {
+        "purchase": { "min_fico": 680, "max_ltv": 80 },
+        "refinance_rate_term_or_cash_out": { "min_fico": 720, "max_ltv": 75 },
+        "cash_out_only": { "min_fico": 720, "max_ltv": 70 }
+      }
+    }
+  },
+  "property_types": {
+    "eligible": ["Single Family Attached", "Single Family Detached", "2-4 Units"],
+    "rural": "Not eligible",
+    "condominium": {
+      "warrantable": "Eligible per Matrix",
+      "non_warrantable_and_condotel": "5% LTV reduction",
+      "florida_condo_ltv_over_70": "Requires Full Condo Review"
+    }
+  },
+  "cash_out": {
+    "ltv_gt_65": "$600,000 max cash-in-hand",
+    "ltv_60_to_65": "$1,000,000 max cash-in-hand",
+    "ltv_lte_60": "Unlimited"
+  },
+  "appraisals": {
+    "two_appraisals_required": "Loan amounts >= $2,000,000",
+    "desk_review": "Ordered on all loans with CU Score over 2.5 (exception: full second appraisal). Must be in tolerance per guidelines",
+    "transferred_appraisal": "Acceptable"
+  },
+  "declining_market": "5% LTV reduction off Matrix Max LTV (as identified by appraiser)",
+  "acreage": "Property up to 10 acres, not meeting rural definition, is eligible",
+  "income": {
+    "long_term_rental": "Refer to Guidelines",
+    "short_term_rental": "Refer to Guidelines"
+  },
+  "short_term_rental": {
+    "allowed": true,
+    "max_ltv_purchase_rate_term": 75,
+    "max_ltv_cash_out": 70
+  },
+  "rural_property": {
+    "allowed": false
+  },
+  "tradelines": {
+    "options": [
+      "Borrower(s) have 3 scores",
+      "1 open and reporting 24 months",
+      "2 open and reporting 12 months"
+    ]
+  },
+  "mortgage_housing_history": {
+    "required": "Complete 12-month housing history",
+    "rent_free": "Not permitted (see Rent Free Clarification)",
+    "1x30x12": "No reduction",
+    "0x60x12": {
+      "purchase_max": "70% LTV",
+      "refinance_max": "65% LTV"
+    }
+  },
+  "first_time_investor": {
+    "definition": "Borrower not meeting experienced investor definition (history of owning/managing commercial or non-owner occupied residential real estate for at least 1 year in last 3 years)",
+    "eligibility": {
+      "min_credit_score": "Per Matrix",
+      "housing_history": "No housing late payments in most recent 12 months",
+      "living_rent_free": "Not permitted"
+    }
+  },
+  "rent_free_clarification": {
+    "not_considered_rent_free": [
+      "Borrower(s) live in a marital home (letter from spouse + evidence of mortgage/lease required)",
+      "Borrower(s) sold primary home within past 6 months and purchasing primary home",
+      "Borrower(s) own primary home free and clear with proof taxes paid current",
+      "Documented 12-month payment history on other real estate owned + proof of ownership (not applicable for first time investor)"
+    ]
+  },
+  "credit_event_seasoning": {
+    "bk_fc_ss_dil_deferral_modification": {
+      "gte_36_months": "No reduction",
+      "gte_24_months": {
+        "purchase_rate_term": "Max 75% LTV",
+        "cash_out": "Max 70% LTV"
+      }
+    }
+  },
+  "assets": "Min of 30-days asset verification required",
+  "reserves": {
+    "loan_lte_1.5M": "No reserves",
+    "loan_gt_1.5M": "2 months PITIA",
+    "loan_gt_2.5M": "6 months PITIA",
+    "cash_out_for_reserves": true
+  },
+  "seller_contribution": "6% Max",
+  "gift_funds": "Permitted",
+  "citizenship": ["US Citizen", "Permanent Resident Alien", "Non-Permanent Resident Alien (with US Credit and acceptable VISA)"],
+  "prepayment_penalty": {
+    "amount": "5% of unpaid principal balance",
+    "not_allowed_states": ["Alaska", "Kansas", "Maryland", "Michigan", "Minnesota", "New Mexico", "Ohio (1-2 Units)", "Rhode Island", "Vermont"],
+    "additional_restrictions": {
+      "IL": "Natural person < 8.00% APR required",
+      "MS": "Step Down required",
+      "NJ": "Titled Owner must be an Entity",
+      "PA": "1-2 Units > $329,411"
+    }
+  },
+  "geographic_restrictions": {
+    "state_specific": "State or Local High Cost not permitted",
+    "ineligible_states": "Refer to State Licensing",
+    "ineligible_locations": ["Hawaii lava zones 1 & 2", "Puerto Rico", "Guam", "US Virgin Islands", "Baltimore MD", "Philadelphia PA"]
+  }
+}
