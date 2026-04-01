@@ -4,7 +4,6 @@ import type { Investor } from '../types'
 const PRI = ['Primary Residence'] as const
 const SEC = ['Second Home'] as const
 const INV = ['Investment'] as const
-const PRI_SEC = ['Primary Residence', 'Second Home'] as const
 const PRI_SEC_INV = ['Primary Residence', 'Second Home', 'Investment'] as const
 
 const US_CSHIP = ['US Citizen', 'Permanent Resident', 'Non-Permanent Resident'] as const
@@ -30,7 +29,6 @@ const FULL_ALT_DOCS = [
 const PURCH = ['Purchase'] as const
 const RT = ['Rate/Term Refinance'] as const
 const CO = ['Cash-Out Refinance'] as const
-const PURCH_RT = ['Purchase', 'Rate/Term Refinance'] as const
 const ALL_PURPOSES = ['Purchase', 'Rate/Term Refinance', 'Cash-Out Refinance'] as const
 
 export const adProduct: Investor = {
@@ -236,7 +234,4 @@ export const adProduct: Investor = {
     loanModification: '48 months',
     forbearance: '48 months',
   },
-
-  sourceDocuments: ['AD Product Matrix 2 19 2026.pdf'],
-  lastUpdated: '2026-02-19',
 }

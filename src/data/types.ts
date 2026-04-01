@@ -107,11 +107,11 @@ export interface LtvMatrixEntry {
   maxCltv?: number
   minLoanAmount: number
   maxLoanAmount: number
-  propertyTypes: PropertyType[]
-  occupancy: OccupancyType[]
-  docTypes: DocType[]
-  citizenship: CitizenshipType[]
-  loanPurpose: LoanPurpose[]
+  propertyTypes: readonly PropertyType[]
+  occupancy: readonly OccupancyType[]
+  docTypes: readonly DocType[]
+  citizenship: readonly CitizenshipType[]
+  loanPurpose: readonly LoanPurpose[]
   maxDti?: number
   notes?: string
 }
