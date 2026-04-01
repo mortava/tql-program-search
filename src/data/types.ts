@@ -103,7 +103,7 @@ export type STRRentProofMethod = (typeof STR_RENT_PROOF_METHODS)[number]
 export interface LtvMatrixEntry {
   minFico: number
   maxFico: number
-  maxLtv: number
+  maxLtv?: number
   maxCltv?: number
   minLoanAmount: number
   maxLoanAmount: number

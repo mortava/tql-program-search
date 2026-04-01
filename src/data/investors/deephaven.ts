@@ -327,10 +327,10 @@ export const deephaven: Investor = {
           loanPurpose: ['Purchase', 'Rate/Term Refinance'], notes: 'DSCR >= 1.00. Non-warrantable condo max 75% LTV.',
         },
         {
-          minFico: 720, maxFico: 999, maxLtv: 80, minLoanAmount: 100000, maxLoanAmount: 1500000,
+          minFico: 720, maxFico: 999, maxLtv: 65, minLoanAmount: 100000, maxLoanAmount: 1500000,
           propertyTypes: ['Rural'],
           occupancy: ['Investment'], docTypes: ['DSCR'], citizenship: ['US Citizen', 'Permanent Resident', 'Non-Permanent Resident'],
-          loanPurpose: ['Purchase'], maxLtv: 65, notes: 'DSCR >= 1.00. Rural: max 65% LTV, purchase only, long-term rent only.',
+          loanPurpose: ['Purchase'], notes: 'DSCR >= 1.00. Rural: max 65% LTV, purchase only, long-term rent only.',
         },
         {
           minFico: 700, maxFico: 999, maxLtv: 80, minLoanAmount: 100000, maxLoanAmount: 1500000,
