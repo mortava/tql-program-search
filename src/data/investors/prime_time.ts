@@ -1,169 +1,202 @@
 import type { Investor } from '../types'
 
+const PRIM = ['Primary Residence'] as const
+const SEC = ['Second Home'] as const
+const INV = ['Investment'] as const
+const PRIM_SEC = ['Primary Residence', 'Second Home'] as const
+const PRIM_SEC_INV = ['Primary Residence', 'Second Home', 'Investment'] as const
+
+const STANDARD_PROPS = ['SFR', 'PUD', 'Condo (Warrantable)', 'Condo (Non-Warrantable)', 'Condotel', '2-4 Unit'] as const
+const ALL_PROPS = ['SFR', 'PUD', 'Condo (Warrantable)', 'Condo (Non-Warrantable)', 'Condotel', '2-4 Unit', 'Rural'] as const
+
+const STANDARD_DOCS = ['Full Doc', 'Bank Statement (Personal)', 'Bank Statement (Business)', '1099 Only', 'WVOE', 'Asset Depletion'] as const
+const ALT_DOCS = ['P&L Only', 'WVOE', 'Asset Depletion'] as const
+
+const US_CSHIP = ['US Citizen', 'Permanent Resident', 'Non-Permanent Resident'] as const
+
 export const primeTime: Investor = {
   id: 'prime-time',
   name: 'Prime Time (Verus)',
-  nmls: '',
-  effectiveDate: '2026',
-  sourceDocuments: [
-    'Prime Time - Standard Doc and Alt Doc.pdf',
-  ],
-  programs: [
-    {
-      id: 'prime-time-standard-alt-doc',
-      name: 'Prime Time Standard & Alt Doc',
-      category: 'Full Doc & Alt-Doc Primary Residence',
-      docTypes: ['Full Doc', 'Bank Statement (12)', 'Bank Statement (24)', '1099', 'P&L', 'WVOE', 'Asset Utilization'],
-      occupancyTypes: ['Primary', 'Second Home', 'Investment'],
-      propertyTypes: ['SFR', 'PUD', 'Condo', 'Condotel', '2-4 Unit', 'Rural'],
-      minLoanAmount: 150000,
-      maxLoanAmount: 4000000,
-      minFico: 620,
-      citizenshipTypes: ['US Citizen', 'Permanent Resident', 'Non-Permanent Resident'],
-      ltvMatrix: [
-        // Primary — Standard/Bank Statement/1099 — Purchase
-        { minFico: 720, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 90 },
-        { minFico: 720, maxLoanAmount: 1500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 90 },
-        { minFico: 720, maxLoanAmount: 2000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 85 },
-        { minFico: 720, maxLoanAmount: 2500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 80 },
-        { minFico: 720, maxLoanAmount: 3000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 75 },
-        { minFico: 720, maxLoanAmount: 3500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 70 },
-        { minFico: 720, maxLoanAmount: 4000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 70 },
+  shortName: 'Prime Time',
+  description:
+    'Non-QM Full Doc & Alt-Doc lender offering Standard and Alt-Doc programs for primary, second home, and investment properties. Supports bank statement, 1099, P&L, WVOE, and asset utilization income documentation.',
 
-        { minFico: 700, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 90 },
-        { minFico: 700, maxLoanAmount: 1500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 90 },
-        { minFico: 700, maxLoanAmount: 2000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 85 },
-        { minFico: 700, maxLoanAmount: 2500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 75 },
-        { minFico: 700, maxLoanAmount: 3000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 75 },
-        { minFico: 700, maxLoanAmount: 3500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 70 },
-
-        { minFico: 680, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 90 },
-        { minFico: 680, maxLoanAmount: 1500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 85 },
-        { minFico: 680, maxLoanAmount: 2000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 80 },
-        { minFico: 680, maxLoanAmount: 2500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 75 },
-        { minFico: 680, maxLoanAmount: 3000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 70 },
-
-        { minFico: 660, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 80 },
-        { minFico: 660, maxLoanAmount: 1500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 80 },
-        { minFico: 660, maxLoanAmount: 2000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 75 },
-        { minFico: 660, maxLoanAmount: 2500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 70 },
-
-        { minFico: 640, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 80 },
-        { minFico: 640, maxLoanAmount: 1500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 70 },
-        { minFico: 640, maxLoanAmount: 2000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 65 },
-
-        { minFico: 620, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 70 },
-
-        // Primary — Rate/Term
-        { minFico: 720, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Rate/Term Refinance', maxLtv: 85 },
-        { minFico: 720, maxLoanAmount: 2000000, occupancyType: 'Primary', loanPurpose: 'Rate/Term Refinance', maxLtv: 80 },
-        { minFico: 720, maxLoanAmount: 3000000, occupancyType: 'Primary', loanPurpose: 'Rate/Term Refinance', maxLtv: 70 },
-        { minFico: 700, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Rate/Term Refinance', maxLtv: 85 },
-        { minFico: 700, maxLoanAmount: 2000000, occupancyType: 'Primary', loanPurpose: 'Rate/Term Refinance', maxLtv: 75 },
-        { minFico: 680, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Rate/Term Refinance', maxLtv: 85 },
-        { minFico: 680, maxLoanAmount: 2000000, occupancyType: 'Primary', loanPurpose: 'Rate/Term Refinance', maxLtv: 75 },
-        { minFico: 660, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Rate/Term Refinance', maxLtv: 80 },
-        { minFico: 640, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Rate/Term Refinance', maxLtv: 75 },
-
-        // Primary — Cash-Out
-        { minFico: 720, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Cash-Out Refinance', maxLtv: 80 },
-        { minFico: 720, maxLoanAmount: 2000000, occupancyType: 'Primary', loanPurpose: 'Cash-Out Refinance', maxLtv: 80 },
-        { minFico: 720, maxLoanAmount: 3000000, occupancyType: 'Primary', loanPurpose: 'Cash-Out Refinance', maxLtv: 70 },
-        { minFico: 700, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Cash-Out Refinance', maxLtv: 80 },
-        { minFico: 700, maxLoanAmount: 2000000, occupancyType: 'Primary', loanPurpose: 'Cash-Out Refinance', maxLtv: 70 },
-        { minFico: 680, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Cash-Out Refinance', maxLtv: 75 },
-        { minFico: 680, maxLoanAmount: 2000000, occupancyType: 'Primary', loanPurpose: 'Cash-Out Refinance', maxLtv: 70 },
-        { minFico: 660, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Cash-Out Refinance', maxLtv: 75 },
-        { minFico: 640, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Cash-Out Refinance', maxLtv: 70 },
-
-        // Second Home/Investment — Standard/Bank Statement/1099 — Purchase
-        { minFico: 720, maxLoanAmount: 1000000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 85 },
-        { minFico: 720, maxLoanAmount: 1500000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 85 },
-        { minFico: 720, maxLoanAmount: 2000000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 85 },
-        { minFico: 720, maxLoanAmount: 2500000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 80 },
-        { minFico: 720, maxLoanAmount: 3000000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 75 },
-        { minFico: 720, maxLoanAmount: 3500000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 70 },
-
-        { minFico: 700, maxLoanAmount: 1000000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 85 },
-        { minFico: 700, maxLoanAmount: 2000000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 85 },
-        { minFico: 700, maxLoanAmount: 2500000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 75 },
-        { minFico: 700, maxLoanAmount: 3000000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 75 },
-        { minFico: 700, maxLoanAmount: 3500000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 70 },
-
-        { minFico: 680, maxLoanAmount: 1000000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 85 },
-        { minFico: 680, maxLoanAmount: 2000000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 80 },
-        { minFico: 680, maxLoanAmount: 3000000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 70 },
-
-        { minFico: 660, maxLoanAmount: 1000000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 80 },
-        { minFico: 660, maxLoanAmount: 2000000, occupancyType: 'Second Home', loanPurpose: 'Purchase', maxLtv: 75 },
-
-        { minFico: 640, maxLoanAmount: 1000000, occupancyType: 'Investment', loanPurpose: 'Purchase', maxLtv: 80 },
-        { minFico: 640, maxLoanAmount: 1500000, occupancyType: 'Investment', loanPurpose: 'Purchase', maxLtv: 70 },
-        { minFico: 640, maxLoanAmount: 2000000, occupancyType: 'Investment', loanPurpose: 'Purchase', maxLtv: 65 },
-
-        { minFico: 620, maxLoanAmount: 1000000, occupancyType: 'Investment', loanPurpose: 'Purchase', maxLtv: 70 },
-
-        // P&L/WVOE/Asset Utilization — Primary — Purchase (reduced LTV)
-        { minFico: 720, maxLoanAmount: 1000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 80, docType: 'P&L/WVOE/Asset Utilization' },
-        { minFico: 720, maxLoanAmount: 2000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 80, docType: 'P&L/WVOE/Asset Utilization' },
-        { minFico: 720, maxLoanAmount: 2500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 75, docType: 'P&L/WVOE/Asset Utilization' },
-        { minFico: 720, maxLoanAmount: 3000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 70, docType: 'P&L/WVOE/Asset Utilization' },
-        { minFico: 700, maxLoanAmount: 2500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 75, docType: 'P&L/WVOE/Asset Utilization' },
-        { minFico: 680, maxLoanAmount: 2000000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 75, docType: 'P&L/WVOE/Asset Utilization' },
-        { minFico: 680, maxLoanAmount: 2500000, occupancyType: 'Primary', loanPurpose: 'Purchase', maxLtv: 70, docType: 'P&L/WVOE/Asset Utilization' },
-      ],
-      creditEventSeasoning: '>= 36 months; 24-35 months: max 80% purchase, 75% refi, max $1.5M; 12-23 months: max 70% purchase, max $1M',
-      housingHistory: '1x30x12 allowed; 0x60x12: max 80% purchase, 75% refi, max $1.5M; 0x90x12: max 70% purchase, max $1M',
-      notes: [
-        'STR: Not mentioned — consult guidelines',
-        'Rural allowed: max 80% purchase, 75% refi; max 20 acres',
-        '2-4 Units and Condos: max 85% LTV',
-        'Condotel: max 85% LTV; max $2.5M',
-        'IO: min 660 FICO; max 90% LTV (40yr ARM IO eligible)',
-        'State overlays CT/FL/IL/NJ/NY: max 85% purchase, 80% refi, max $2M',
-        'Declining market: max 85% purchase, 80% refi, max $2M',
-        'DTI: max 50%; primary up to 55% with: min $3,500 residual income, max 80% LTV, 2yr Standard Doc, 6 months reserves, not FTHB, min 660 FICO',
-        'Reserves: LTV <=80%: 3 months; 80-85%: 6 months; >85%: 12 months; >$1.5M: 9 months; >$2.5M: 12 months',
-        'Gift funds: primary/2nd home 5% borrower contribution; investment 10%',
-        'Products: 15/30/40yr Fixed; 5/6/7/6/10/6 ARM; IO available',
-        'PPP: investment only; max 5 years; not allowed AK/KS/MI/MN/NM/RI',
-        'P&L/WVOE/Asset Utilization: max $3M purchase; min 680 FICO for P&L; reduced LTV vs standard',
-      ],
-    },
-  ],
   strRequirements: {
     allowed: false,
-    allowedPrograms: [],
-    notes: [
-      'STR requirements not specified in Prime Time guidelines',
-      'Consult current product guidelines for STR eligibility',
-    ],
+    allowedOnDSCR: false,
+    allowedOnFullDoc: false,
+    allowedOnAltDoc: false,
+    rentProofMethods: [],
+    propertyTypes: [],
+    additionalRequirements: ['STR requirements not specified in Prime Time guidelines'],
+    notes: 'STR not specified — consult current product guidelines for STR eligibility.',
   },
+
   ruralPropertyRules: {
-    allowed: true,
-    allowedPrograms: ['Prime Time Standard & Alt Doc'],
+    allowedOnDSCR: false,
+    allowedOnDSCR_STR: false,
+    allowedOnFullDoc: true,
+    allowedOnAltDoc: true,
     maxLtv: 80,
     acreageLimit: '20 acres',
-    notes: [
+    additionalRestrictions: [
       'Rural allowed: max 80% purchase, 75% refi',
       'Max 20 acres',
       'All occupancy types eligible',
     ],
+    notes: 'Rural allowed on Standard & Alt-Doc. Max 80% purchase, 75% refi. Max 20 acres.',
   },
+
+  programs: [
+    // ── Primary Residence — Purchase ────────────────────────────────────
+    {
+      category: 'Full Doc & Alt-Doc Primary Residence',
+      available: true,
+      maxDti: 50,
+      interestOnly: true,
+      prepaymentPenalty: 'Investment only; max 5 years; not allowed AK/KS/MI/MN/NM/RI',
+      minReserves: 'LTV <=80%: 3 months; 80-85%: 6 months; >85%: 12 months; >$1.5M: 9 months; >$2.5M: 12 months',
+      notes: 'Standard/Bank Statement/1099 doc types. IO: min 660 FICO, max 90% LTV (40yr ARM IO eligible). DTI up to 55% with: min $3,500 residual income, max 80% LTV, 2yr Standard Doc, 6mo reserves, not FTHB, min 660 FICO. State overlays CT/FL/IL/NJ/NY: max 85% purchase, 80% refi, max $2M. Declining market: max 85% purchase, 80% refi, max $2M.',
+      ltvMatrix: [
+        // Primary — Standard/Bank Statement/1099 — Purchase
+        { minFico: 720, maxFico: 850, maxLtv: 90, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 720, maxFico: 850, maxLtv: 90, minLoanAmount: 150000, maxLoanAmount: 1500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 720, maxFico: 850, maxLtv: 85, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 720, maxFico: 850, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 2500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 720, maxFico: 850, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 3000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 720, maxFico: 850, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 3500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 720, maxFico: 850, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 4000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+
+        { minFico: 700, maxFico: 719, maxLtv: 90, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 700, maxFico: 719, maxLtv: 90, minLoanAmount: 150000, maxLoanAmount: 1500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 700, maxFico: 719, maxLtv: 85, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 700, maxFico: 719, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 2500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 700, maxFico: 719, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 3000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 700, maxFico: 719, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 3500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+
+        { minFico: 680, maxFico: 699, maxLtv: 90, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 680, maxFico: 699, maxLtv: 85, minLoanAmount: 150000, maxLoanAmount: 1500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 680, maxFico: 699, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 680, maxFico: 699, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 2500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 680, maxFico: 699, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 3000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+
+        { minFico: 660, maxFico: 679, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 660, maxFico: 679, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 1500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 660, maxFico: 679, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 660, maxFico: 679, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 2500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+
+        { minFico: 640, maxFico: 659, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 640, maxFico: 659, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 1500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 640, maxFico: 659, maxLtv: 65, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+
+        { minFico: 620, maxFico: 639, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+
+        // Primary — Rate/Term Refinance
+        { minFico: 720, maxFico: 850, maxLtv: 85, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Rate/Term Refinance'] },
+        { minFico: 720, maxFico: 850, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Rate/Term Refinance'] },
+        { minFico: 720, maxFico: 850, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 3000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Rate/Term Refinance'] },
+        { minFico: 700, maxFico: 719, maxLtv: 85, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Rate/Term Refinance'] },
+        { minFico: 700, maxFico: 719, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Rate/Term Refinance'] },
+        { minFico: 680, maxFico: 699, maxLtv: 85, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Rate/Term Refinance'] },
+        { minFico: 680, maxFico: 699, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Rate/Term Refinance'] },
+        { minFico: 660, maxFico: 679, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Rate/Term Refinance'] },
+        { minFico: 640, maxFico: 659, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Rate/Term Refinance'] },
+
+        // Primary — Cash-Out Refinance
+        { minFico: 720, maxFico: 850, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Cash-Out Refinance'] },
+        { minFico: 720, maxFico: 850, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Cash-Out Refinance'] },
+        { minFico: 720, maxFico: 850, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 3000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Cash-Out Refinance'] },
+        { minFico: 700, maxFico: 719, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Cash-Out Refinance'] },
+        { minFico: 700, maxFico: 719, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Cash-Out Refinance'] },
+        { minFico: 680, maxFico: 699, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Cash-Out Refinance'] },
+        { minFico: 680, maxFico: 699, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Cash-Out Refinance'] },
+        { minFico: 660, maxFico: 679, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Cash-Out Refinance'] },
+        { minFico: 640, maxFico: 659, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Cash-Out Refinance'] },
+
+        // P&L / WVOE / Asset Utilization — Primary — Purchase (reduced LTV)
+        { minFico: 720, maxFico: 850, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: ALT_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'], notes: 'P&L/WVOE/Asset Utilization' },
+        { minFico: 720, maxFico: 850, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: ALT_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'], notes: 'P&L/WVOE/Asset Utilization' },
+        { minFico: 720, maxFico: 850, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 2500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: ALT_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'], notes: 'P&L/WVOE/Asset Utilization' },
+        { minFico: 720, maxFico: 850, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 3000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: ALT_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'], notes: 'P&L/WVOE/Asset Utilization' },
+        { minFico: 700, maxFico: 719, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 2500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: ALT_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'], notes: 'P&L/WVOE/Asset Utilization' },
+        { minFico: 680, maxFico: 699, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: ALT_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'], notes: 'P&L/WVOE/Asset Utilization' },
+        { minFico: 680, maxFico: 699, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 2500000, propertyTypes: ALL_PROPS, occupancy: PRIM, docTypes: ALT_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'], notes: 'P&L/WVOE/Asset Utilization' },
+      ],
+    },
+
+    // ── Second Home ──────────────────────────────────────────────────────
+    {
+      category: 'Full Doc & Alt-Doc Second Home',
+      available: true,
+      maxDti: 50,
+      interestOnly: true,
+      prepaymentPenalty: 'Investment only; max 5 years; not allowed AK/KS/MI/MN/NM/RI',
+      minReserves: 'LTV <=80%: 3 months; 80-85%: 6 months; >85%: 12 months; >$1.5M: 9 months; >$2.5M: 12 months',
+      notes: 'Standard/Bank Statement/1099 doc types for second home.',
+      ltvMatrix: [
+        { minFico: 720, maxFico: 850, maxLtv: 85, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 720, maxFico: 850, maxLtv: 85, minLoanAmount: 150000, maxLoanAmount: 1500000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 720, maxFico: 850, maxLtv: 85, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 720, maxFico: 850, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 2500000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 720, maxFico: 850, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 3000000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 720, maxFico: 850, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 3500000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+
+        { minFico: 700, maxFico: 719, maxLtv: 85, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 700, maxFico: 719, maxLtv: 85, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 700, maxFico: 719, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 2500000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 700, maxFico: 719, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 3000000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 700, maxFico: 719, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 3500000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+
+        { minFico: 680, maxFico: 699, maxLtv: 85, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 680, maxFico: 699, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 680, maxFico: 699, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 3000000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+
+        { minFico: 660, maxFico: 679, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 660, maxFico: 679, maxLtv: 75, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: STANDARD_PROPS, occupancy: SEC, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+      ],
+    },
+
+    // ── Investment ───────────────────────────────────────────────────────
+    {
+      category: 'Full Doc & Alt-Doc Investment',
+      available: true,
+      maxDti: 50,
+      interestOnly: true,
+      prepaymentPenalty: 'Investment only; max 5 years; not allowed AK/KS/MI/MN/NM/RI',
+      minReserves: 'LTV <=80%: 3 months; 80-85%: 6 months; >85%: 12 months; >$1.5M: 9 months; >$2.5M: 12 months',
+      notes: 'Standard/Bank Statement/1099 doc types for investment properties. Gift funds: 10% borrower contribution.',
+      ltvMatrix: [
+        { minFico: 640, maxFico: 850, maxLtv: 80, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: STANDARD_PROPS, occupancy: INV, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 640, maxFico: 850, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 1500000, propertyTypes: STANDARD_PROPS, occupancy: INV, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+        { minFico: 640, maxFico: 850, maxLtv: 65, minLoanAmount: 150000, maxLoanAmount: 2000000, propertyTypes: STANDARD_PROPS, occupancy: INV, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+
+        { minFico: 620, maxFico: 639, maxLtv: 70, minLoanAmount: 150000, maxLoanAmount: 1000000, propertyTypes: STANDARD_PROPS, occupancy: INV, docTypes: STANDARD_DOCS, citizenship: US_CSHIP, loanPurpose: ['Purchase'] },
+      ],
+    },
+  ],
+
   generalGuidelines: {
     minFico: 620,
     maxLoanAmount: 4000000,
+    minLoanAmount: 150000,
+    maxDti: 50,
     maxProperties: 'Unlimited',
-    citizenshipTypes: ['US Citizen', 'Permanent Resident', 'Non-Permanent Resident'],
-    occupancyTypes: ['Primary', 'Second Home', 'Investment'],
-    loanPurposes: ['Purchase', 'Rate/Term Refinance', 'Cash-Out Refinance'],
-    creditEventSeasoning: '12-36 months depending on tier',
-    notes: [
-      'Standard Doc, Bank Statement, 1099, P&L, WVOE, Asset Utilization',
-      'Asset Utilization: eligible assets / 84 = monthly income stream',
-      '1099: 1 or 2 years; 10% fixed expense ratio',
-      'P&L: must be prepared by CPA/EA/CTEC; 1x30x12 max; 36mo credit event seasoning min',
-      'Cash-in-hand: unlimited',
-    ],
+    interestOnly: true,
+    prepaymentPenaltyOptions: ['Investment only; max 5 years; not allowed AK/KS/MI/MN/NM/RI'],
+    reserveRequirements: 'LTV <=80%: 3 months; 80-85%: 6 months; >85%: 12 months; >$1.5M: 9 months; >$2.5M: 12 months',
+    seasoningRequirements: '12-36 months depending on tier',
+    citizenshipAllowed: ['US Citizen', 'Permanent Resident', 'Non-Permanent Resident'],
+    entityVesting: true,
+    trustVesting: true,
   },
+
+  creditEventSeasoning: {
+    bankruptcy: '>=36 months; 24-35 months: max 80% purchase, 75% refi, max $1.5M; 12-23 months: max 70% purchase, max $1M',
+    foreclosure: '>=36 months',
+    shortSale: '>=36 months',
+    mortgageLates: '1x30x12 allowed; 0x60x12: max 80% purchase, 75% refi, max $1.5M; 0x90x12: max 70% purchase, max $1M',
+  },
+
+  sourceDocuments: ['Prime Time - Standard Doc and Alt Doc.pdf'],
+  lastUpdated: '2026-01-01',
 }

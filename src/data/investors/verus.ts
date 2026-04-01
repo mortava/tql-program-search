@@ -5,7 +5,6 @@ const PRI = ['Primary Residence'] as const
 const SEC = ['Second Home'] as const
 const INV = ['Investment'] as const
 const PRI_SEC = ['Primary Residence', 'Second Home'] as const
-const PRI_SEC_INV = ['Primary Residence', 'Second Home', 'Investment'] as const
 const SEC_INV = ['Second Home', 'Investment'] as const
 
 const US_CSHIP = ['US Citizen', 'Permanent Resident'] as const
@@ -27,66 +26,6 @@ const STANDARD_ALT_DOC: readonly ['Full Doc', 'Alt-Doc', 'Bank Statement (Person
 const ASCENT_STD_DOC: readonly ['Full Doc', 'Alt-Doc', 'Bank Statement (Personal)', 'Bank Statement (Business)', '1099 Only'] = ['Full Doc', 'Alt-Doc', 'Bank Statement (Personal)', 'Bank Statement (Business)', '1099 Only']
 const ASCENT_ALT_DOC: readonly ['P&L Only', 'WVOE', 'Asset Depletion'] = ['P&L Only', 'WVOE', 'Asset Depletion']
 
-// ── Helper: expand JSON rows into LtvMatrixEntry[] ────────────────────
-// Each JSON row has purchaseLTV, rateTermLTV, cashOutLTV — we split into
-// up to 3 entries (one per loan purpose) when LTVs differ.
-
-function expandRow(
-  row: { minFICO: number; maxLoanAmount: number; purchaseLTV: number | null; rateTermLTV: number | null; cashOutLTV: number | null },
-  prevMaxLoan: number,
-  defaults: {
-    propertyTypes: readonly string[]
-    occupancy: readonly string[]
-    docTypes: readonly string[]
-    citizenship: readonly string[]
-    maxDti?: number
-    notes?: string
-  },
-) {
-  const entries: any[] = []
-  const base = {
-    minFico: row.minFICO,
-    maxFico: row.minFICO === 620 ? 639 : row.minFICO === 640 ? 659 : row.minFICO === 660 ? 679 : row.minFICO === 680 ? 699 : row.minFICO === 700 ? 719 : row.minFICO === 720 ? 739 : row.minFICO === 740 ? 850 : 850,
-    minLoanAmount: prevMaxLoan + 1 > 150000 ? prevMaxLoan + 1 : 150000,
-    maxLoanAmount: row.maxLoanAmount,
-    propertyTypes: [...defaults.propertyTypes],
-    occupancy: [...defaults.occupancy],
-    docTypes: [...defaults.docTypes],
-    citizenship: [...defaults.citizenship],
-    ...(defaults.maxDti ? { maxDti: defaults.maxDti } : {}),
-    ...(defaults.notes ? { notes: defaults.notes } : {}),
-  }
-
-  if (row.purchaseLTV !== null) {
-    // Check if purchase and rate/term share the same LTV
-    if (row.rateTermLTV !== null && row.purchaseLTV === row.rateTermLTV) {
-      if (row.cashOutLTV !== null && row.cashOutLTV === row.purchaseLTV) {
-        entries.push({ ...base, maxLtv: row.purchaseLTV, loanPurpose: [...ALL_PURPOSES] })
-      } else {
-        entries.push({ ...base, maxLtv: row.purchaseLTV, loanPurpose: ['Purchase', 'Rate/Term Refinance'] })
-        if (row.cashOutLTV !== null) {
-          entries.push({ ...base, maxLtv: row.cashOutLTV, loanPurpose: ['Cash-Out Refinance'] })
-        }
-      }
-    } else {
-      entries.push({ ...base, maxLtv: row.purchaseLTV, loanPurpose: ['Purchase'] })
-      if (row.rateTermLTV !== null) {
-        if (row.cashOutLTV !== null && row.rateTermLTV === row.cashOutLTV) {
-          entries.push({ ...base, maxLtv: row.rateTermLTV, loanPurpose: ['Rate/Term Refinance', 'Cash-Out Refinance'] })
-        } else {
-          entries.push({ ...base, maxLtv: row.rateTermLTV, loanPurpose: ['Rate/Term Refinance'] })
-          if (row.cashOutLTV !== null) {
-            entries.push({ ...base, maxLtv: row.cashOutLTV, loanPurpose: ['Cash-Out Refinance'] })
-          }
-        }
-      } else if (row.cashOutLTV !== null) {
-        entries.push({ ...base, maxLtv: row.cashOutLTV, loanPurpose: ['Cash-Out Refinance'] })
-      }
-    }
-  }
-
-  return entries
-}
 
 export const verus: Investor = {
   id: 'verus',
